@@ -5,269 +5,269 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK丨Hong Kong 01 Std, server: upoz.cn.greatgameupload.org, port: 20480, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: HK丨Hong Kong 02, server: upoz.cn.greatgameupload.org, port: 13503, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: HK丨Hong Kong 03, server: upoz.cn.greatgameupload.org, port: 32355, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: HK丨Hong Kong 04, server: upoz.cn.greatgameupload.org, port: 40557, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: HK丨Hong Kong 05, server: upoz.cn.greatgameupload.org, port: 31155, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: TW丨Taiwan 01, server: upoz.cn.greatgameupload.org, port: 29522, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: "JP丨Japan [Home]", server: upoz.cn.greatgameupload.org, port: 36968, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: JP丨Japan 01 Std, server: upoz.cn.greatgameupload.org, port: 48545, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: JP丨Japan 02, server: upoz.cn.greatgameupload.org, port: 35789, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: JP丨Japan 03, server: upoz.cn.greatgameupload.org, port: 41950, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: SG丨Singapore 01, server: upoz.cn.greatgameupload.org, port: 45725, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: SG丨Singapore 02, server: upoz.cn.greatgameupload.org, port: 18362, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: MO丨Macao 01, server: upoz.cn.greatgameupload.org, port: 28523, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: "MY丨Kuala Lumpur [Home]", server: upoz.cn.greatgameupload.org, port: 30066, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: KR丨South Korea, server: upoz.cn.greatgameupload.org, port: 44139, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: "VN丨 Vietnam [Home]", server: upoz.cn.greatgameupload.org, port: 37244, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: AR丨Argentina 01, server: upoz.cn.greatgameupload.org, port: 36512, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: GB丨United Kingdom 01, server: upoz.cn.greatgameupload.org, port: 33970, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: DE丨Germany 01, server: upoz.cn.greatgameupload.org, port: 34135, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: IT丨Italy 01, server: upoz.cn.greatgameupload.org, port: 21646, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: ZA丨Johannesburg 01, server: upoz.cn.greatgameupload.org, port: 47231, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: AE丨Dubai 01, server: upoz.cn.greatgameupload.org, port: 50332, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: IE丨Dublin 01, server: upoz.cn.greatgameupload.org, port: 18864, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: "UA丨Ukraine [Home]", server: upoz.cn.greatgameupload.org, port: 65297, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: "US丨Los Angeles [Home]", server: upoz.cn.greatgameupload.org, port: 37388, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: "US丨Durham [Home]", server: upoz.cn.greatgameupload.org, port: 25532, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: US丨Los Angeles 01 Std, server: upoz.cn.greatgameupload.org, port: 25535, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: US丨Los Angeles 02, server: upoz.cn.greatgameupload.org, port: 25536, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇭🇰 HK丨Hong Kong 01 Std, server: upoz.cn.greatgameupload.org, port: 20480, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK丨Hong Kong 02, server: upoz.cn.greatgameupload.org, port: 13503, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK丨Hong Kong 03, server: upoz.cn.greatgameupload.org, port: 32355, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK丨Hong Kong 04, server: upoz.cn.greatgameupload.org, port: 40557, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK丨Hong Kong 05, server: upoz.cn.greatgameupload.org, port: 31155, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 TW丨Taiwan 01, server: upoz.cn.greatgameupload.org, port: 29522, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: "🇯🇵 JP丨Japan [Home]", server: upoz.cn.greatgameupload.org, port: 36968, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP丨Japan 01 Std, server: upoz.cn.greatgameupload.org, port: 48545, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP丨Japan 02, server: upoz.cn.greatgameupload.org, port: 35789, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP丨Japan 03, server: upoz.cn.greatgameupload.org, port: 41950, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG丨Singapore 01, server: upoz.cn.greatgameupload.org, port: 45725, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG丨Singapore 02, server: upoz.cn.greatgameupload.org, port: 18362, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇴 MO丨Macao 01, server: upoz.cn.greatgameupload.org, port: 28523, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: "🇲🇾 MY丨Kuala Lumpur [Home]", server: upoz.cn.greatgameupload.org, port: 30066, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR丨South Korea, server: upoz.cn.greatgameupload.org, port: 44139, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: "🇻🇳 VN丨 Vietnam [Home]", server: upoz.cn.greatgameupload.org, port: 37244, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇷 AR丨Argentina 01, server: upoz.cn.greatgameupload.org, port: 36512, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB丨United Kingdom 01, server: upoz.cn.greatgameupload.org, port: 33970, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE丨Germany 01, server: upoz.cn.greatgameupload.org, port: 34135, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇹 IT丨Italy 01, server: upoz.cn.greatgameupload.org, port: 21646, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: ZA丨Johannesburg 01, server: upoz.cn.greatgameupload.org, port: 47231, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇪 AE丨Dubai 01, server: upoz.cn.greatgameupload.org, port: 50332, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇪 IE丨Dublin 01, server: upoz.cn.greatgameupload.org, port: 18864, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: "🇺🇦 UA丨Ukraine [Home]", server: upoz.cn.greatgameupload.org, port: 65297, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: "🇺🇸 US丨Los Angeles [Home]", server: upoz.cn.greatgameupload.org, port: 37388, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: "🇺🇸 US丨Durham [Home]", server: upoz.cn.greatgameupload.org, port: 25532, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US丨Los Angeles 01 Std, server: upoz.cn.greatgameupload.org, port: 25535, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US丨Los Angeles 02, server: upoz.cn.greatgameupload.org, port: 25536, type: trojan, password: 5aaa0103-9b94-4315-b82e-6a7771db2adc, sni: www.baidu.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - HK丨Hong Kong 01 Std
-      - HK丨Hong Kong 02
-      - HK丨Hong Kong 03
-      - HK丨Hong Kong 04
-      - HK丨Hong Kong 05
-      - TW丨Taiwan 01
-      - JP丨Japan [Home]
-      - JP丨Japan 01 Std
-      - JP丨Japan 02
-      - JP丨Japan 03
-      - SG丨Singapore 01
-      - SG丨Singapore 02
-      - MO丨Macao 01
-      - MY丨Kuala Lumpur [Home]
-      - KR丨South Korea
-      - VN丨 Vietnam [Home]
-      - AR丨Argentina 01
-      - GB丨United Kingdom 01
-      - DE丨Germany 01
-      - IT丨Italy 01
+      - 🇭🇰 HK丨Hong Kong 01 Std
+      - 🇭🇰 HK丨Hong Kong 02
+      - 🇭🇰 HK丨Hong Kong 03
+      - 🇭🇰 HK丨Hong Kong 04
+      - 🇭🇰 HK丨Hong Kong 05
+      - 🇨🇳 TW丨Taiwan 01
+      - 🇯🇵 JP丨Japan [Home]
+      - 🇯🇵 JP丨Japan 01 Std
+      - 🇯🇵 JP丨Japan 02
+      - 🇯🇵 JP丨Japan 03
+      - 🇸🇬 SG丨Singapore 01
+      - 🇸🇬 SG丨Singapore 02
+      - 🇲🇴 MO丨Macao 01
+      - 🇲🇾 MY丨Kuala Lumpur [Home]
+      - 🇰🇷 KR丨South Korea
+      - 🇻🇳 VN丨 Vietnam [Home]
+      - 🇦🇷 AR丨Argentina 01
+      - 🇬🇧 GB丨United Kingdom 01
+      - 🇩🇪 DE丨Germany 01
+      - 🇮🇹 IT丨Italy 01
       - ZA丨Johannesburg 01
-      - AE丨Dubai 01
-      - IE丨Dublin 01
-      - UA丨Ukraine [Home]
-      - US丨Los Angeles [Home]
-      - US丨Durham [Home]
-      - US丨Los Angeles 01 Std
-      - US丨Los Angeles 02
+      - 🇦🇪 AE丨Dubai 01
+      - 🇮🇪 IE丨Dublin 01
+      - 🇺🇦 UA丨Ukraine [Home]
+      - 🇺🇸 US丨Los Angeles [Home]
+      - 🇺🇸 US丨Durham [Home]
+      - 🇺🇸 US丨Los Angeles 01 Std
+      - 🇺🇸 US丨Los Angeles 02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - HK丨Hong Kong 01 Std
-      - HK丨Hong Kong 02
-      - HK丨Hong Kong 03
-      - HK丨Hong Kong 04
-      - HK丨Hong Kong 05
-      - TW丨Taiwan 01
-      - JP丨Japan [Home]
-      - JP丨Japan 01 Std
-      - JP丨Japan 02
-      - JP丨Japan 03
-      - SG丨Singapore 01
-      - SG丨Singapore 02
-      - MO丨Macao 01
-      - MY丨Kuala Lumpur [Home]
-      - KR丨South Korea
-      - VN丨 Vietnam [Home]
-      - AR丨Argentina 01
-      - GB丨United Kingdom 01
-      - DE丨Germany 01
-      - IT丨Italy 01
+      - 🇭🇰 HK丨Hong Kong 01 Std
+      - 🇭🇰 HK丨Hong Kong 02
+      - 🇭🇰 HK丨Hong Kong 03
+      - 🇭🇰 HK丨Hong Kong 04
+      - 🇭🇰 HK丨Hong Kong 05
+      - 🇨🇳 TW丨Taiwan 01
+      - 🇯🇵 JP丨Japan [Home]
+      - 🇯🇵 JP丨Japan 01 Std
+      - 🇯🇵 JP丨Japan 02
+      - 🇯🇵 JP丨Japan 03
+      - 🇸🇬 SG丨Singapore 01
+      - 🇸🇬 SG丨Singapore 02
+      - 🇲🇴 MO丨Macao 01
+      - 🇲🇾 MY丨Kuala Lumpur [Home]
+      - 🇰🇷 KR丨South Korea
+      - 🇻🇳 VN丨 Vietnam [Home]
+      - 🇦🇷 AR丨Argentina 01
+      - 🇬🇧 GB丨United Kingdom 01
+      - 🇩🇪 DE丨Germany 01
+      - 🇮🇹 IT丨Italy 01
       - ZA丨Johannesburg 01
-      - AE丨Dubai 01
-      - IE丨Dublin 01
-      - UA丨Ukraine [Home]
-      - US丨Los Angeles [Home]
-      - US丨Durham [Home]
-      - US丨Los Angeles 01 Std
-      - US丨Los Angeles 02
+      - 🇦🇪 AE丨Dubai 01
+      - 🇮🇪 IE丨Dublin 01
+      - 🇺🇦 UA丨Ukraine [Home]
+      - 🇺🇸 US丨Los Angeles [Home]
+      - 🇺🇸 US丨Durham [Home]
+      - 🇺🇸 US丨Los Angeles 01 Std
+      - 🇺🇸 US丨Los Angeles 02
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK丨Hong Kong 01 Std
-      - HK丨Hong Kong 02
-      - HK丨Hong Kong 03
-      - HK丨Hong Kong 04
-      - HK丨Hong Kong 05
-      - TW丨Taiwan 01
-      - JP丨Japan [Home]
-      - JP丨Japan 01 Std
-      - JP丨Japan 02
-      - JP丨Japan 03
-      - SG丨Singapore 01
-      - SG丨Singapore 02
-      - MO丨Macao 01
-      - MY丨Kuala Lumpur [Home]
-      - KR丨South Korea
-      - VN丨 Vietnam [Home]
-      - AR丨Argentina 01
-      - GB丨United Kingdom 01
-      - DE丨Germany 01
-      - IT丨Italy 01
+      - 🇭🇰 HK丨Hong Kong 01 Std
+      - 🇭🇰 HK丨Hong Kong 02
+      - 🇭🇰 HK丨Hong Kong 03
+      - 🇭🇰 HK丨Hong Kong 04
+      - 🇭🇰 HK丨Hong Kong 05
+      - 🇨🇳 TW丨Taiwan 01
+      - 🇯🇵 JP丨Japan [Home]
+      - 🇯🇵 JP丨Japan 01 Std
+      - 🇯🇵 JP丨Japan 02
+      - 🇯🇵 JP丨Japan 03
+      - 🇸🇬 SG丨Singapore 01
+      - 🇸🇬 SG丨Singapore 02
+      - 🇲🇴 MO丨Macao 01
+      - 🇲🇾 MY丨Kuala Lumpur [Home]
+      - 🇰🇷 KR丨South Korea
+      - 🇻🇳 VN丨 Vietnam [Home]
+      - 🇦🇷 AR丨Argentina 01
+      - 🇬🇧 GB丨United Kingdom 01
+      - 🇩🇪 DE丨Germany 01
+      - 🇮🇹 IT丨Italy 01
       - ZA丨Johannesburg 01
-      - AE丨Dubai 01
-      - IE丨Dublin 01
-      - UA丨Ukraine [Home]
-      - US丨Los Angeles [Home]
-      - US丨Durham [Home]
-      - US丨Los Angeles 01 Std
-      - US丨Los Angeles 02
+      - 🇦🇪 AE丨Dubai 01
+      - 🇮🇪 IE丨Dublin 01
+      - 🇺🇦 UA丨Ukraine [Home]
+      - 🇺🇸 US丨Los Angeles [Home]
+      - 🇺🇸 US丨Durham [Home]
+      - 🇺🇸 US丨Los Angeles 01 Std
+      - 🇺🇸 US丨Los Angeles 02
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK丨Hong Kong 01 Std
-      - HK丨Hong Kong 02
-      - HK丨Hong Kong 03
-      - HK丨Hong Kong 04
-      - HK丨Hong Kong 05
-      - TW丨Taiwan 01
-      - JP丨Japan [Home]
-      - JP丨Japan 01 Std
-      - JP丨Japan 02
-      - JP丨Japan 03
-      - SG丨Singapore 01
-      - SG丨Singapore 02
-      - MO丨Macao 01
-      - MY丨Kuala Lumpur [Home]
-      - KR丨South Korea
-      - VN丨 Vietnam [Home]
-      - AR丨Argentina 01
-      - GB丨United Kingdom 01
-      - DE丨Germany 01
-      - IT丨Italy 01
+      - 🇭🇰 HK丨Hong Kong 01 Std
+      - 🇭🇰 HK丨Hong Kong 02
+      - 🇭🇰 HK丨Hong Kong 03
+      - 🇭🇰 HK丨Hong Kong 04
+      - 🇭🇰 HK丨Hong Kong 05
+      - 🇨🇳 TW丨Taiwan 01
+      - 🇯🇵 JP丨Japan [Home]
+      - 🇯🇵 JP丨Japan 01 Std
+      - 🇯🇵 JP丨Japan 02
+      - 🇯🇵 JP丨Japan 03
+      - 🇸🇬 SG丨Singapore 01
+      - 🇸🇬 SG丨Singapore 02
+      - 🇲🇴 MO丨Macao 01
+      - 🇲🇾 MY丨Kuala Lumpur [Home]
+      - 🇰🇷 KR丨South Korea
+      - 🇻🇳 VN丨 Vietnam [Home]
+      - 🇦🇷 AR丨Argentina 01
+      - 🇬🇧 GB丨United Kingdom 01
+      - 🇩🇪 DE丨Germany 01
+      - 🇮🇹 IT丨Italy 01
       - ZA丨Johannesburg 01
-      - AE丨Dubai 01
-      - IE丨Dublin 01
-      - UA丨Ukraine [Home]
-      - US丨Los Angeles [Home]
-      - US丨Durham [Home]
-      - US丨Los Angeles 01 Std
-      - US丨Los Angeles 02
+      - 🇦🇪 AE丨Dubai 01
+      - 🇮🇪 IE丨Dublin 01
+      - 🇺🇦 UA丨Ukraine [Home]
+      - 🇺🇸 US丨Los Angeles [Home]
+      - 🇺🇸 US丨Durham [Home]
+      - 🇺🇸 US丨Los Angeles 01 Std
+      - 🇺🇸 US丨Los Angeles 02
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - HK丨Hong Kong 01 Std
-      - HK丨Hong Kong 02
-      - HK丨Hong Kong 03
-      - HK丨Hong Kong 04
-      - HK丨Hong Kong 05
-      - TW丨Taiwan 01
-      - JP丨Japan [Home]
-      - JP丨Japan 01 Std
-      - JP丨Japan 02
-      - JP丨Japan 03
-      - SG丨Singapore 01
-      - SG丨Singapore 02
-      - MO丨Macao 01
-      - MY丨Kuala Lumpur [Home]
-      - KR丨South Korea
-      - VN丨 Vietnam [Home]
-      - AR丨Argentina 01
-      - GB丨United Kingdom 01
-      - DE丨Germany 01
-      - IT丨Italy 01
+      - 🇭🇰 HK丨Hong Kong 01 Std
+      - 🇭🇰 HK丨Hong Kong 02
+      - 🇭🇰 HK丨Hong Kong 03
+      - 🇭🇰 HK丨Hong Kong 04
+      - 🇭🇰 HK丨Hong Kong 05
+      - 🇨🇳 TW丨Taiwan 01
+      - 🇯🇵 JP丨Japan [Home]
+      - 🇯🇵 JP丨Japan 01 Std
+      - 🇯🇵 JP丨Japan 02
+      - 🇯🇵 JP丨Japan 03
+      - 🇸🇬 SG丨Singapore 01
+      - 🇸🇬 SG丨Singapore 02
+      - 🇲🇴 MO丨Macao 01
+      - 🇲🇾 MY丨Kuala Lumpur [Home]
+      - 🇰🇷 KR丨South Korea
+      - 🇻🇳 VN丨 Vietnam [Home]
+      - 🇦🇷 AR丨Argentina 01
+      - 🇬🇧 GB丨United Kingdom 01
+      - 🇩🇪 DE丨Germany 01
+      - 🇮🇹 IT丨Italy 01
       - ZA丨Johannesburg 01
-      - AE丨Dubai 01
-      - IE丨Dublin 01
-      - UA丨Ukraine [Home]
-      - US丨Los Angeles [Home]
-      - US丨Durham [Home]
-      - US丨Los Angeles 01 Std
-      - US丨Los Angeles 02
+      - 🇦🇪 AE丨Dubai 01
+      - 🇮🇪 IE丨Dublin 01
+      - 🇺🇦 UA丨Ukraine [Home]
+      - 🇺🇸 US丨Los Angeles [Home]
+      - 🇺🇸 US丨Durham [Home]
+      - 🇺🇸 US丨Los Angeles 01 Std
+      - 🇺🇸 US丨Los Angeles 02
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK丨Hong Kong 01 Std
-      - HK丨Hong Kong 02
-      - HK丨Hong Kong 03
-      - HK丨Hong Kong 04
-      - HK丨Hong Kong 05
-      - TW丨Taiwan 01
-      - JP丨Japan [Home]
-      - JP丨Japan 01 Std
-      - JP丨Japan 02
-      - JP丨Japan 03
-      - SG丨Singapore 01
-      - SG丨Singapore 02
-      - MO丨Macao 01
-      - MY丨Kuala Lumpur [Home]
-      - KR丨South Korea
-      - VN丨 Vietnam [Home]
-      - AR丨Argentina 01
-      - GB丨United Kingdom 01
-      - DE丨Germany 01
-      - IT丨Italy 01
+      - 🇭🇰 HK丨Hong Kong 01 Std
+      - 🇭🇰 HK丨Hong Kong 02
+      - 🇭🇰 HK丨Hong Kong 03
+      - 🇭🇰 HK丨Hong Kong 04
+      - 🇭🇰 HK丨Hong Kong 05
+      - 🇨🇳 TW丨Taiwan 01
+      - 🇯🇵 JP丨Japan [Home]
+      - 🇯🇵 JP丨Japan 01 Std
+      - 🇯🇵 JP丨Japan 02
+      - 🇯🇵 JP丨Japan 03
+      - 🇸🇬 SG丨Singapore 01
+      - 🇸🇬 SG丨Singapore 02
+      - 🇲🇴 MO丨Macao 01
+      - 🇲🇾 MY丨Kuala Lumpur [Home]
+      - 🇰🇷 KR丨South Korea
+      - 🇻🇳 VN丨 Vietnam [Home]
+      - 🇦🇷 AR丨Argentina 01
+      - 🇬🇧 GB丨United Kingdom 01
+      - 🇩🇪 DE丨Germany 01
+      - 🇮🇹 IT丨Italy 01
       - ZA丨Johannesburg 01
-      - AE丨Dubai 01
-      - IE丨Dublin 01
-      - UA丨Ukraine [Home]
-      - US丨Los Angeles [Home]
-      - US丨Durham [Home]
-      - US丨Los Angeles 01 Std
-      - US丨Los Angeles 02
+      - 🇦🇪 AE丨Dubai 01
+      - 🇮🇪 IE丨Dublin 01
+      - 🇺🇦 UA丨Ukraine [Home]
+      - 🇺🇸 US丨Los Angeles [Home]
+      - 🇺🇸 US丨Durham [Home]
+      - 🇺🇸 US丨Los Angeles 01 Std
+      - 🇺🇸 US丨Los Angeles 02
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK丨Hong Kong 01 Std
-      - HK丨Hong Kong 02
-      - HK丨Hong Kong 03
-      - HK丨Hong Kong 04
-      - HK丨Hong Kong 05
-      - TW丨Taiwan 01
-      - JP丨Japan [Home]
-      - JP丨Japan 01 Std
-      - JP丨Japan 02
-      - JP丨Japan 03
-      - SG丨Singapore 01
-      - SG丨Singapore 02
-      - MO丨Macao 01
-      - MY丨Kuala Lumpur [Home]
-      - KR丨South Korea
-      - VN丨 Vietnam [Home]
-      - AR丨Argentina 01
-      - GB丨United Kingdom 01
-      - DE丨Germany 01
-      - IT丨Italy 01
+      - 🇭🇰 HK丨Hong Kong 01 Std
+      - 🇭🇰 HK丨Hong Kong 02
+      - 🇭🇰 HK丨Hong Kong 03
+      - 🇭🇰 HK丨Hong Kong 04
+      - 🇭🇰 HK丨Hong Kong 05
+      - 🇨🇳 TW丨Taiwan 01
+      - 🇯🇵 JP丨Japan [Home]
+      - 🇯🇵 JP丨Japan 01 Std
+      - 🇯🇵 JP丨Japan 02
+      - 🇯🇵 JP丨Japan 03
+      - 🇸🇬 SG丨Singapore 01
+      - 🇸🇬 SG丨Singapore 02
+      - 🇲🇴 MO丨Macao 01
+      - 🇲🇾 MY丨Kuala Lumpur [Home]
+      - 🇰🇷 KR丨South Korea
+      - 🇻🇳 VN丨 Vietnam [Home]
+      - 🇦🇷 AR丨Argentina 01
+      - 🇬🇧 GB丨United Kingdom 01
+      - 🇩🇪 DE丨Germany 01
+      - 🇮🇹 IT丨Italy 01
       - ZA丨Johannesburg 01
-      - AE丨Dubai 01
-      - IE丨Dublin 01
-      - UA丨Ukraine [Home]
-      - US丨Los Angeles [Home]
-      - US丨Durham [Home]
-      - US丨Los Angeles 01 Std
-      - US丨Los Angeles 02
+      - 🇦🇪 AE丨Dubai 01
+      - 🇮🇪 IE丨Dublin 01
+      - 🇺🇦 UA丨Ukraine [Home]
+      - 🇺🇸 US丨Los Angeles [Home]
+      - 🇺🇸 US丨Durham [Home]
+      - 🇺🇸 US丨Los Angeles 01 Std
+      - 🇺🇸 US丨Los Angeles 02
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -290,34 +290,34 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK丨Hong Kong 01 Std
-      - HK丨Hong Kong 02
-      - HK丨Hong Kong 03
-      - HK丨Hong Kong 04
-      - HK丨Hong Kong 05
-      - TW丨Taiwan 01
-      - JP丨Japan [Home]
-      - JP丨Japan 01 Std
-      - JP丨Japan 02
-      - JP丨Japan 03
-      - SG丨Singapore 01
-      - SG丨Singapore 02
-      - MO丨Macao 01
-      - MY丨Kuala Lumpur [Home]
-      - KR丨South Korea
-      - VN丨 Vietnam [Home]
-      - AR丨Argentina 01
-      - GB丨United Kingdom 01
-      - DE丨Germany 01
-      - IT丨Italy 01
+      - 🇭🇰 HK丨Hong Kong 01 Std
+      - 🇭🇰 HK丨Hong Kong 02
+      - 🇭🇰 HK丨Hong Kong 03
+      - 🇭🇰 HK丨Hong Kong 04
+      - 🇭🇰 HK丨Hong Kong 05
+      - 🇨🇳 TW丨Taiwan 01
+      - 🇯🇵 JP丨Japan [Home]
+      - 🇯🇵 JP丨Japan 01 Std
+      - 🇯🇵 JP丨Japan 02
+      - 🇯🇵 JP丨Japan 03
+      - 🇸🇬 SG丨Singapore 01
+      - 🇸🇬 SG丨Singapore 02
+      - 🇲🇴 MO丨Macao 01
+      - 🇲🇾 MY丨Kuala Lumpur [Home]
+      - 🇰🇷 KR丨South Korea
+      - 🇻🇳 VN丨 Vietnam [Home]
+      - 🇦🇷 AR丨Argentina 01
+      - 🇬🇧 GB丨United Kingdom 01
+      - 🇩🇪 DE丨Germany 01
+      - 🇮🇹 IT丨Italy 01
       - ZA丨Johannesburg 01
-      - AE丨Dubai 01
-      - IE丨Dublin 01
-      - UA丨Ukraine [Home]
-      - US丨Los Angeles [Home]
-      - US丨Durham [Home]
-      - US丨Los Angeles 01 Std
-      - US丨Los Angeles 02
+      - 🇦🇪 AE丨Dubai 01
+      - 🇮🇪 IE丨Dublin 01
+      - 🇺🇦 UA丨Ukraine [Home]
+      - 🇺🇸 US丨Los Angeles [Home]
+      - 🇺🇸 US丨Durham [Home]
+      - 🇺🇸 US丨Los Angeles 01 Std
+      - 🇺🇸 US丨Los Angeles 02
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
