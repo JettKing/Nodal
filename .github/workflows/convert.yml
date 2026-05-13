@@ -33,9 +33,11 @@ jobs:
 
           chmod +x subconverter/subconverter
 
-          ./subconverter/subconverter &
+          cd subconverter
 
-          sleep 30
+          nohup ./subconverter > /dev/null 2>&1 &
+
+          sleep 15
 
       # 转换 HMQ
       - name: Convert HMQ
