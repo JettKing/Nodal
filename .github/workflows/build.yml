@@ -1,4 +1,4 @@
-name: Build Clash YAML
+name: Generate Clash Meta YAML
 
 on:
   push:
@@ -6,9 +6,7 @@ on:
       - main
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -16,50 +14,38 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download subconverter
+      - name: Start Subconverter
         run: |
 
-          wget https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
+          docker run -d \
+          --name subconverter \
+          -p 25500:25500 \
+          tindy2013/subconverter
 
-          tar -zxvf subconverter_linux64.tar.gz
-
-          chmod +x subconverter/subconverter
-
-      - name: Start subconverter
-        run: |
-
-          cd subconverter
-
-          nohup ./subconverter > /dev/null 2>&1 &
-
-          sleep 10
+          sleep 15
 
       - name: Generate YAML
         run: |
 
           mkdir -p docs
 
-          files=("vpn" "FYH" "HMQ" "HYL" "LXS" "WXQ" "WXY")
+          files=("vpn" "HMQ" "FYH" "HYL" "LXS" "WXQ" "WXY")
 
           for file in "${files[@]}"
           do
 
-            echo "Generating ${file}.yaml"
-
             curl -L -o docs/${file}.yaml \
-            "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/${file}"
+            "http://127.0.0.1:25500/sub?target=clashmeta&url=https://raw.githubusercontent.com/${{ github.repository }}/main/${file}&insert=false&emoji=true&list=false"
 
           done
 
-      - name: Push YAML
+      - name: Deploy
         run: |
 
           git config --global user.name github-actions
-
           git config --global user.email github-actions@github.com
 
           git add docs/*.yaml
-
-          git commit -m "auto build yaml" || echo "no changes"
+          git commit -m "update yaml" || echo "no changes"
 
           git push
