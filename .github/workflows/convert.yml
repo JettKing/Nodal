@@ -2,8 +2,10 @@ name: Auto Convert All Clash
 
 on:
 
-  # 任意提交自动运行
+  # 任意提交自动运行（忽略 yaml）
   push:
+    paths-ignore:
+      - '*.yaml'
 
   # 手动运行
   workflow_dispatch:
@@ -48,43 +50,43 @@ jobs:
       - name: Convert HMQ
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HMQ&rename=%E5%BE%90%E8%83%96%E8%99%8E%E8%B5%84%E6%BA%90%E7%A4%BE-HMQ&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HMQ.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HMQ&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HMQ.yaml
 
       # 转换 HYL
       - name: Convert HYL
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HYL&rename=%E5%BE%90%E8%83%96%E8%99%8E%E8%B5%84%E6%BA%90%E7%A4%BE-HYL&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HYL.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HYL&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HYL.yaml
 
       # 转换 LXS
       - name: Convert LXS
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/LXS&rename=%E5%BE%90%E8%83%96%E8%99%8E%E8%B5%84%E6%BA%90%E7%A4%BE-LXS&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o LXS.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/LXS&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o LXS.yaml
 
       # 转换 FYH
       - name: Convert FYH
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/FYH&rename=%E5%BE%90%E8%83%96%E8%99%8E%E8%B5%84%E6%BA%90%E7%A4%BE-FYH&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o FYH.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/FYH&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o FYH.yaml
 
       # 转换 WXQ
       - name: Convert WXQ
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXQ&rename=%E5%BE%90%E8%83%96%E8%99%8E%E8%B5%84%E6%BA%90%E7%A4%BE-WXQ&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXQ.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXQ&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXQ.yaml
 
       # 转换 WXY
       - name: Convert WXY
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXY&rename=%E5%BE%90%E8%83%96%E8%99%8E%E8%B5%84%E6%BA%90%E7%A4%BE-WXY&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXY.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXY&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXY.yaml
 
       # 转换 vpn（小写）
       - name: Convert vpn
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/vpn&rename=%E5%BE%90%E8%83%96%E8%99%8E%E8%B5%84%E6%BA%90%E7%A4%BE-vpn&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o vpn.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/vpn&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o vpn.yaml
 
       # 提交 YAML
       - name: Push YAML
@@ -98,4 +100,4 @@ jobs:
 
           git commit -m "Auto update yaml" || echo "No changes"
 
-          git push
+          git push || echo "No changes"
