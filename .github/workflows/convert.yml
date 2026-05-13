@@ -2,10 +2,8 @@ name: Auto Convert All Clash
 
 on:
 
-  # 修改文件后自动运行
+  # 任意提交自动运行
   push:
-    branches:
-      - main
 
   # 手动运行
   workflow_dispatch:
