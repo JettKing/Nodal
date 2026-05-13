@@ -6,12 +6,15 @@ on:
       - main
 
 jobs:
+
   build:
+
     runs-on: ubuntu-latest
 
     steps:
 
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Install subconverter
         run: |
@@ -19,23 +22,39 @@ jobs:
 
       - name: Start subconverter
         run: |
-          cd subconverter
-          chmod +x subconverter
-          nohup ./subconverter > /dev/null 2>&1 &
+
+          chmod +x subconverter/subconverter
+
+          nohup ./subconverter/subconverter > /dev/null 2>&1 &
+
           sleep 10
 
       - name: Generate YAML
         run: |
+
           mkdir -p docs
 
-          curl -o docs/HMQ.yaml \
-          "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HMQ"
+          files=("vpn" "FYH" "HMQ" "HYL" "LXS" "WXQ" "WXY")
+
+          for file in "${files[@]}"
+          do
+
+            echo "Generating ${file}.yaml"
+
+            curl -L -o docs/${file}.yaml \
+            "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/${file}"
+
+          done
 
       - name: Push YAML
         run: |
+
           git config --global user.name github-actions
+
           git config --global user.email github-actions@github.com
 
           git add .
-          git commit -m "auto build yaml" || echo done
+
+          git commit -m "auto build yaml" || echo "no changes"
+
           git push
