@@ -16,16 +16,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install subconverter
+      - name: Download subconverter
         run: |
-          git clone https://github.com/tindy2013/subconverter.git
+
+          wget https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
+
+          tar -zxvf subconverter_linux64.tar.gz
+
+          chmod +x subconverter/subconverter
 
       - name: Start subconverter
         run: |
 
-          chmod +x subconverter/subconverter
+          cd subconverter
 
-          nohup ./subconverter/subconverter > /dev/null 2>&1 &
+          nohup ./subconverter > /dev/null 2>&1 &
 
           sleep 10
 
