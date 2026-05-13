@@ -1,0 +1,81 @@
+name: Auto Convert All Clash
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  convert:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install Subconverter
+      run: |
+
+        git clone https://github.com/tindy2013/subconverter.git
+
+    - name: Start Subconverter
+      run: |
+
+        cd subconverter
+
+        chmod +x subconverter
+
+        ./subconverter &
+
+        sleep 10
+
+    # HMQ
+    - name: Convert HMQ
+      run: |
+
+        curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HMQ&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HMQ.yaml
+
+    # HYL
+    - name: Convert HYL
+      run: |
+
+        curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HYL&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HYL.yaml
+
+    # LXS
+    - name: Convert LXS
+      run: |
+
+        curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/LXS&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o LXS.yaml
+
+    # FYH
+    - name: Convert FYH
+      run: |
+
+        curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/FYH&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o FYH.yaml
+
+    # WXQ
+    - name: Convert WXQ
+      run: |
+
+        curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXQ&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXQ.yaml
+
+    # WXY
+    - name: Convert WXY
+      run: |
+
+        curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXY&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXY.yaml
+
+    - name: Push YAML
+      run: |
+
+        git config --global user.name "github-actions"
+
+        git config --global user.email "actions@github.com"
+
+        git add *.yaml
+
+        git commit -m "auto update clash yaml"
+
+        git push
