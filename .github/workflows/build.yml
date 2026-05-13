@@ -58,7 +58,7 @@ jobs:
 
           git config --global user.email github-actions@github.com
 
-          git add .
+          git add docs/*.yaml
 
           git commit -m "auto build yaml" || echo "no changes"
 
