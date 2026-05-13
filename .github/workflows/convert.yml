@@ -2,8 +2,15 @@ name: Auto Convert All Clash
 
 on:
 
+  # 修改文件后自动运行
+  push:
+    branches:
+      - main
+
+  # 手动运行
   workflow_dispatch:
 
+  # 每6小时自动运行一次
   schedule:
     - cron: '0 */6 * * *'
 
@@ -74,6 +81,12 @@ jobs:
         run: |
 
           curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXY&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXY.yaml
+
+      # 转换 vpn（小写）
+      - name: Convert vpn
+        run: |
+
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/vpn&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o vpn.yaml
 
       # 提交 YAML
       - name: Push YAML
