@@ -50,37 +50,37 @@ jobs:
       - name: Convert HMQ
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HMQ&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HMQ.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HMQ006&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HMQ006.yaml
 
       # 转换 HYL
       - name: Convert HYL
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HYL&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HYL.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HYL001&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HYL001.yaml
 
       # 转换 LXS
       - name: Convert LXS
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/LXS&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o LXS.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/LXS004&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o LXS004.yaml
 
       # 转换 FYH
       - name: Convert FYH
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/FYH&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o FYH.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/FYH002&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o FYH002.yaml
 
       # 转换 WXQ
       - name: Convert WXQ
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXQ&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXQ.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXQ005&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXQ005.yaml
 
       # 转换 WXY
       - name: Convert WXY
         run: |
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXY&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXY.yaml
+          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXY003&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXY003.yaml
 
       # 转换 vpn（小写）
       - name: Convert vpn
