@@ -5,6 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 距离下次重置剩余：30 天, server: pokemon-01.yunjnet.com, port: 55016, type: trojan, password: 4512b9be-f99b-4fd2-9077-956348e12e0d, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
   - {name: 建议：感到卡顿请切换到专线节点, server: pokemon-01.yunjnet.com, port: 55016, type: trojan, password: 4512b9be-f99b-4fd2-9077-956348e12e0d, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 【亚洲】香港01丨V6【1x】, server: ptxlv6-1.yunjnet.com, port: 54357, type: trojan, password: 4512b9be-f99b-4fd2-9077-956348e12e0d, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 【亚洲】香港02丨V6【1x】, server: ptxlv6-2.yunjnet.com, port: 54357, type: trojan, password: 4512b9be-f99b-4fd2-9077-956348e12e0d, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
@@ -40,6 +41,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 距离下次重置剩余：30 天
       - 建议：感到卡顿请切换到专线节点
       - 🇭🇰 【亚洲】香港01丨V6【1x】
       - 🇭🇰 【亚洲】香港02丨V6【1x】
@@ -75,6 +77,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 距离下次重置剩余：30 天
       - 建议：感到卡顿请切换到专线节点
       - 🇭🇰 【亚洲】香港01丨V6【1x】
       - 🇭🇰 【亚洲】香港02丨V6【1x】
@@ -110,6 +113,7 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 距离下次重置剩余：30 天
       - 建议：感到卡顿请切换到专线节点
       - 🇭🇰 【亚洲】香港01丨V6【1x】
       - 🇭🇰 【亚洲】香港02丨V6【1x】
@@ -144,6 +148,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 距离下次重置剩余：30 天
       - 建议：感到卡顿请切换到专线节点
       - 🇭🇰 【亚洲】香港01丨V6【1x】
       - 🇭🇰 【亚洲】香港02丨V6【1x】
@@ -178,6 +183,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 距离下次重置剩余：30 天
       - 建议：感到卡顿请切换到专线节点
       - 🇭🇰 【亚洲】香港01丨V6【1x】
       - 🇭🇰 【亚洲】香港02丨V6【1x】
@@ -212,6 +218,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 距离下次重置剩余：30 天
       - 建议：感到卡顿请切换到专线节点
       - 🇭🇰 【亚洲】香港01丨V6【1x】
       - 🇭🇰 【亚洲】香港02丨V6【1x】
@@ -247,6 +254,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 距离下次重置剩余：30 天
       - 建议：感到卡顿请切换到专线节点
       - 🇭🇰 【亚洲】香港01丨V6【1x】
       - 🇭🇰 【亚洲】香港02丨V6【1x】
@@ -298,6 +306,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 距离下次重置剩余：30 天
       - 建议：感到卡顿请切换到专线节点
       - 🇭🇰 【亚洲】香港01丨V6【1x】
       - 🇭🇰 【亚洲】香港02丨V6【1x】
