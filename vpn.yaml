@@ -5,77 +5,1469 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "✈️欢迎关注我的频道,❗️", server: hk15.jsylianjie8.com, port: 25847, type: trojan, password: 9ece503b-7090-4591-b3cb-94f751c98eee, sni: jsygouer.weixin-baidu-qq.com, skip-cert-verify: true, udp: true}
-  - {name: "✈️徐胖虎资源社,❗️", server: hk15.jsylianjie8.com, port: 25847, type: trojan, password: 9ece503b-7090-4591-b3cb-94f751c98eee, sni: jsygouer.weixin-baidu-qq.com, skip-cert-verify: true, udp: true}
-  - {name: "✈️https://t.me/xph_fx,❗️", server: hk15.jsylianjie8.com, port: 25847, type: trojan, password: 9ece503b-7090-4591-b3cb-94f751c98eee, sni: jsygouer.weixin-baidu-qq.com, skip-cert-verify: true, udp: true}
-  - {name: "🇸🇬 ✈️如遇不可用请更新订阅,❗️", server: 43.248.99.181, port: 25635, type: trojan, password: 9ece503b-7090-4591-b3cb-94f751c98eee, sni: jsygouer.weixin-baidu-qq.com, skip-cert-verify: true, udp: true}
+  - {name: "欢迎关注我的频道,❗️", server: pokemon-01.yunjnet.com, port: 55016, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: "徐胖虎资源社,❗️", server: pokemon-01.yunjnet.com, port: 55016, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: "https://t.me/xph_fx,❗️", server: pokemon-01.yunjnet.com, port: 55016, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: "🇸🇬 如遇不可用请更新订阅,❗️", server: pokemon-01.yunjnet.com, port: 55016, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】, server: ptxlv6-01.yunjnet.com, port: 54357, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】, server: ptxlv6-2.yunjnet.com, port: 54357, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】, server: ptxlv6-01.yunjnet.com, port: 54258, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】, server: ptxlv6-2.yunjnet.com, port: 54258, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】, server: ptxlv6-01.yunjnet.com, port: 54261, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】, server: ptxlv6-2.yunjnet.com, port: 54261, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】, server: ptxlv6-01.yunjnet.com, port: 54273, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】, server: ptxlv6-2.yunjnet.com, port: 54273, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 83c78632-3585-433a-98e7-5ba9e45e2313, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 2, server: ptxlv6-01.yunjnet.com, port: 54357, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 2, server: ptxlv6-2.yunjnet.com, port: 54357, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 2, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 2, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 2, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 2, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 2, server: ptxlv6-01.yunjnet.com, port: 54258, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 2, server: ptxlv6-2.yunjnet.com, port: 54258, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 2, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 2, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 2, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 2, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 2, server: ptxlv6-01.yunjnet.com, port: 54261, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 2, server: ptxlv6-2.yunjnet.com, port: 54261, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 2, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 2, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 2, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 2, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 2, server: ptxlv6-01.yunjnet.com, port: 54273, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 2, server: ptxlv6-2.yunjnet.com, port: 54273, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: e884dbf1-65d9-42c6-8597-af5f933717b3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 3, server: ptxlv6-01.yunjnet.com, port: 54357, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 3, server: ptxlv6-2.yunjnet.com, port: 54357, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 3, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 3, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 3, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 3, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 3, server: ptxlv6-01.yunjnet.com, port: 54258, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 3, server: ptxlv6-2.yunjnet.com, port: 54258, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 3, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 3, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 3, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 3, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 3, server: ptxlv6-01.yunjnet.com, port: 54261, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 3, server: ptxlv6-2.yunjnet.com, port: 54261, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 3, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 3, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 3, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 3, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 3, server: ptxlv6-01.yunjnet.com, port: 54273, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 3, server: ptxlv6-2.yunjnet.com, port: 54273, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 691d7d3d-ada6-4ef4-ab79-4043fec12557, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 4, server: ptxlv6-01.yunjnet.com, port: 54357, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 4, server: ptxlv6-2.yunjnet.com, port: 54357, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 4, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 4, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 4, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 4, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 4, server: ptxlv6-01.yunjnet.com, port: 54258, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 4, server: ptxlv6-2.yunjnet.com, port: 54258, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 4, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 4, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 4, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 4, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 4, server: ptxlv6-01.yunjnet.com, port: 54261, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 4, server: ptxlv6-2.yunjnet.com, port: 54261, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 4, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 4, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 4, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 4, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 4, server: ptxlv6-01.yunjnet.com, port: 54273, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 4, server: ptxlv6-2.yunjnet.com, port: 54273, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 51b37db3-8b14-4401-812c-4510a10abc36, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 5, server: ptxlv6-01.yunjnet.com, port: 54357, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 5, server: ptxlv6-2.yunjnet.com, port: 54357, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 5, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 5, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 5, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 5, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 5, server: ptxlv6-01.yunjnet.com, port: 54258, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 5, server: ptxlv6-2.yunjnet.com, port: 54258, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 5, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 5, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 5, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 5, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 5, server: ptxlv6-01.yunjnet.com, port: 54261, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 5, server: ptxlv6-2.yunjnet.com, port: 54261, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 5, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 5, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 5, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 5, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 5, server: ptxlv6-01.yunjnet.com, port: 54273, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 5, server: ptxlv6-2.yunjnet.com, port: 54273, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: a71be469-5514-4d06-a96c-b8b0aafa28f3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 6, server: ptxlv6-01.yunjnet.com, port: 54357, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 6, server: ptxlv6-2.yunjnet.com, port: 54357, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 6, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 6, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 6, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 6, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 6, server: ptxlv6-01.yunjnet.com, port: 54258, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 6, server: ptxlv6-2.yunjnet.com, port: 54258, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 6, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 6, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 6, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 6, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 6, server: ptxlv6-01.yunjnet.com, port: 54261, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 6, server: ptxlv6-2.yunjnet.com, port: 54261, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 6, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 6, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 6, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 6, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 6, server: ptxlv6-01.yunjnet.com, port: 54273, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 6, server: ptxlv6-2.yunjnet.com, port: 54273, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 202a5fe3-05ae-4130-8439-ed0df1d1969e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ✈️欢迎关注我的频道,❗️
-      - ✈️徐胖虎资源社,❗️
-      - ✈️https://t.me/xph_fx,❗️
-      - 🇸🇬 ✈️如遇不可用请更新订阅,❗️
+      - 欢迎关注我的频道,❗️
+      - 徐胖虎资源社,❗️
+      - https://t.me/xph_fx,❗️
+      - 🇸🇬 如遇不可用请更新订阅,❗️
+      - 🇭🇰 【亚洲】香港01丨V6【1x】
+      - 🇭🇰 【亚洲】香港02丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨专线【3x】
+      - 🇯🇵 【亚洲】日本02丨专线【3x】
+      - 🇯🇵 【亚洲】日本03丨专线【3x】
+      - 🇯🇵 【亚洲】日本04丨专线【3x】
+      - 🇯🇵 【亚洲】日本01丨V6【1x】
+      - 🇯🇵 【亚洲】日本02丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国01丨专线【3x】
+      - 🇺🇸 【北美洲】美国02丨专线【3x】
+      - 🇺🇸 【北美洲】美国03丨专线【3x】
+      - 🇺🇸 【北美洲】美国04丨专线【3x】
+      - 🇺🇸 【北美洲】美国01丨V6【1x】
+      - 🇺🇸 【北美洲】美国02丨V6【1x】
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 2
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 2
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ✈️欢迎关注我的频道,❗️
-      - ✈️徐胖虎资源社,❗️
-      - ✈️https://t.me/xph_fx,❗️
-      - 🇸🇬 ✈️如遇不可用请更新订阅,❗️
+      - 欢迎关注我的频道,❗️
+      - 徐胖虎资源社,❗️
+      - https://t.me/xph_fx,❗️
+      - 🇸🇬 如遇不可用请更新订阅,❗️
+      - 🇭🇰 【亚洲】香港01丨V6【1x】
+      - 🇭🇰 【亚洲】香港02丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨专线【3x】
+      - 🇯🇵 【亚洲】日本02丨专线【3x】
+      - 🇯🇵 【亚洲】日本03丨专线【3x】
+      - 🇯🇵 【亚洲】日本04丨专线【3x】
+      - 🇯🇵 【亚洲】日本01丨V6【1x】
+      - 🇯🇵 【亚洲】日本02丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国01丨专线【3x】
+      - 🇺🇸 【北美洲】美国02丨专线【3x】
+      - 🇺🇸 【北美洲】美国03丨专线【3x】
+      - 🇺🇸 【北美洲】美国04丨专线【3x】
+      - 🇺🇸 【北美洲】美国01丨V6【1x】
+      - 🇺🇸 【北美洲】美国02丨V6【1x】
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 2
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 2
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 6
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ✈️欢迎关注我的频道,❗️
-      - ✈️徐胖虎资源社,❗️
-      - ✈️https://t.me/xph_fx,❗️
-      - 🇸🇬 ✈️如遇不可用请更新订阅,❗️
+      - 欢迎关注我的频道,❗️
+      - 徐胖虎资源社,❗️
+      - https://t.me/xph_fx,❗️
+      - 🇸🇬 如遇不可用请更新订阅,❗️
+      - 🇭🇰 【亚洲】香港01丨V6【1x】
+      - 🇭🇰 【亚洲】香港02丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨专线【3x】
+      - 🇯🇵 【亚洲】日本02丨专线【3x】
+      - 🇯🇵 【亚洲】日本03丨专线【3x】
+      - 🇯🇵 【亚洲】日本04丨专线【3x】
+      - 🇯🇵 【亚洲】日本01丨V6【1x】
+      - 🇯🇵 【亚洲】日本02丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国01丨专线【3x】
+      - 🇺🇸 【北美洲】美国02丨专线【3x】
+      - 🇺🇸 【北美洲】美国03丨专线【3x】
+      - 🇺🇸 【北美洲】美国04丨专线【3x】
+      - 🇺🇸 【北美洲】美国01丨V6【1x】
+      - 🇺🇸 【北美洲】美国02丨V6【1x】
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 2
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 2
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ✈️欢迎关注我的频道,❗️
-      - ✈️徐胖虎资源社,❗️
-      - ✈️https://t.me/xph_fx,❗️
-      - 🇸🇬 ✈️如遇不可用请更新订阅,❗️
+      - 欢迎关注我的频道,❗️
+      - 徐胖虎资源社,❗️
+      - https://t.me/xph_fx,❗️
+      - 🇸🇬 如遇不可用请更新订阅,❗️
+      - 🇭🇰 【亚洲】香港01丨V6【1x】
+      - 🇭🇰 【亚洲】香港02丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨专线【3x】
+      - 🇯🇵 【亚洲】日本02丨专线【3x】
+      - 🇯🇵 【亚洲】日本03丨专线【3x】
+      - 🇯🇵 【亚洲】日本04丨专线【3x】
+      - 🇯🇵 【亚洲】日本01丨V6【1x】
+      - 🇯🇵 【亚洲】日本02丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国01丨专线【3x】
+      - 🇺🇸 【北美洲】美国02丨专线【3x】
+      - 🇺🇸 【北美洲】美国03丨专线【3x】
+      - 🇺🇸 【北美洲】美国04丨专线【3x】
+      - 🇺🇸 【北美洲】美国01丨V6【1x】
+      - 🇺🇸 【北美洲】美国02丨V6【1x】
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 2
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 2
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 6
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ✈️欢迎关注我的频道,❗️
-      - ✈️徐胖虎资源社,❗️
-      - ✈️https://t.me/xph_fx,❗️
-      - 🇸🇬 ✈️如遇不可用请更新订阅,❗️
+      - 欢迎关注我的频道,❗️
+      - 徐胖虎资源社,❗️
+      - https://t.me/xph_fx,❗️
+      - 🇸🇬 如遇不可用请更新订阅,❗️
+      - 🇭🇰 【亚洲】香港01丨V6【1x】
+      - 🇭🇰 【亚洲】香港02丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨专线【3x】
+      - 🇯🇵 【亚洲】日本02丨专线【3x】
+      - 🇯🇵 【亚洲】日本03丨专线【3x】
+      - 🇯🇵 【亚洲】日本04丨专线【3x】
+      - 🇯🇵 【亚洲】日本01丨V6【1x】
+      - 🇯🇵 【亚洲】日本02丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国01丨专线【3x】
+      - 🇺🇸 【北美洲】美国02丨专线【3x】
+      - 🇺🇸 【北美洲】美国03丨专线【3x】
+      - 🇺🇸 【北美洲】美国04丨专线【3x】
+      - 🇺🇸 【北美洲】美国01丨V6【1x】
+      - 🇺🇸 【北美洲】美国02丨V6【1x】
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 2
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 2
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ✈️欢迎关注我的频道,❗️
-      - ✈️徐胖虎资源社,❗️
-      - ✈️https://t.me/xph_fx,❗️
-      - 🇸🇬 ✈️如遇不可用请更新订阅,❗️
+      - 欢迎关注我的频道,❗️
+      - 徐胖虎资源社,❗️
+      - https://t.me/xph_fx,❗️
+      - 🇸🇬 如遇不可用请更新订阅,❗️
+      - 🇭🇰 【亚洲】香港01丨V6【1x】
+      - 🇭🇰 【亚洲】香港02丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨专线【3x】
+      - 🇯🇵 【亚洲】日本02丨专线【3x】
+      - 🇯🇵 【亚洲】日本03丨专线【3x】
+      - 🇯🇵 【亚洲】日本04丨专线【3x】
+      - 🇯🇵 【亚洲】日本01丨V6【1x】
+      - 🇯🇵 【亚洲】日本02丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国01丨专线【3x】
+      - 🇺🇸 【北美洲】美国02丨专线【3x】
+      - 🇺🇸 【北美洲】美国03丨专线【3x】
+      - 🇺🇸 【北美洲】美国04丨专线【3x】
+      - 🇺🇸 【北美洲】美国01丨V6【1x】
+      - 🇺🇸 【北美洲】美国02丨V6【1x】
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 2
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 2
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 6
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ✈️欢迎关注我的频道,❗️
-      - ✈️徐胖虎资源社,❗️
-      - ✈️https://t.me/xph_fx,❗️
-      - 🇸🇬 ✈️如遇不可用请更新订阅,❗️
+      - 欢迎关注我的频道,❗️
+      - 徐胖虎资源社,❗️
+      - https://t.me/xph_fx,❗️
+      - 🇸🇬 如遇不可用请更新订阅,❗️
+      - 🇭🇰 【亚洲】香港01丨V6【1x】
+      - 🇭🇰 【亚洲】香港02丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨专线【3x】
+      - 🇯🇵 【亚洲】日本02丨专线【3x】
+      - 🇯🇵 【亚洲】日本03丨专线【3x】
+      - 🇯🇵 【亚洲】日本04丨专线【3x】
+      - 🇯🇵 【亚洲】日本01丨V6【1x】
+      - 🇯🇵 【亚洲】日本02丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国01丨专线【3x】
+      - 🇺🇸 【北美洲】美国02丨专线【3x】
+      - 🇺🇸 【北美洲】美国03丨专线【3x】
+      - 🇺🇸 【北美洲】美国04丨专线【3x】
+      - 🇺🇸 【北美洲】美国01丨V6【1x】
+      - 🇺🇸 【北美洲】美国02丨V6【1x】
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 2
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 2
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,10 +1490,184 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ✈️欢迎关注我的频道,❗️
-      - ✈️徐胖虎资源社,❗️
-      - ✈️https://t.me/xph_fx,❗️
-      - 🇸🇬 ✈️如遇不可用请更新订阅,❗️
+      - 欢迎关注我的频道,❗️
+      - 徐胖虎资源社,❗️
+      - https://t.me/xph_fx,❗️
+      - 🇸🇬 如遇不可用请更新订阅,❗️
+      - 🇭🇰 【亚洲】香港01丨V6【1x】
+      - 🇭🇰 【亚洲】香港02丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨专线【3x】
+      - 🇯🇵 【亚洲】日本02丨专线【3x】
+      - 🇯🇵 【亚洲】日本03丨专线【3x】
+      - 🇯🇵 【亚洲】日本04丨专线【3x】
+      - 🇯🇵 【亚洲】日本01丨V6【1x】
+      - 🇯🇵 【亚洲】日本02丨V6【1x】
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国01丨专线【3x】
+      - 🇺🇸 【北美洲】美国02丨专线【3x】
+      - 🇺🇸 【北美洲】美国03丨专线【3x】
+      - 🇺🇸 【北美洲】美国04丨专线【3x】
+      - 🇺🇸 【北美洲】美国01丨V6【1x】
+      - 🇺🇸 【北美洲】美国02丨V6【1x】
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 2
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 2
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 2
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 2
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 2
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 2
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 2
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 2
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 2
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 3
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 3
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 3
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 3
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 3
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 3
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 4
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 4
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 5
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 5
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 6
+      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本02丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本03丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本04丨专线【3x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6
+      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6
+      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6
+      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国01丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国02丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国03丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国04丨专线【3x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 6
+      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 6
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
