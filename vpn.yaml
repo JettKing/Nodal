@@ -5,296 +5,238 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: be0dc18d-5b49-4f45-b3b4-5cec31c28d90, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 2, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 2, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 2, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 2, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 2, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 2, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 2, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 2, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 2, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 2, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 2, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 2, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 3e8f44f3-b21f-47eb-a152-4a62d53af704, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 3, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 3, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 3, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 3, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 3, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 3, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 3, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 3, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 3, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 3, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 3, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 3, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: b143fb84-222b-47b8-8cb4-4dffd2412402, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 4, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 4, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 4, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 4, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 4, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 4, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 4, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 4, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 4, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 4, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 4, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 4, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 63615fcd-34e8-4e99-a4c9-05b1e81d21c3, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 5, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 5, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 5, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 5, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 5, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 5, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 5, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 5, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 5, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 5, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 5, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 5, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 35d0c638-c9ec-42df-8da2-b50e532cef0e, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 6, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 6, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 6, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 6, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 6, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 6, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 6, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 6, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 6, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 6, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 6, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 6, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 8106a702-0c24-4e45-8227-41d1c83faab2, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 7, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 7, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 7, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 7, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 7, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 7, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 7, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 7, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 7, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 7, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 7, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 7, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 7, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 7, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 7, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 7, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: ec5ee1f3-f496-4bfe-a2a1-b87b5eb7d3ad, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 8, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 8, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 8, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 8, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 8, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 8, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 8, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 8, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 8, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 8, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 8, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 8, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 8, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 8, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 8, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 8, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 9b3f4625-3c35-409d-a2ad-eed7209892ff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 9, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 9, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 9, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 9, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 9, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 9, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 9, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 9, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 9, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 9, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 9, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 9, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 9, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 9, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 9, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 9, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 9, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 9, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 9, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 9, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 9, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 9, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 9, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 9, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 9, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 9, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 9, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 9, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 9, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: b81f78b9-e85f-49ec-8fe0-667071344d09, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 10, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 10, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 10, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 10, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 10, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 10, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 10, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 10, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 10, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 10, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 10, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 10, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 10, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 10, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 10, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 10, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 10, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 10, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 10, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 10, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 10, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 10, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 10, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 10, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 10, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 10, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 10, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 10, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 10, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: b5559a8a-29ef-4b96-be78-56466068b6a9, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 1700f5fb-1b40-4300-aa36-99f4369d19b0, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 2, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 2, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 2, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 2, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 2, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 2, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 2, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 2, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 2, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 2, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 2, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 2, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 2, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 2, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 2, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 2, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 2, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: ea98c6ab-4f0d-4ede-acbf-d9d475cfb10f, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 3, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 3, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 3, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 3, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 3, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 3, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 3, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 3, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 3, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 3, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 3, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 3, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 3, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 3, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 3, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 3, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 3, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 80a7eea0-e415-4508-a284-958cd751c856, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 4, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 4, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 4, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 4, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 4, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 4, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 4, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 4, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 4, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 4, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 4, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 4, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 4, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 4, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 4, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 4, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 4, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: fffa9e12-fe46-4010-9df4-cc7f72e2d398, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 5, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 5, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 5, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 5, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 5, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 5, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 5, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 5, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 5, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 5, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 5, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 5, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 5, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 5, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 5, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 5, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 5, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 8e7cb18a-3c17-47fe-9e22-6df04e562670, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 6, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 6, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 6, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 6, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 6, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 6, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 6, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 6, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 6, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 6, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 6, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 6, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 6, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 6, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 6, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 6, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 6, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: e7d07214-d52d-4a36-aea0-b6b65f2e8fff, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 7, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 7, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 7, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 7, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 7, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 7, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 7, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 7, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 7, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 7, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 7, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 7, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 7, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 7, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 7, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 7, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 7, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 3d731a74-2492-4f78-92ce-a592fdb22ad4, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡01丨专线【3x】 8, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡02丨专线【3x】 8, server: pokemonsg-01.yunjnet.com, port: 55016, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡03丨专线【3x】 8, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡04丨专线【3x】 8, server: pokemonsg-02.yunjnet.com, port: 55017, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 55027, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.sg, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨专线【3x】 8, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨专线【3x】 8, server: pokemonjp-01.yunjnet.com, port: 54032, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本03丨专线【3x】 8, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本04丨专线【3x】 8, server: pokemonjp-02.yunjnet.com, port: 54032, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 8, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 8, server: pokemon-02.yunjnet.com, port: 54029, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 8, server: pokemon-01.yunjnet.com, port: 59110, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 8, server: pokemon-01.yunjnet.com, port: 59099, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.lamer.com.hk, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 59111, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.apple.com.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨专线【3x】 8, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨专线【3x】 8, server: pokemonus-01.yunjnet.com, port: 56115, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国03丨专线【3x】 8, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国04丨专线【3x】 8, server: pokemonus-02.yunjnet.com, port: 56017, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国05丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 【北美洲】美国06丨IPLC【10x】 8, server: pokemon-02.yunjnet.com, port: 56019, type: trojan, password: 130db682-b766-408d-a86f-d2d8c141f034, sni: iosapps.itunes.apple.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -533,64 +475,6 @@ proxy-groups:
       - 🇺🇸 【北美洲】美国02丨V6【1x】 8
       - 🇺🇸 【北美洲】美国05丨IPLC【10x】 8
       - 🇺🇸 【北美洲】美国06丨IPLC【10x】 8
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 9
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 9
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 9
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 10
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 10
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 10
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -829,64 +713,6 @@ proxy-groups:
       - 🇺🇸 【北美洲】美国02丨V6【1x】 8
       - 🇺🇸 【北美洲】美国05丨IPLC【10x】 8
       - 🇺🇸 【北美洲】美国06丨IPLC【10x】 8
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 9
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 9
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 9
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 10
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 10
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 10
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1125,64 +951,6 @@ proxy-groups:
       - 🇺🇸 【北美洲】美国02丨V6【1x】 8
       - 🇺🇸 【北美洲】美国05丨IPLC【10x】 8
       - 🇺🇸 【北美洲】美国06丨IPLC【10x】 8
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 9
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 9
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 9
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 10
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 10
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 10
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 10
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1420,64 +1188,6 @@ proxy-groups:
       - 🇺🇸 【北美洲】美国02丨V6【1x】 8
       - 🇺🇸 【北美洲】美国05丨IPLC【10x】 8
       - 🇺🇸 【北美洲】美国06丨IPLC【10x】 8
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 9
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 9
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 9
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 10
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 10
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 10
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -1715,64 +1425,6 @@ proxy-groups:
       - 🇺🇸 【北美洲】美国02丨V6【1x】 8
       - 🇺🇸 【北美洲】美国05丨IPLC【10x】 8
       - 🇺🇸 【北美洲】美国06丨IPLC【10x】 8
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 9
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 9
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 9
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 10
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 10
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 10
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 10
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -2010,64 +1662,6 @@ proxy-groups:
       - 🇺🇸 【北美洲】美国02丨V6【1x】 8
       - 🇺🇸 【北美洲】美国05丨IPLC【10x】 8
       - 🇺🇸 【北美洲】美国06丨IPLC【10x】 8
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 9
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 9
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 9
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 10
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 10
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 10
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 10
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -2306,64 +1900,6 @@ proxy-groups:
       - 🇺🇸 【北美洲】美国02丨V6【1x】 8
       - 🇺🇸 【北美洲】美国05丨IPLC【10x】 8
       - 🇺🇸 【北美洲】美国06丨IPLC【10x】 8
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 9
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 9
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 9
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 10
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 10
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 10
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2618,64 +2154,6 @@ proxy-groups:
       - 🇺🇸 【北美洲】美国02丨V6【1x】 8
       - 🇺🇸 【北美洲】美国05丨IPLC【10x】 8
       - 🇺🇸 【北美洲】美国06丨IPLC【10x】 8
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 9
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 9
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 9
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 9
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 9
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 9
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 9
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 9
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 9
-      - 🇭🇰 【亚洲】香港01丨V6【1x】 10
-      - 🇭🇰 【亚洲】香港02丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡01丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡02丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡03丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡04丨专线【3x】 10
-      - 🇸🇬 【亚洲】新加坡09丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡10丨IPLC【10x】 10
-      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
-      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本02丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本03丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本04丨专线【3x】 10
-      - 🇯🇵 【亚洲】日本01丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本02丨V6【1x】 10
-      - 🇯🇵 【亚洲】日本01丨IPLC游戏专线【10x】 10
-      - 🇯🇵 【亚洲】日本02丨IPLC游戏专线【10x】 10
-      - 🇰🇷 【亚洲】韩国家宽01丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽02丨专线【6x】 10
-      - 🇰🇷 【亚洲】韩国家宽03丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国01丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国02丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国03丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国04丨专线【3x】 10
-      - 🇺🇸 【北美洲】美国01丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国02丨V6【1x】 10
-      - 🇺🇸 【北美洲】美国05丨IPLC【10x】 10
-      - 🇺🇸 【北美洲】美国06丨IPLC【10x】 10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
