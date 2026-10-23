@@ -1,103 +1,256 @@
-name: Auto Convert All Clash
+name: Convert subscriptions to Clash
 
 on:
-
-  # 任意提交自动运行（忽略 yaml）
-  push:
-    paths-ignore:
-      - '*.yaml'
-
-  # 手动运行
   workflow_dispatch:
-
-  # 每6小时自动运行一次
   schedule:
     - cron: '0 */6 * * *'
+  push:
+    paths:
+      - '.github/workflows/convert.yml'
+
+# 该工作流需要把生成的 YAML 提交回当前仓库，因此必须有写权限。
+# 注意：生成的 YAML 包含节点连接信息；公开仓库会公开这些信息。
+permissions:
+  contents: write
+
+concurrency:
+  group: convert-subscriptions
+  cancel-in-progress: true
+
+env:
+  SUBCONVERTER_VERSION: 'v0.9.0'
+  SUBCONVERTER_ASSET: 'subconverter_linux64.tar.gz'
+  ACL4SSR_CONFIG_URL: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini'
+  SOURCES: 'HMQ006 HYL001 LXS004 FYH002 WXQ005 WXY003 vpn'
 
 jobs:
-
   convert:
-
+    name: Convert secret subscriptions and publish Clash YAML
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
-
-      # 拉取仓库
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
-      # 下载 subconverter
-      - name: Download Subconverter
+      - name: Download pinned subconverter
+        env:
+          VERSION: ${{ env.SUBCONVERTER_VERSION }}
+          ASSET: ${{ env.SUBCONVERTER_ASSET }}
         run: |
+          set -Eeuo pipefail
+          url="https://github.com/tindy2013/subconverter/releases/download/${VERSION}/${ASSET}"
+          curl --fail --show-error --silent --location --retry 3 --retry-delay 5 \
+            "$url" --output subconverter.tar.gz
+          test -s subconverter.tar.gz
+          mkdir -p subconverter
+          tar --extract --gzip --file subconverter.tar.gz --directory subconverter
+          binary="$(find subconverter -type f -name subconverter -perm -u+x -print -quit)"
+          test -n "$binary"
+          echo "SUBCONVERTER_BIN=$binary" >> "$GITHUB_ENV"
 
-          wget https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
-
-          tar -zxvf subconverter_linux64.tar.gz
-
-      # 启动 subconverter
-      - name: Start Subconverter
+      - name: Start local source server and subconverter
         run: |
+          set -Eeuo pipefail
+          mkdir -p "$RUNNER_TEMP/nodal-input" "$RUNNER_TEMP/nodal-output"
 
-          chmod +x subconverter/subconverter
+          # 订阅源只在 Runner 本机提供给 subconverter，不从公开 Raw URL 读取。
+          python3 -m http.server 18080 \
+            --bind 127.0.0.1 \
+            --directory "$RUNNER_TEMP/nodal-input" \
+            > "$RUNNER_TEMP/source-server.log" 2>&1 &
+          echo "SOURCE_SERVER_PID=$!" >> "$GITHUB_ENV"
 
-          cd subconverter
+          "$SUBCONVERTER_BIN" > "$RUNNER_TEMP/subconverter.log" 2>&1 &
+          echo "SUBCONVERTER_PID=$!" >> "$GITHUB_ENV"
 
-          nohup ./subconverter > /dev/null 2>&1 &
+          ready=false
+          for _ in $(seq 1 30); do
+            if (echo > /dev/tcp/127.0.0.1/25500) >/dev/null 2>&1; then
+              ready=true
+              break
+            fi
+            if ! kill -0 "$SUBCONVERTER_PID" 2>/dev/null; then
+              cat "$RUNNER_TEMP/subconverter.log" >&2 || true
+              exit 1
+            fi
+            sleep 1
+          done
 
-          sleep 15
+          if [[ "$ready" != true ]]; then
+            cat "$RUNNER_TEMP/subconverter.log" >&2 || true
+            echo 'subconverter did not listen on 127.0.0.1:25500 in time.' >&2
+            exit 1
+          fi
 
-      # 转换 HMQ
-      - name: Convert HMQ
+      - name: Convert subscriptions from GitHub Secrets
+        env:
+          # 每个 Secret 保存对应订阅源文件的完整 Base64 内容。
+          NODAL_HMQ006: ${{ secrets.NODAL_HMQ006 }}
+          NODAL_HYL001: ${{ secrets.NODAL_HYL001 }}
+          NODAL_LXS004: ${{ secrets.NODAL_LXS004 }}
+          NODAL_FYH002: ${{ secrets.NODAL_FYH002 }}
+          NODAL_WXQ005: ${{ secrets.NODAL_WXQ005 }}
+          NODAL_WXY003: ${{ secrets.NODAL_WXY003 }}
+          NODAL_VPN: ${{ secrets.NODAL_VPN }}
+          ACL4SSR_CONFIG_URL: ${{ env.ACL4SSR_CONFIG_URL }}
+          SOURCES: ${{ env.SOURCES }}
         run: |
+          set -Eeuo pipefail
+          trap 'kill "$SUBCONVERTER_PID" "$SOURCE_SERVER_PID" 2>/dev/null || true' EXIT
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HMQ006&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HMQ006.yaml
+          input_dir="$RUNNER_TEMP/nodal-input"
+          output_dir="$RUNNER_TEMP/nodal-output"
 
-      # 转换 HYL
-      - name: Convert HYL
+          for source in $SOURCES; do
+            if [[ "$source" == 'vpn' ]]; then
+              secret_name='NODAL_VPN'
+            else
+              secret_name="NODAL_${source}"
+            fi
+            encoded="${!secret_name:-}"
+            if [[ -z "$encoded" ]]; then
+              echo "Missing required GitHub Secret: ${secret_name}" >&2
+              exit 1
+            fi
+
+            input_file="${input_dir}/${source}"
+            output_file="${source}.yaml"
+            temporary_file="${output_file}.tmp"
+
+            # 不打印 decoded 内容；它只存在于 Runner 临时目录。
+            printf '%s' "$encoded" | base64 --decode > "$input_file"
+            test -s "$input_file"
+            rm -f "$temporary_file"
+
+            curl --fail --show-error --silent --location \
+              --retry 3 --retry-delay 5 \
+              --get 'http://127.0.0.1:25500/sub' \
+              --data-urlencode 'target=clash' \
+              --data-urlencode "url=http://127.0.0.1:18080/${source}" \
+              --data-urlencode 'emoji=true' \
+              --data-urlencode 'udp=true' \
+              --data-urlencode 'tfo=true' \
+              --data-urlencode 'scv=false' \
+              --data-urlencode 'insert=false' \
+              --data-urlencode "config=${ACL4SSR_CONFIG_URL}" \
+              --output "$temporary_file"
+
+            test -s "$temporary_file"
+            if grep -Eiq 'no nodes were found|error|not found|bad gateway' "$temporary_file"; then
+              echo "Conversion failed for ${source}; previous YAML was kept." >&2
+              sed -n '1,5p' "$temporary_file" >&2 || true
+              rm -f "$temporary_file"
+              exit 1
+            fi
+
+            grep -q '^proxies:' "$temporary_file"
+            grep -q '^proxy-groups:' "$temporary_file"
+            grep -q '^rules:' "$temporary_file"
+            mv -f "$temporary_file" "$output_file"
+          done
+
+      - name: Validate generated YAML and references
         run: |
+          set -Eeuo pipefail
+          python3 -m pip install --disable-pip-version-check --no-input 'PyYAML==6.0.2'
+          python3 - <<'PY'
+          from pathlib import Path
+          import collections
+          import yaml
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/HYL001&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o HYL001.yaml
+          sources = 'HMQ006 HYL001 LXS004 FYH002 WXQ005 WXY003 vpn'.split()
+          failed = False
 
-      # 转换 LXS
-      - name: Convert LXS
+          for source in sources:
+              path = Path(f'{source}.yaml')
+              try:
+                  data = yaml.safe_load(path.read_text(encoding='utf-8'))
+              except Exception as exc:
+                  print(f'ERROR {source}: invalid YAML: {exc}')
+                  failed = True
+                  continue
+
+              if not isinstance(data, dict):
+                  print(f'ERROR {source}: root must be a mapping')
+                  failed = True
+                  continue
+
+              proxies = data.get('proxies')
+              groups = data.get('proxy-groups')
+              rules = data.get('rules')
+              if not isinstance(proxies, list) or not proxies:
+                  print(f'ERROR {source}: proxies must be a non-empty list')
+                  failed = True
+              if not isinstance(groups, list) or not groups:
+                  print(f'ERROR {source}: proxy-groups must be a non-empty list')
+                  failed = True
+              if not isinstance(rules, list) or not rules:
+                  print(f'ERROR {source}: rules must be a non-empty list')
+                  failed = True
+
+              proxy_names = [item.get('name') for item in proxies or [] if isinstance(item, dict)]
+              duplicate_names = [name for name, count in collections.Counter(proxy_names).items() if count > 1]
+              if duplicate_names:
+                  print(f'ERROR {source}: duplicate proxy names: {duplicate_names}')
+                  failed = True
+
+              group_names = {item.get('name') for item in groups or [] if isinstance(item, dict)}
+              known = set(proxy_names) | group_names | {'DIRECT', 'REJECT'}
+              missing_groups = set()
+              for group in groups or []:
+                  if isinstance(group, dict):
+                      missing_groups.update(
+                          item for item in group.get('proxies') or [] if item not in known
+                      )
+              if missing_groups:
+                  print(f'ERROR {source}: unresolved group references: {sorted(missing_groups)}')
+                  failed = True
+
+              missing_targets = set()
+              for rule in rules or []:
+                  if not isinstance(rule, str) or len(rule.split(',')) < 2:
+                      print(f'ERROR {source}: malformed rule')
+                      failed = True
+                      continue
+                  target = rule.rsplit(',', 1)[-1].strip()
+                  if target not in known and target != 'no-resolve':
+                      missing_targets.add(target)
+              if missing_targets:
+                  print(f'ERROR {source}: unresolved rule targets: {sorted(missing_targets)}')
+                  failed = True
+
+              print(f'OK {source}: proxies={len(proxies or [])}, groups={len(groups or [])}, rules={len(rules or [])}')
+
+          if failed:
+              raise SystemExit(1)
+          PY
+
+      - name: Commit and push validated YAML
         run: |
+          set -Eeuo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- '*.yaml'
 
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/LXS004&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o LXS004.yaml
+          if git diff --cached --quiet; then
+            echo 'No validated YAML changes.'
+            exit 0
+          fi
 
-      # 转换 FYH
-      - name: Convert FYH
+          git commit -m 'chore: update generated Clash configs'
+          git push
+
+      - name: Remove sensitive temporary files
+        if: always()
         run: |
-
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/FYH002&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o FYH002.yaml
-
-      # 转换 WXQ
-      - name: Convert WXQ
-        run: |
-
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXQ005&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXQ005.yaml
-
-      # 转换 WXY
-      - name: Convert WXY
-        run: |
-
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/WXY003&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o WXY003.yaml
-
-      # 转换 vpn（小写）
-      - name: Convert vpn
-        run: |
-
-          curl "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/JettKing/Nodal/main/vpn&emoji=true&udp=true&tfo=true&scv=true&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini" -o vpn.yaml
-
-      # 提交 YAML
-      - name: Push YAML
-        run: |
-
-          git config --global user.name "github-actions"
-
-          git config --global user.email "actions@github.com"
-
-          git add *.yaml
-
-          git commit -m "Auto update yaml" || echo "No changes"
-
-          git push || echo "No changes"
+          set +e
+          kill "${SUBCONVERTER_PID:-}" "${SOURCE_SERVER_PID:-}" 2>/dev/null || true
+          find "$RUNNER_TEMP/nodal-input" "$RUNNER_TEMP/nodal-output" \
+            -type f -exec shred --remove --zero --force {} + 2>/dev/null || true
+          rm -rf "$RUNNER_TEMP/nodal-input" "$RUNNER_TEMP/nodal-output" \
+            "$RUNNER_TEMP/subconverter.log" "$RUNNER_TEMP/source-server.log" \
+            subconverter.tar.gz subconverter
