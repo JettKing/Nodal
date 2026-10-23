@@ -20,7 +20,8 @@ concurrency:
 env:
   SUBCONVERTER_VERSION: 'v0.9.0'
   SUBCONVERTER_ASSET: 'subconverter_linux64.tar.gz'
-  ACL4SSR_CONFIG_URL: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini'
+  SUBCONVERTER_SHA256: '884a6d1168267eba076fcdd5171215bacf98c17948ab526e4cbbdcad5f7a0217'
+  ACL4SSR_CONFIG_URL: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/575637df38884575bfa523e95c17d0ee3be1676c/Clash/config/ACL4SSR_Online.ini'
   SOURCES: 'HMQ006 HYL001 LXS004 FYH002 WXQ005 WXY003 vpn'
 
 jobs:
@@ -31,7 +32,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           fetch-depth: 0
           persist-credentials: true
@@ -46,6 +47,7 @@ jobs:
           curl --fail --show-error --silent --location --retry 3 --retry-delay 5 \
             "$url" --output subconverter.tar.gz
           test -s subconverter.tar.gz
+          echo "${{ env.SUBCONVERTER_SHA256 }}  subconverter.tar.gz" | sha256sum --check --strict -
           mkdir -p subconverter
           tar --extract --gzip --file subconverter.tar.gz --directory subconverter
           binary="$(find subconverter -type f -name subconverter -perm -u+x -print -quit)"
@@ -108,23 +110,35 @@ jobs:
             output_file="${source}.yaml"
             temporary_file="${output_file}.tmp"
 
+            if ! base64 --decode "$input_file" >/dev/null 2>"$RUNNER_TEMP/base64-error"; then
+              echo "Invalid Base64 in repository source file: ${source}" >&2
+              rm -f "$RUNNER_TEMP/base64-error"
+              exit 1
+            fi
+
             rm -f "$temporary_file"
 
-            curl --fail --show-error --silent --location \
-              --retry 3 --retry-delay 5 \
-              --get 'http://127.0.0.1:25500/sub' \
-              --data-urlencode 'target=clash' \
-              --data-urlencode "url=http://127.0.0.1:18080/${source}" \
-              --data-urlencode 'emoji=true' \
-              --data-urlencode 'udp=true' \
-              --data-urlencode 'tfo=true' \
-              --data-urlencode 'scv=false' \
-              --data-urlencode 'insert=false' \
-              --data-urlencode "config=${ACL4SSR_CONFIG_URL}" \
-              --output "$temporary_file"
+            if ! curl --fail-with-body --show-error --silent --location \
+                --retry 3 --retry-delay 5 \
+                --get 'http://127.0.0.1:25500/sub' \
+                --data-urlencode 'target=clash' \
+                --data-urlencode "url=http://127.0.0.1:18080/${source}" \
+                --data-urlencode 'emoji=true' \
+                --data-urlencode 'udp=true' \
+                --data-urlencode 'tfo=true' \
+                --data-urlencode 'scv=false' \
+                --data-urlencode 'insert=false' \
+                --data-urlencode "config=${ACL4SSR_CONFIG_URL}" \
+                --output "$temporary_file"; then
+              echo "subconverter returned an HTTP/client error for ${source}." >&2
+              sed -n '1,5p' "$temporary_file" >&2 || true
+              rm -f "$temporary_file"
+              exit 1
+            fi
 
             test -s "$temporary_file"
-            if grep -Eiq 'no nodes were found|error|not found|bad gateway' "$temporary_file"; then
+            if grep -Fqi 'No nodes were found' "$temporary_file" || \
+              head -n 1 "$temporary_file" | grep -Eiq '^(error|bad gateway)(:|$)'; then
               echo "Conversion failed for ${source}; previous YAML was kept." >&2
               sed -n '1,5p' "$temporary_file" >&2 || true
               rm -f "$temporary_file"
@@ -138,6 +152,8 @@ jobs:
           done
 
       - name: Validate generated YAML and references
+        env:
+          SOURCES: ${{ env.SOURCES }}
         run: |
           set -Eeuo pipefail
           python3 -m pip install --disable-pip-version-check --no-input 'PyYAML==6.0.2'
@@ -146,7 +162,9 @@ jobs:
           import collections
           import yaml
 
-          sources = 'HMQ006 HYL001 LXS004 FYH002 WXQ005 WXY003 vpn'.split()
+          import os
+
+          sources = os.environ['SOURCES'].split()
           failed = False
 
           for source in sources:
@@ -234,4 +252,4 @@ jobs:
           set +e
           kill "${SUBCONVERTER_PID:-}" "${SOURCE_SERVER_PID:-}" 2>/dev/null || true
           rm -rf "$RUNNER_TEMP/subconverter.log" "$RUNNER_TEMP/source-server.log" \
-            subconverter.tar.gz subconverter
+            "$RUNNER_TEMP/base64-error" subconverter.tar.gz subconverter
