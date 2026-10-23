@@ -5,8 +5,8 @@ on:
   schedule:
     - cron: '0 */6 * * *'
   push:
-    paths:
-      - '.github/workflows/convert.yml'
+    paths-ignore:
+      - '*.yaml'
 
 # 该工作流需要把生成的 YAML 提交回当前仓库，因此必须有写权限。
 # 注意：生成的 YAML 包含节点连接信息；公开仓库会公开这些信息。
@@ -25,7 +25,7 @@ env:
 
 jobs:
   convert:
-    name: Convert secret subscriptions and publish Clash YAML
+    name: Convert repository subscriptions and publish Clash YAML
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -55,12 +55,12 @@ jobs:
       - name: Start local source server and subconverter
         run: |
           set -Eeuo pipefail
-          mkdir -p "$RUNNER_TEMP/nodal-input" "$RUNNER_TEMP/nodal-output"
+          test -d "$GITHUB_WORKSPACE"
 
-          # 订阅源只在 Runner 本机提供给 subconverter，不从公开 Raw URL 读取。
+          # 使用 Checkout 后的仓库文件，通过 Runner 本机地址提供给 subconverter。
           python3 -m http.server 18080 \
             --bind 127.0.0.1 \
-            --directory "$RUNNER_TEMP/nodal-input" \
+            --directory "$GITHUB_WORKSPACE" \
             > "$RUNNER_TEMP/source-server.log" 2>&1 &
           source_server_pid=$!
           echo "SOURCE_SERVER_PID=$source_server_pid" >> "$GITHUB_ENV"
@@ -88,44 +88,26 @@ jobs:
             exit 1
           fi
 
-      - name: Convert subscriptions from GitHub Secrets
+      - name: Convert subscriptions from repository files
         env:
-          # 每个 Secret 保存对应订阅源文件的完整 Base64 内容。
-          NODAL_HMQ006: ${{ secrets.NODAL_HMQ006 }}
-          NODAL_HYL001: ${{ secrets.NODAL_HYL001 }}
-          NODAL_LXS004: ${{ secrets.NODAL_LXS004 }}
-          NODAL_FYH002: ${{ secrets.NODAL_FYH002 }}
-          NODAL_WXQ005: ${{ secrets.NODAL_WXQ005 }}
-          NODAL_WXY003: ${{ secrets.NODAL_WXY003 }}
-          NODAL_VPN: ${{ secrets.NODAL_VPN }}
           ACL4SSR_CONFIG_URL: ${{ env.ACL4SSR_CONFIG_URL }}
           SOURCES: ${{ env.SOURCES }}
         run: |
           set -Eeuo pipefail
           trap 'kill "$SUBCONVERTER_PID" "$SOURCE_SERVER_PID" 2>/dev/null || true' EXIT
 
-          input_dir="$RUNNER_TEMP/nodal-input"
-          output_dir="$RUNNER_TEMP/nodal-output"
+          source_dir="$GITHUB_WORKSPACE"
 
           for source in $SOURCES; do
-            if [[ "$source" == 'vpn' ]]; then
-              secret_name='NODAL_VPN'
-            else
-              secret_name="NODAL_${source}"
-            fi
-            encoded="${!secret_name:-}"
-            if [[ -z "$encoded" ]]; then
-              echo "Missing required GitHub Secret: ${secret_name}" >&2
+            input_file="${source_dir}/${source}"
+            if [[ ! -s "$input_file" ]]; then
+              echo "Missing or empty repository source file: ${source}" >&2
               exit 1
             fi
 
-            input_file="${input_dir}/${source}"
             output_file="${source}.yaml"
             temporary_file="${output_file}.tmp"
 
-            # 不打印 decoded 内容；它只存在于 Runner 临时目录。
-            printf '%s' "$encoded" | base64 --decode > "$input_file"
-            test -s "$input_file"
             rm -f "$temporary_file"
 
             curl --fail --show-error --silent --location \
@@ -251,8 +233,5 @@ jobs:
         run: |
           set +e
           kill "${SUBCONVERTER_PID:-}" "${SOURCE_SERVER_PID:-}" 2>/dev/null || true
-          find "$RUNNER_TEMP/nodal-input" "$RUNNER_TEMP/nodal-output" \
-            -type f -exec shred --remove --zero --force {} + 2>/dev/null || true
-          rm -rf "$RUNNER_TEMP/nodal-input" "$RUNNER_TEMP/nodal-output" \
-            "$RUNNER_TEMP/subconverter.log" "$RUNNER_TEMP/source-server.log" \
+          rm -rf "$RUNNER_TEMP/subconverter.log" "$RUNNER_TEMP/source-server.log" \
             subconverter.tar.gz subconverter

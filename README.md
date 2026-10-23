@@ -4,7 +4,7 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 
 项目将多个订阅源转换为 Clash/Mihomo 可使用的 YAML 配置，并在转换成功且通过校验后自动提交到当前仓库。
 
-> **重要安全提示**：生成后的 `*.yaml` 文件包含代理服务器地址、端口以及节点认证信息。只要这些文件被提交到公开仓库，节点信息就会公开。本项目当前采用“输入订阅源使用 GitHub Secrets，生成配置继续提交到公开仓库”的方案，因此它只能保护原始订阅源，不能隐藏生成后的节点配置。
+> **重要安全提示**：项目根目录中的无扩展名订阅源文件和生成后的 `*.yaml` 文件都可能包含代理服务器地址、端口以及节点认证信息。公开仓库会公开这些内容。当前工作流优先保持项目原有的简单运行方式，直接读取仓库中的订阅源文件。
 
 ## 功能概览
 
@@ -16,14 +16,14 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 
 它会执行以下流程：
 
-1. 从 GitHub Actions Secrets 读取订阅源。
-2. 将订阅源临时写入 GitHub Runner 的临时目录。
-3. 仅通过本机地址提供给 `subconverter`，不从公开 Raw URL 读取原始订阅。
+1. Checkout 当前仓库。
+2. 检查根目录中的订阅源文件是否存在且非空。
+3. 通过 Runner 本机地址将仓库文件提供给 `subconverter`。
 4. 使用固定版本的 `subconverter` 转换为 Clash YAML。
 5. 检查生成结果是否有效。
 6. 检查代理名称、代理组引用和规则目标。
 7. 转换和校验全部成功后，提交并推送对应的 `*.yaml` 文件。
-8. 删除 Runner 上的临时订阅文件和转换日志。
+8. 删除 Runner 上的转换程序和日志。
 
 如果任一订阅缺失、转换失败或校验失败，工作流会停止，并且不会用错误内容覆盖已有 YAML 文件。
 
@@ -51,62 +51,32 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 └── README.md
 ```
 
-工作流当前不读取根目录下的无扩展名订阅源文件；这些文件仅作为格式参考或本地备用文件。自动转换使用 GitHub Secrets 中的内容。
+工作流直接读取根目录下的无扩展名订阅源文件。文件内容通常是 Base64 编码的节点订阅，工作流不会在日志中打印其内容。
 
-## 配置 GitHub Secrets
+## 配置订阅源文件
 
-进入 GitHub 仓库：
-
-```text
-Settings → Secrets and variables → Actions → New repository secret
-```
-
-创建以下 7 个 Repository secrets：
+在仓库根目录保留以下 7 个文件：
 
 ```text
-NODAL_HMQ006
-NODAL_HYL001
-NODAL_LXS004
-NODAL_FYH002
-NODAL_WXQ005
-NODAL_WXY003
-NODAL_VPN
-```
-
-Secret 名称必须完全匹配。`vpn` 对应的 Secret 名称是大写的 `NODAL_VPN`。
-
-### Secret 的值是什么
-
-每个 Secret 的值应当是对应订阅源文件的完整 Base64 内容，而不是直接粘贴解码后的多行节点链接。
-
-例如，本地文件为：
-
-```text
+HMQ006
+HYL001
+LXS004
 FYH002
+WXQ005
+WXY003
+vpn
 ```
 
-则可以使用 GitHub CLI 写入：
+文件名必须完全匹配，其中 VPN 源文件名称为小写 `vpn`。如果使用自己的订阅源，请确保文件内容是 `subconverter` 支持的格式，并保持 Base64 编码完整。
 
-```bash
-gh secret set NODAL_FYH002 < FYH002
-gh secret set NODAL_HMQ006 < HMQ006
-gh secret set NODAL_HYL001 < HYL001
-gh secret set NODAL_LXS004 < LXS004
-gh secret set NODAL_WXQ005 < WXQ005
-gh secret set NODAL_WXY003 < WXY003
-gh secret set NODAL_VPN < vpn
-```
-
-也可以在 GitHub 网页中手动粘贴 Base64 内容。
-
-### 不要直接复用已经泄露的凭据
+### 不要提交未经授权的凭据
 
 如果仓库历史或公开文件曾经包含真实节点密码、UUID 或订阅链接，应先完成以下操作：
 
 1. 在节点服务商处吊销旧密码和 UUID。
 2. 生成全新的节点凭据。
 3. 生成新的订阅源。
-4. 将新订阅源写入 Secrets。
+4. 更新仓库中的源文件。
 5. 清理 Git 历史中的旧凭据，避免旧提交继续暴露。
 
 Base64 只是编码，不是加密。任何拿到 Base64 内容的人都可以将其解码。
@@ -138,27 +108,27 @@ GitHub Actions 使用 UTC 时间。该表达式表示 UTC 时间每天的 00:00�
 
 当 `.github/workflows/convert.yml` 发生提交时会触发一次工作流。
 
-生成的 YAML 提交不会再次触发本工作流，因为工作流只监听工作流文件本身：
+生成的 YAML 提交不会再次触发本工作流，因为工作流忽略根目录下的 `*.yaml` 文件：
 
 ```yaml
 push:
-  paths:
-    - '.github/workflows/convert.yml'
+  paths-ignore:
+    - '*.yaml'
 ```
 
 ## 生成的配置
 
-每个 Secret 对应一个生成的 YAML 文件：
+每个订阅源文件对应一个生成的 YAML 文件：
 
-| Secret | 输出文件 |
+| 订阅源文件 | 输出文件 |
 |---|---|
-| `NODAL_HMQ006` | `HMQ006.yaml` |
-| `NODAL_HYL001` | `HYL001.yaml` |
-| `NODAL_LXS004` | `LXS004.yaml` |
-| `NODAL_FYH002` | `FYH002.yaml` |
-| `NODAL_WXQ005` | `WXQ005.yaml` |
-| `NODAL_WXY003` | `WXY003.yaml` |
-| `NODAL_VPN` | `vpn.yaml` |
+| `HMQ006` | `HMQ006.yaml` |
+| `HYL001` | `HYL001.yaml` |
+| `LXS004` | `LXS004.yaml` |
+| `FYH002` | `FYH002.yaml` |
+| `WXQ005` | `WXQ005.yaml` |
+| `WXY003` | `WXY003.yaml` |
+| `vpn` | `vpn.yaml` |
 
 当前转换参数包括：
 
@@ -239,21 +209,16 @@ base64 --decode FYH002 | head
 
 ## 常见故障
 
-### `Missing required GitHub Secret`
+### `Missing or empty repository source file`
 
-说明工作流没有找到对应的 Secret。检查：
-
-- Secret 是否创建在正确的仓库中。
-- 名称是否完全匹配。
-- `vpn` 是否使用 `NODAL_VPN`。
-- Secret 是否为空。
+说明工作流没有找到对应的仓库源文件。检查文件是否位于仓库根目录、名称是否完全匹配，以及文件是否为空。
 
 ### `No nodes were found!`
 
 说明 `subconverter` 没有从对应订阅源解析到节点。常见原因：
 
-- Secret 内容不是完整 Base64 内容。
-- Secret 内容已经被重复 Base64 编码。
+- 源文件不是完整 Base64 内容。
+- 源文件已经被重复 Base64 编码。
 - 订阅源已失效。
 - 节点服务商返回了错误页面。
 - 节点格式不再被当前版本的 `subconverter` 支持。
@@ -279,10 +244,10 @@ base64 --decode FYH002 | head
 
 当前方案的安全边界是：
 
-- 原始订阅源从 GitHub Secrets 读取，不再依赖公开 Raw 文件。
-- Secret 内容只在 Runner 临时目录中使用。
-- 工作流完成后会删除临时订阅文件和日志。
-- 生成后的 YAML 会提交到公开仓库，因此其中的节点信息仍然公开。
+- 工作流直接读取公开仓库中的订阅源文件。
+- 源文件和生成后的 YAML 都可能包含节点信息，因此公开仓库会公开这些内容。
+- 转换时通过 Runner 本机地址提供源文件，不依赖外部 Raw URL 拉取。
+- 工作流完成后会删除 Runner 上的转换程序和日志。
 
 如果需要真正隐藏节点凭据，不应将生成的 YAML 提交到公开仓库。可以改用：
 
