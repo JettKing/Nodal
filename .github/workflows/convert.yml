@@ -62,10 +62,12 @@ jobs:
             --bind 127.0.0.1 \
             --directory "$RUNNER_TEMP/nodal-input" \
             > "$RUNNER_TEMP/source-server.log" 2>&1 &
-          echo "SOURCE_SERVER_PID=$!" >> "$GITHUB_ENV"
+          source_server_pid=$!
+          echo "SOURCE_SERVER_PID=$source_server_pid" >> "$GITHUB_ENV"
 
           "$SUBCONVERTER_BIN" > "$RUNNER_TEMP/subconverter.log" 2>&1 &
-          echo "SUBCONVERTER_PID=$!" >> "$GITHUB_ENV"
+          subconverter_pid=$!
+          echo "SUBCONVERTER_PID=$subconverter_pid" >> "$GITHUB_ENV"
 
           ready=false
           for _ in $(seq 1 30); do
@@ -73,7 +75,7 @@ jobs:
               ready=true
               break
             fi
-            if ! kill -0 "$SUBCONVERTER_PID" 2>/dev/null; then
+            if ! kill -0 "$subconverter_pid" 2>/dev/null; then
               cat "$RUNNER_TEMP/subconverter.log" >&2 || true
               exit 1
             fi
