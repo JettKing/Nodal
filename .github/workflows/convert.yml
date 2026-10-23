@@ -37,6 +37,42 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
+      - name: Validate repository source files
+        env:
+          SOURCES: ${{ env.SOURCES }}
+        run: |
+          set -Eeuo pipefail
+          python3 - <<'PY'
+          import base64
+          import os
+          from pathlib import Path
+
+          protocols = (
+              'vmess://', 'vless://', 'trojan://', 'ss://', 'ssr://',
+              'hysteria://', 'hysteria2://', 'tuic://', 'socks://', 'http://',
+          )
+
+          for source in os.environ['SOURCES'].split():
+              path = Path(source)
+              if not path.is_file() or path.stat().st_size == 0:
+                  raise SystemExit(f'Missing or empty repository source file: {source}')
+              try:
+                  decoded = base64.b64decode(path.read_bytes(), validate=True)
+                  text = decoded.decode('utf-8')
+              except Exception as exc:
+                  raise SystemExit(f'Invalid Base64 or UTF-8 in {source}: {exc}')
+
+              lines = [line.strip() for line in text.splitlines() if line.strip()]
+              recognized = sum(
+                  line.lower().startswith(protocol)
+                  for line in lines
+                  for protocol in protocols
+              )
+              if not lines or recognized == 0:
+                  raise SystemExit(f'No supported proxy URI found in {source}')
+              print(f'OK {source}: decoded_lines={len(lines)}, recognized_uris={recognized}')
+          PY
+
       - name: Download pinned subconverter
         env:
           VERSION: ${{ env.SUBCONVERTER_VERSION }}

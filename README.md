@@ -17,9 +17,9 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 它会执行以下流程：
 
 1. Checkout 当前仓库。
-2. 检查根目录中的订阅源文件是否存在且非空。
+2. 检查根目录中的订阅源文件是否存在、Base64/UTF-8 有效且包含支持的代理 URI。
 3. 通过 Runner 本机地址将仓库文件提供给 `subconverter`。
-4. 使用固定版本的 `subconverter` 转换为 Clash YAML。
+4. 使用固定版本并经过 SHA-256 校验的 `subconverter` 转换为 Clash YAML。
 5. 检查生成结果是否有效。
 6. 检查代理名称、代理组引用和规则目标。
 7. 转换和校验全部成功后，提交并推送对应的 `*.yaml` 文件。
