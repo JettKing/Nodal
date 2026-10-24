@@ -5,30 +5,78 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 7d3c89f4-bd51-4553-9b89-75d62777da6a, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 7d3c89f4-bd51-4553-9b89-75d62777da6a, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 7d3c89f4-bd51-4553-9b89-75d62777da6a, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 7d3c89f4-bd51-4553-9b89-75d62777da6a, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 7d3c89f4-bd51-4553-9b89-75d62777da6a, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 7d3c89f4-bd51-4553-9b89-75d62777da6a, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 7d3c89f4-bd51-4553-9b89-75d62777da6a, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 7d3c89f4-bd51-4553-9b89-75d62777da6a, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 07aef016-d349-42ea-9cb7-3206380ae1bd, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 07aef016-d349-42ea-9cb7-3206380ae1bd, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 07aef016-d349-42ea-9cb7-3206380ae1bd, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 07aef016-d349-42ea-9cb7-3206380ae1bd, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 07aef016-d349-42ea-9cb7-3206380ae1bd, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 07aef016-d349-42ea-9cb7-3206380ae1bd, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 07aef016-d349-42ea-9cb7-3206380ae1bd, sni: www.bing.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 07aef016-d349-42ea-9cb7-3206380ae1bd, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: d597dcd5-4ed5-458a-945b-58dfa3661cb9, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: d597dcd5-4ed5-458a-945b-58dfa3661cb9, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: d597dcd5-4ed5-458a-945b-58dfa3661cb9, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: d597dcd5-4ed5-458a-945b-58dfa3661cb9, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: d597dcd5-4ed5-458a-945b-58dfa3661cb9, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: d597dcd5-4ed5-458a-945b-58dfa3661cb9, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: d597dcd5-4ed5-458a-945b-58dfa3661cb9, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: d597dcd5-4ed5-458a-945b-58dfa3661cb9, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: b556fef6-c976-4f14-af7e-09260c4867ae, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: b556fef6-c976-4f14-af7e-09260c4867ae, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: b556fef6-c976-4f14-af7e-09260c4867ae, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: b556fef6-c976-4f14-af7e-09260c4867ae, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: b556fef6-c976-4f14-af7e-09260c4867ae, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: b556fef6-c976-4f14-af7e-09260c4867ae, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 2, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: b556fef6-c976-4f14-af7e-09260c4867ae, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 2, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: b556fef6-c976-4f14-af7e-09260c4867ae, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: cfce2fd0-e7d2-487a-b071-568e0194bf23, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: cfce2fd0-e7d2-487a-b071-568e0194bf23, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: cfce2fd0-e7d2-487a-b071-568e0194bf23, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: cfce2fd0-e7d2-487a-b071-568e0194bf23, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: cfce2fd0-e7d2-487a-b071-568e0194bf23, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: cfce2fd0-e7d2-487a-b071-568e0194bf23, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 3, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: cfce2fd0-e7d2-487a-b071-568e0194bf23, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 3, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: cfce2fd0-e7d2-487a-b071-568e0194bf23, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 58e5b20f-5c7d-45ed-bb45-35fcd2577eb8, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 58e5b20f-5c7d-45ed-bb45-35fcd2577eb8, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 58e5b20f-5c7d-45ed-bb45-35fcd2577eb8, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 58e5b20f-5c7d-45ed-bb45-35fcd2577eb8, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 58e5b20f-5c7d-45ed-bb45-35fcd2577eb8, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 58e5b20f-5c7d-45ed-bb45-35fcd2577eb8, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 4, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 58e5b20f-5c7d-45ed-bb45-35fcd2577eb8, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 4, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 58e5b20f-5c7d-45ed-bb45-35fcd2577eb8, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 9a098f50-be4b-4f6c-b837-52fb7eacb346, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 9a098f50-be4b-4f6c-b837-52fb7eacb346, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 9a098f50-be4b-4f6c-b837-52fb7eacb346, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 9a098f50-be4b-4f6c-b837-52fb7eacb346, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 9a098f50-be4b-4f6c-b837-52fb7eacb346, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 9a098f50-be4b-4f6c-b837-52fb7eacb346, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 5, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 9a098f50-be4b-4f6c-b837-52fb7eacb346, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 5, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 9a098f50-be4b-4f6c-b837-52fb7eacb346, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 03c3c43e-9781-4246-80e7-7f1a19782a96, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 03c3c43e-9781-4246-80e7-7f1a19782a96, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 03c3c43e-9781-4246-80e7-7f1a19782a96, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 03c3c43e-9781-4246-80e7-7f1a19782a96, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 03c3c43e-9781-4246-80e7-7f1a19782a96, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 03c3c43e-9781-4246-80e7-7f1a19782a96, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 6, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 03c3c43e-9781-4246-80e7-7f1a19782a96, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 6, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 03c3c43e-9781-4246-80e7-7f1a19782a96, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 1a49b729-c9b9-41ae-a47b-e4f11368bcbe, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 1a49b729-c9b9-41ae-a47b-e4f11368bcbe, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 1a49b729-c9b9-41ae-a47b-e4f11368bcbe, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 1a49b729-c9b9-41ae-a47b-e4f11368bcbe, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 1a49b729-c9b9-41ae-a47b-e4f11368bcbe, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 1a49b729-c9b9-41ae-a47b-e4f11368bcbe, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 7, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 1a49b729-c9b9-41ae-a47b-e4f11368bcbe, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 7, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 1a49b729-c9b9-41ae-a47b-e4f11368bcbe, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 151d3766-d5e4-4947-a46c-3f0a7f503c0a, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 151d3766-d5e4-4947-a46c-3f0a7f503c0a, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 151d3766-d5e4-4947-a46c-3f0a7f503c0a, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 151d3766-d5e4-4947-a46c-3f0a7f503c0a, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 151d3766-d5e4-4947-a46c-3f0a7f503c0a, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 151d3766-d5e4-4947-a46c-3f0a7f503c0a, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 8, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 151d3766-d5e4-4947-a46c-3f0a7f503c0a, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 8, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 151d3766-d5e4-4947-a46c-3f0a7f503c0a, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港01丨V6【1x】 9, server: ptxlv6-01.waimaosass.icu, port: 54357, type: trojan, password: 977d69f8-836c-410a-841f-996fcece84b2, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【亚洲】香港02丨V6【1x】 9, server: ptxlv6-02.waimaosass.icu, port: 54357, type: trojan, password: 977d69f8-836c-410a-841f-996fcece84b2, sni: www.lamer.com.hk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 9, server: ptxlv6-01.waimaosass.icu, port: 54258, type: trojan, password: 977d69f8-836c-410a-841f-996fcece84b2, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 9, server: ptxlv6-02.waimaosass.icu, port: 54258, type: trojan, password: 977d69f8-836c-410a-841f-996fcece84b2, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本01丨V6【1x】 9, server: ptxlv6-01.waimaosass.icu, port: 54261, type: trojan, password: 977d69f8-836c-410a-841f-996fcece84b2, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 【亚洲】日本02丨V6【1x】 9, server: ptxlv6-02.waimaosass.icu, port: 54261, type: trojan, password: 977d69f8-836c-410a-841f-996fcece84b2, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国01丨V6【1x】 9, server: ptxlv6-01.waimaosass.icu, port: 54273, type: trojan, password: 977d69f8-836c-410a-841f-996fcece84b2, sni: www.bing.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 【北美洲】美国02丨V6【1x】 9, server: ptxlv6-02.waimaosass.icu, port: 54273, type: trojan, password: 977d69f8-836c-410a-841f-996fcece84b2, sni: www.bing.com, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -59,6 +107,54 @@ proxy-groups:
       - 🇯🇵 【亚洲】日本02丨V6【1x】 3
       - 🇺🇸 【北美洲】美国01丨V6【1x】 3
       - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -89,6 +185,54 @@ proxy-groups:
       - 🇯🇵 【亚洲】日本02丨V6【1x】 3
       - 🇺🇸 【北美洲】美国01丨V6【1x】 3
       - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -119,6 +263,54 @@ proxy-groups:
       - 🇯🇵 【亚洲】日本02丨V6【1x】 3
       - 🇺🇸 【北美洲】美国01丨V6【1x】 3
       - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
   - name: 📲 电报信息
     type: select
     proxies:
@@ -148,6 +340,54 @@ proxy-groups:
       - 🇯🇵 【亚洲】日本02丨V6【1x】 3
       - 🇺🇸 【北美洲】美国01丨V6【1x】 3
       - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -177,6 +417,54 @@ proxy-groups:
       - 🇯🇵 【亚洲】日本02丨V6【1x】 3
       - 🇺🇸 【北美洲】美国01丨V6【1x】 3
       - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -206,6 +494,54 @@ proxy-groups:
       - 🇯🇵 【亚洲】日本02丨V6【1x】 3
       - 🇺🇸 【北美洲】美国01丨V6【1x】 3
       - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -236,6 +572,54 @@ proxy-groups:
       - 🇯🇵 【亚洲】日本02丨V6【1x】 3
       - 🇺🇸 【北美洲】美国01丨V6【1x】 3
       - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -282,6 +666,54 @@ proxy-groups:
       - 🇯🇵 【亚洲】日本02丨V6【1x】 3
       - 🇺🇸 【北美洲】美国01丨V6【1x】 3
       - 🇺🇸 【北美洲】美国02丨V6【1x】 3
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 4
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 4
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 4
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 4
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 5
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 5
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 5
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 5
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 6
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 6
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 6
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 6
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 7
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 7
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 7
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 7
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 8
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 8
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 8
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+      - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+      - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+      - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+      - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+      - 🇺🇸 【北美洲】美国02丨V6【1x】 9
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
