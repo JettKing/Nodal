@@ -1,4 +1,4 @@
-name: Convert subscriptions to Clash
+name: Convert subscriptions to Clash with SubConverter-Extended
 
 on:
   workflow_dispatch:
@@ -8,8 +8,8 @@ on:
     paths-ignore:
       - '*.yaml'
 
-# 该工作流需要把生成的 YAML 提交回当前仓库，因此必须有写权限。
-# 注意：生成的 YAML 包含节点连接信息；公开仓库会公开这些信息。
+# 生成的 YAML 可能包含节点地址、端口和认证信息。
+# 公开仓库会公开这些内容。
 permissions:
   contents: write
 
@@ -18,17 +18,18 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  SUBCONVERTER_VERSION: 'v0.9.0'
-  SUBCONVERTER_ASSET: 'subconverter_linux64.tar.gz'
-  SUBCONVERTER_SHA256: '884a6d1168267eba076fcdd5171215bacf98c17948ab526e4cbbdcad5f7a0217'
+  SUBCONVERTER_VERSION: 'v1.10.5'
+  SUBCONVERTER_ASSET: 'SubConverter-Extended-v1.10.5-linux-amd64.tar.gz'
+  SUBCONVERTER_SHA256: '9d13fc3a1d1d922627a5e80e0b600347ea701ccec302d00027ad133166b5b030'
+  SUBCONVERTER_REPOSITORY: 'Aethersailor/SubConverter-Extended'
+  SUBCONVERTER_PORT: '25500'
   ACL4SSR_CONFIG_URL: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/575637df38884575bfa523e95c17d0ee3be1676c/Clash/config/ACL4SSR_Online.ini'
-  SOURCES: 'HMQ006 HYL001 LXS004 FYH002 WXQ005 WXY003 vpn'
 
 jobs:
   convert:
-    name: Convert repository subscriptions and publish Clash YAML
+    name: Convert subscriptions and publish Mihomo YAML
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -37,9 +38,54 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
+      - name: Discover subscription source files
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          python3 - <<'PY_DISCOVER'
+          import base64
+          import os
+          from pathlib import Path
+
+          protocols = (
+              'vmess://', 'vless://', 'trojan://', 'ss://', 'ssr://',
+              'hysteria://', 'hysteria2://', 'hy2://', 'tuic://',
+              'anytls://', 'socks://', 'socks5://', 'http://',
+              'wireguard://', 'wg://',
+          )
+
+          candidates = sorted(
+              path for path in Path('.').iterdir()
+              if path.is_file()
+              and not path.name.startswith('.')
+              and path.suffix == ''
+          )
+
+          sources = []
+          for path in candidates:
+              try:
+                  decoded = base64.b64decode(
+                      path.read_bytes(), validate=True
+                  ).decode('utf-8')
+              except Exception:
+                  continue
+
+              lines = [line.strip() for line in decoded.splitlines() if line.strip()]
+              if any(line.lower().startswith(protocols) for line in lines):
+                  sources.append(path.name)
+
+          if not sources:
+              raise SystemExit('No valid subscription source files found.')
+
+          source_value = ' '.join(sources)
+          print(f'Discovered sources: {source_value}')
+          print(f'Source count: {len(sources)}')
+
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as env:
+              env.write(f'SOURCES={source_value}\n')
+          PY_DISCOVER
+
       - name: Validate repository source files
-        env:
-          SOURCES: ${{ env.SOURCES }}
         run: |
           set -Eeuo pipefail
           python3 - <<'PY'
@@ -48,14 +94,28 @@ jobs:
           from pathlib import Path
 
           protocols = (
-              'vmess://', 'vless://', 'trojan://', 'ss://', 'ssr://',
-              'hysteria://', 'hysteria2://', 'tuic://', 'socks://', 'http://',
+              'vmess://',
+              'vless://',
+              'trojan://',
+              'ss://',
+              'ssr://',
+              'hysteria://',
+              'hysteria2://',
+              'hy2://',
+              'tuic://',
+              'anytls://',
+              'socks://',
+              'socks5://',
+              'http://',
+              'wireguard://',
+              'wg://',
           )
 
           for source in os.environ['SOURCES'].split():
               path = Path(source)
               if not path.is_file() or path.stat().st_size == 0:
                   raise SystemExit(f'Missing or empty repository source file: {source}')
+
               try:
                   decoded = base64.b64decode(path.read_bytes(), validate=True)
                   text = decoded.decode('utf-8')
@@ -63,154 +123,285 @@ jobs:
                   raise SystemExit(f'Invalid Base64 or UTF-8 in {source}: {exc}')
 
               lines = [line.strip() for line in text.splitlines() if line.strip()]
-              recognized = sum(
-                  line.lower().startswith(protocol)
-                  for line in lines
-                  for protocol in protocols
-              )
-              if not lines or recognized == 0:
+              recognized = [
+                  line for line in lines
+                  if line.lower().startswith(protocols)
+              ]
+
+              if not lines or not recognized:
                   raise SystemExit(f'No supported proxy URI found in {source}')
-              print(f'OK {source}: decoded_lines={len(lines)}, recognized_uris={recognized}')
+
+              print(
+                  f'OK {source}: '
+                  f'decoded_lines={len(lines)}, '
+                  f'recognized_uris={len(recognized)}'
+              )
           PY
 
-      - name: Download pinned subconverter
+      - name: Download pinned SubConverter-Extended
         env:
           VERSION: ${{ env.SUBCONVERTER_VERSION }}
           ASSET: ${{ env.SUBCONVERTER_ASSET }}
+          REPOSITORY: ${{ env.SUBCONVERTER_REPOSITORY }}
         run: |
           set -Eeuo pipefail
-          url="https://github.com/tindy2013/subconverter/releases/download/${VERSION}/${ASSET}"
-          curl --fail --show-error --silent --location --retry 3 --retry-delay 5 \
-            "$url" --output subconverter.tar.gz
-          test -s subconverter.tar.gz
-          echo "${{ env.SUBCONVERTER_SHA256 }}  subconverter.tar.gz" | sha256sum --check --strict -
-          mkdir -p subconverter
-          tar --extract --gzip --file subconverter.tar.gz --directory subconverter
-          binary="$(find subconverter -type f -name subconverter -perm -u+x -print -quit)"
-          test -n "$binary"
-          echo "SUBCONVERTER_BIN=$binary" >> "$GITHUB_ENV"
 
-      - name: Start local source server and subconverter
+          url="https://github.com/${REPOSITORY}/releases/download/${VERSION}/${ASSET}"
+
+          curl --fail --show-error --silent --location \
+            --retry 3 \
+            --retry-delay 5 \
+            "$url" \
+            --output subconverter-extended.tar.gz
+
+          test -s subconverter-extended.tar.gz
+          echo "${{ env.SUBCONVERTER_SHA256 }}  subconverter-extended.tar.gz" \
+            | sha256sum --check --strict -
+
+          mkdir -p subconverter-extended
+          tar --extract \
+            --gzip \
+            --file subconverter-extended.tar.gz \
+            --directory subconverter-extended
+
+          test -x subconverter-extended/SubConverter-Extended/start.sh
+          test -x subconverter-extended/SubConverter-Extended/subconverter
+
+          # 禁止便携版自动在线升级，确保本次运行使用固定版本。
+          cp subconverter-extended/SubConverter-Extended/base/pref.example.toml \
+             subconverter-extended/SubConverter-Extended/base/pref.toml
+
+          sed -i -E \
+            "s/^listen = .*/listen = \"127.0.0.1\"/; \
+             s/^port = .*/port = ${SUBCONVERTER_PORT}/" \
+            subconverter-extended/SubConverter-Extended/base/pref.toml
+
+          echo "SUBCONVERTER_ROOT=$GITHUB_WORKSPACE/subconverter-extended/SubConverter-Extended" \
+            >> "$GITHUB_ENV"
+
+      - name: Start local source server and SubConverter-Extended
         run: |
           set -Eeuo pipefail
-          test -d "$GITHUB_WORKSPACE"
 
-          # 使用 Checkout 后的仓库文件，通过 Runner 本机地址提供给 subconverter。
           python3 -m http.server 18080 \
             --bind 127.0.0.1 \
             --directory "$GITHUB_WORKSPACE" \
             > "$RUNNER_TEMP/source-server.log" 2>&1 &
+
           source_server_pid=$!
           echo "SOURCE_SERVER_PID=$source_server_pid" >> "$GITHUB_ENV"
 
-          "$SUBCONVERTER_BIN" > "$RUNNER_TEMP/subconverter.log" 2>&1 &
+          SUBCONVERTER_SKIP_AUTO_UPDATE=1 \
+            "$SUBCONVERTER_ROOT/start.sh" \
+            > "$RUNNER_TEMP/subconverter-extended.log" 2>&1 &
+
           subconverter_pid=$!
           echo "SUBCONVERTER_PID=$subconverter_pid" >> "$GITHUB_ENV"
 
           ready=false
-          for _ in $(seq 1 30); do
-            if (echo > /dev/tcp/127.0.0.1/25500) >/dev/null 2>&1; then
+          for _ in $(seq 1 60); do
+            if curl --fail --silent \
+                "http://127.0.0.1:${SUBCONVERTER_PORT}/version" \
+                >/dev/null 2>&1; then
               ready=true
               break
             fi
+
             if ! kill -0 "$subconverter_pid" 2>/dev/null; then
-              cat "$RUNNER_TEMP/subconverter.log" >&2 || true
+              cat "$RUNNER_TEMP/subconverter-extended.log" >&2 || true
               exit 1
             fi
+
             sleep 1
           done
 
           if [[ "$ready" != true ]]; then
-            cat "$RUNNER_TEMP/subconverter.log" >&2 || true
-            echo 'subconverter did not listen on 127.0.0.1:25500 in time.' >&2
+            cat "$RUNNER_TEMP/subconverter-extended.log" >&2 || true
+            echo 'SubConverter-Extended did not become ready.' >&2
             exit 1
           fi
 
-      - name: Convert subscriptions from repository files
+      - name: Convert and merge subscriptions
         env:
           ACL4SSR_CONFIG_URL: ${{ env.ACL4SSR_CONFIG_URL }}
-          SOURCES: ${{ env.SOURCES }}
+          SUBCONVERTER_PORT: ${{ env.SUBCONVERTER_PORT }}
         run: |
           set -Eeuo pipefail
-          trap 'kill "$SUBCONVERTER_PID" "$SOURCE_SERVER_PID" 2>/dev/null || true' EXIT
 
-          source_dir="$GITHUB_WORKSPACE"
+          trap '
+            kill "${SUBCONVERTER_PID:-}" "${SOURCE_SERVER_PID:-}" 2>/dev/null || true
+          ' EXIT
 
-          for source in $SOURCES; do
-            input_file="${source_dir}/${source}"
-            if [[ ! -s "$input_file" ]]; then
-              echo "Missing or empty repository source file: ${source}" >&2
-              exit 1
-            fi
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          import yaml
 
-            output_file="${source}.yaml"
-            temporary_file="${output_file}.tmp"
+          api = f"http://127.0.0.1:{os.environ['SUBCONVERTER_PORT']}/sub"
+          config_url = os.environ['ACL4SSR_CONFIG_URL']
+          sources = os.environ['SOURCES'].split()
 
-            if ! base64 --decode "$input_file" >/dev/null 2>"$RUNNER_TEMP/base64-error"; then
-              echo "Invalid Base64 in repository source file: ${source}" >&2
-              rm -f "$RUNNER_TEMP/base64-error"
-              exit 1
-            fi
+          # 通过 urllib 调用本机服务，避免把节点内容放入 shell 日志。
+          import urllib.parse
+          import urllib.request
 
-            rm -f "$temporary_file"
+          def request(source: str, list_only: bool) -> dict:
+              params = {
+                  'target': 'clash',
+                  'url': f'http://127.0.0.1:18080/{source}',
+                  'emoji': 'true',
+                  'udp': 'true',
+                  'tfo': 'true',
+                  'scv': 'false',
+                  'insert': 'false',
+                  'config': config_url,
+              }
+              if list_only:
+                  params['list'] = 'true'
 
-            if ! curl --fail-with-body --show-error --silent --location \
-                --connect-timeout 15 --max-time 180 \
-                --retry 3 --retry-delay 5 \
-                --get 'http://127.0.0.1:25500/sub' \
-                --data-urlencode 'target=clash' \
-                --data-urlencode "url=http://127.0.0.1:18080/${source}" \
-                --data-urlencode 'emoji=true' \
-                --data-urlencode 'udp=true' \
-                --data-urlencode 'tfo=true' \
-                --data-urlencode 'scv=false' \
-                --data-urlencode 'insert=false' \
-                --data-urlencode "config=${ACL4SSR_CONFIG_URL}" \
-                --output "$temporary_file" \
-                2>"$RUNNER_TEMP/${source}-conversion-error"; then
-              echo "subconverter returned an HTTP/client error for ${source}; response body was not logged." >&2
-              rm -f "$temporary_file"
-              exit 1
-            fi
+              query = urllib.parse.urlencode(params)
+              req = urllib.request.Request(f'{api}?{query}')
+              with urllib.request.urlopen(req, timeout=240) as response:
+                  body = response.read().decode('utf-8')
 
-            test -s "$temporary_file"
-            if grep -Fqi 'No nodes were found' "$temporary_file" || \
-              head -n 1 "$temporary_file" | grep -Eiq '^(error|bad gateway)(:|$)'; then
-              echo "Conversion failed for ${source}; previous YAML was kept." >&2
-              rm -f "$temporary_file"
-              exit 1
-            fi
+              data = yaml.safe_load(body)
+              if not isinstance(data, dict):
+                  raise RuntimeError(f'{source}: converter returned a non-mapping YAML')
+              if body.lstrip().lower().startswith(('error', 'bad gateway')):
+                  raise RuntimeError(f'{source}: converter returned an error response')
+              return data
 
-            # subconverter v0.9.0 only targets the legacy Clash format and
-            # drops modern Hysteria2/VLESS links. Merge those links into the
-            # generated file using Mihomo-compatible proxy fields.
-            python3 "$GITHUB_WORKSPACE/scripts/merge_mihomo_nodes.py" \
-              --source "$input_file" \
-              --config "$temporary_file"
+          def node_name(item):
+              return item.get('name') if isinstance(item, dict) else None
 
-            grep -q '^proxies:' "$temporary_file"
-            grep -q '^proxy-groups:' "$temporary_file"
-            grep -q '^rules:' "$temporary_file"
-            mv -f "$temporary_file" "$output_file"
-          done
+          for source in sources:
+              temporary = Path(f'{source}.yaml.tmp')
+              try:
+                  # 完整模式：取得 proxy-groups、rules、rule-providers 等规则骨架。
+                  full = request(source, list_only=False)
+                  # list 模式：取得可直接嵌入静态 YAML 的所有节点。
+                  direct = request(source, list_only=True)
 
-      - name: Validate generated YAML and references
-        env:
-          SOURCES: ${{ env.SOURCES }}
+                  nodes = direct.get('proxies')
+                  groups = full.get('proxy-groups')
+                  rules = full.get('rules')
+
+                  if not isinstance(nodes, list) or not nodes:
+                      raise RuntimeError(f'{source}: list=true returned no proxies')
+                  if not isinstance(groups, list) or not groups:
+                      raise RuntimeError(f'{source}: full output returned no proxy-groups')
+                  if not isinstance(rules, list) or not rules:
+                      raise RuntimeError(f'{source}: full output returned no rules')
+
+                  providers = full.pop('proxy-providers', {}) or {}
+                  provider_names = set(providers) if isinstance(providers, dict) else set()
+                  names = [node_name(item) for item in nodes]
+                  names = [name for name in names if name]
+
+                  # SubConverter-Extended 的完整模式通常让 proxy-groups
+                  # 通过 use: [provider] 引用远程 Provider。这里把这些
+                  # Provider 引用展开为 list=true 返回的静态节点名称。
+                  for group in groups:
+                      if not isinstance(group, dict):
+                          continue
+
+                      references = []
+                      existing = group.get('proxies')
+                      if isinstance(existing, list):
+                          references.extend(existing)
+
+                      uses = group.pop('use', [])
+                      if isinstance(uses, list):
+                          references.extend(uses)
+                      elif isinstance(uses, str):
+                          references.append(uses)
+
+                      expanded = []
+                      for reference in references:
+                          if reference in provider_names:
+                              expanded.extend(names)
+                          elif reference not in expanded:
+                              expanded.append(reference)
+
+                      # Provider 组可能没有 proxies/use；这种情况下把节点
+                      # 放入第一个 select 组，避免静态节点无法被选择。
+                      if not expanded and group.get('type') in {
+                          'select', 'url-test', 'fallback', 'load-balance'
+                      }:
+                          expanded = list(names)
+
+                      if expanded:
+                          group['proxies'] = list(dict.fromkeys(expanded))
+
+                  full['proxies'] = nodes
+                  full['proxy-groups'] = groups
+                  full['rules'] = rules
+                  full.pop('proxy-providers', None)
+
+                  temporary.write_text(
+                      yaml.safe_dump(
+                          full,
+                          allow_unicode=True,
+                          sort_keys=False,
+                          default_flow_style=False,
+                      ),
+                      encoding='utf-8',
+                  )
+
+                  print(
+                      f'OK {source}: '
+                      f'proxies={len(nodes)}, '
+                      f'groups={len(groups)}, '
+                      f'rules={len(rules)}'
+                  )
+              except Exception:
+                  temporary.unlink(missing_ok=True)
+                  raise
+
+              temporary.replace(Path(f'{source}.yaml'))
+          PY
+
+      - name: Validate generated YAML and protocol preservation
         run: |
           set -Eeuo pipefail
           python3 -m pip install --disable-pip-version-check --no-input 'PyYAML==6.0.2'
+
           python3 - <<'PY'
+          import base64
+          import os
+          from collections import Counter
           from pathlib import Path
-          import collections
           import yaml
 
-          import os
+          protocol_aliases = {
+              'hy2': 'hysteria2',
+              'hysteria2': 'hysteria2',
+              'vless': 'vless',
+              'trojan': 'trojan',
+              'vmess': 'vmess',
+              'ss': 'ss',
+              'ssr': 'ssr',
+              'tuic': 'tuic',
+              'anytls': 'anytls',
+          }
 
-          sources = os.environ['SOURCES'].split()
           failed = False
 
-          for source in sources:
+          for source in os.environ['SOURCES'].split():
+              source_text = base64.b64decode(
+                  Path(source).read_bytes(),
+                  validate=True,
+              ).decode('utf-8')
+
+              source_types = Counter()
+              for line in source_text.splitlines():
+                  line = line.strip().lower()
+                  if '://' not in line:
+                      continue
+                  scheme = line.split('://', 1)[0]
+                  if scheme in protocol_aliases:
+                      source_types[protocol_aliases[scheme]] += 1
+
               path = Path(f'{source}.yaml')
               try:
                   data = yaml.safe_load(path.read_text(encoding='utf-8'))
@@ -227,6 +418,7 @@ jobs:
               proxies = data.get('proxies')
               groups = data.get('proxy-groups')
               rules = data.get('rules')
+
               if not isinstance(proxies, list) or not proxies:
                   print(f'ERROR {source}: proxies must be a non-empty list')
                   failed = True
@@ -237,44 +429,59 @@ jobs:
                   print(f'ERROR {source}: rules must be a non-empty list')
                   failed = True
 
+              actual_types = Counter()
               proxy_names = []
               for item in proxies or []:
-                  if not isinstance(item, dict) or not item.get('name') or not item.get('type'):
-                      print(f'ERROR {source}: every proxy must have name and type')
+                  if not isinstance(item, dict):
+                      print(f'ERROR {source}: proxy entry is not a mapping')
                       failed = True
                       continue
-                  if not item.get('server') or not item.get('port'):
-                      print(f"ERROR {source}: proxy {item.get('name')!r} must have server and port")
+
+                  name = item.get('name')
+                  proxy_type = item.get('type')
+                  proxy_names.append(name)
+                  actual_types[proxy_type] += 1
+
+                  if not name or not proxy_type:
+                      print(f'ERROR {source}: proxy is missing name or type')
                       failed = True
-                  if item.get('type') in {'hysteria2', 'vless'}:
-                      required = 'password' if item['type'] == 'hysteria2' else 'uuid'
-                      if not item.get(required):
-                          print(f"ERROR {source}: {item['type']} proxy {item.get('name')!r} is missing {required}")
-                          failed = True
-                  proxy_names.append(item.get('name'))
-              duplicate_names = [name for name, count in collections.Counter(proxy_names).items() if count > 1]
-              if duplicate_names:
-                  print(f'ERROR {source}: duplicate proxy names: {duplicate_names}')
+                  if not item.get('server') or not item.get('port'):
+                      print(f'ERROR {source}: proxy {name!r} lacks server/port')
+                      failed = True
+                  if proxy_type == 'vless' and not item.get('uuid'):
+                      print(f'ERROR {source}: VLESS proxy {name!r} lacks uuid')
+                      failed = True
+                  if proxy_type == 'hysteria2' and not item.get('password'):
+                      print(f'ERROR {source}: Hysteria2 proxy {name!r} lacks password')
+                      failed = True
+
+              duplicates = [
+                  name for name, count in Counter(proxy_names).items()
+                  if name and count > 1
+              ]
+              if duplicates:
+                  print(f'ERROR {source}: duplicate proxy names: {duplicates}')
                   failed = True
 
-              group_names_list = [item.get('name') for item in groups or [] if isinstance(item, dict)]
-              group_names = set(group_names_list)
-              duplicate_group_names = [name for name, count in collections.Counter(group_names_list).items() if count > 1]
-              if duplicate_group_names:
-                  print(f'ERROR {source}: duplicate proxy-group names: {duplicate_group_names}')
-                  failed = True
+              group_names = {
+                  group.get('name')
+                  for group in groups or []
+                  if isinstance(group, dict) and group.get('name')
+              }
               known = set(proxy_names) | group_names | {'DIRECT', 'REJECT'}
-              missing_groups = set()
+
+              missing_group_refs = set()
               for group in groups or []:
-                  if isinstance(group, dict):
-                      missing_groups.update(
-                          item for item in group.get('proxies') or [] if item not in known
-                      )
-              if missing_groups:
-                  print(f'ERROR {source}: unresolved group references: {sorted(missing_groups)}')
+                  if not isinstance(group, dict):
+                      continue
+                  for reference in group.get('proxies') or []:
+                      if reference not in known:
+                          missing_group_refs.add(reference)
+              if missing_group_refs:
+                  print(f'ERROR {source}: unresolved proxy-group references')
                   failed = True
 
-              missing_targets = set()
+              missing_rule_targets = set()
               for rule in rules or []:
                   if not isinstance(rule, str) or len(rule.split(',')) < 2:
                       print(f'ERROR {source}: malformed rule')
@@ -282,12 +489,27 @@ jobs:
                       continue
                   target = rule.rsplit(',', 1)[-1].strip()
                   if target not in known and target != 'no-resolve':
-                      missing_targets.add(target)
-              if missing_targets:
-                  print(f'ERROR {source}: unresolved rule targets: {sorted(missing_targets)}')
+                      missing_rule_targets.add(target)
+              if missing_rule_targets:
+                  print(f'ERROR {source}: unresolved rule targets')
                   failed = True
 
-              print(f'OK {source}: proxies={len(proxies or [])}, groups={len(groups or [])}, rules={len(rules or [])}')
+              # 只要求源中存在的现代协议至少保留一个，避免静默丢失。
+              for proxy_type in ('vless', 'hysteria2'):
+                  if source_types.get(proxy_type, 0) and not actual_types.get(proxy_type, 0):
+                      print(
+                          f'ERROR {source}: source contains '
+                          f'{proxy_type}, but output contains none'
+                      )
+                      failed = True
+
+              print(
+                  f'CHECK {source}: '
+                  f'source_types={dict(source_types)}, '
+                  f'output_types={dict(actual_types)}, '
+                  f'groups={len(groups or [])}, '
+                  f'rules={len(rules or [])}'
+              )
 
           if failed:
               raise SystemExit(1)
@@ -308,11 +530,14 @@ jobs:
           git commit -m 'chore: update generated Clash configs'
           git push
 
-      - name: Remove sensitive temporary files
+      - name: Remove temporary files
         if: always()
         run: |
           set +e
           kill "${SUBCONVERTER_PID:-}" "${SOURCE_SERVER_PID:-}" 2>/dev/null || true
-          rm -rf "$RUNNER_TEMP/subconverter.log" "$RUNNER_TEMP/source-server.log" \
-            "$RUNNER_TEMP/base64-error" "$RUNNER_TEMP"/*-conversion-error \
-            subconverter.tar.gz subconverter
+          rm -rf \
+            "$RUNNER_TEMP/subconverter-extended.log" \
+            "$RUNNER_TEMP/source-server.log" \
+            "$RUNNER_TEMP"/*-conversion-error \
+            subconverter-extended.tar.gz \
+            subconverter-extended
