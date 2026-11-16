@@ -193,7 +193,45 @@ jobs:
               )"
               if [[ "$modern_node_count" =~ ^[1-9][0-9]*$ ]]; then
                 echo "${source}: ${fallback_reason}; using Mihomo fallback for ${modern_node_count} modern nodes."
-                cat > "$temporary_file" <<'YAML'
+                template_file="$(find "$source_dir" -maxdepth 1 -type f -name '*.yaml' ! -name "${source}.yaml" -print | sort | head -n 1 || true)"
+                if [[ -n "$template_file" ]]; then
+                  python3 - "$template_file" "$temporary_file" <<'PY'
+          import sys
+          from pathlib import Path
+          import yaml
+
+          template_path = Path(sys.argv[1])
+          output_path = Path(sys.argv[2])
+          data = yaml.safe_load(template_path.read_text(encoding="utf-8"))
+          if not isinstance(data, dict):
+              raise SystemExit(f"Invalid fallback template: {template_path}")
+
+          groups = data.get("proxy-groups")
+          rules = data.get("rules")
+          if not isinstance(groups, list) or not isinstance(rules, list):
+              raise SystemExit(f"Fallback template lacks proxy-groups/rules: {template_path}")
+
+          group_names = {
+              group.get("name")
+              for group in groups
+              if isinstance(group, dict) and group.get("name")
+          }
+          builtins = {"DIRECT", "REJECT"}
+          for group in groups:
+              if isinstance(group, dict) and isinstance(group.get("proxies"), list):
+                  group["proxies"] = [
+                      item for item in group["proxies"]
+                      if item in group_names or item in builtins
+                  ]
+
+          data["proxies"] = []
+          output_path.write_text(
+              yaml.safe_dump(data, allow_unicode=True, sort_keys=False),
+              encoding="utf-8",
+          )
+          PY
+                else
+                  cat > "$temporary_file" <<'YAML'
           proxies: []
           proxy-groups:
             - name: "🚀 节点选择"
@@ -203,6 +241,7 @@ jobs:
           rules:
             - "MATCH,🚀 节点选择"
           YAML
+                fi
               else
                 echo "Conversion failed for ${source}: ${fallback_reason}; no supported modern VLESS/Hysteria2 nodes were parsed." >&2
                 cat "$RUNNER_TEMP/${source}-conversion-error" >&2 || true
