@@ -444,6 +444,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - DIRECT
   - 🇺🇸United States 01
   - 🇺🇸United States 02
   - 🇺🇸United States 03
