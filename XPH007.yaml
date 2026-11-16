@@ -401,14 +401,14 @@ proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
-  - 🌐 其他地区自动
-  - 🇺🇸 美国自动
-  - 🇸🇬 新加坡自动
+  - ♻️ 自动选择
+  - 🔁 故障切换
+  - 🔐 VLESS 自动
   - 🇭🇰 香港自动
   - 🇯🇵 日本自动
-  - 🔐 VLESS 自动
-  - 🔁 故障切换
-  - ♻️ 自动选择
+  - 🇸🇬 新加坡自动
+  - 🇺🇸 美国自动
+  - 🌐 其他地区自动
   - DIRECT
   - 🇺🇸United States 01
   - 🇺🇸United States 02
@@ -473,6 +473,104 @@ proxy-groups:
   - 🇹🇼Taiwan 04
   - 🇩🇪Germany 01
   - 🇩🇪Germany 02
+- name: 🔁 故障切换
+  type: fallback
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🔐 VLESS 自动
+- name: 🔐 VLESS 自动
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  proxies:
+  - 🇺🇸United States 01
+  - 🇺🇸United States 02
+  - 🇺🇸United States 03
+  - 🇺🇸United States 04
+  - 🇲🇾Malaysia 01
+  - 🇲🇾Malaysia 02
+  - 🇸🇬Singapore 01
+  - 🇸🇬Singapore 02
+  - 🇸🇬Singapore 03
+  - 🇸🇬Singapore 04
+  - 🇯🇵Japan 01
+  - 🇯🇵Japan 02
+  - 🇯🇵Japan 03
+  - 🇯🇵Japan 04
+  - 🇰🇷Korea 01
+  - 🇰🇷Korea 02
+  - 🇳🇱Netherlands 01
+  - 🇳🇱Netherlands 02
+  - 🇬🇧United Kingdom 01
+  - 🇬🇧United Kingdom 02
+  - 🇭🇰Hong Kong 03
+  - 🇭🇰Hong Kong 04
+  - 🇭🇰Hong Kong 05
+  - 🇭🇰Hong Kong 06
+  - 🇹🇼Taiwan 03
+  - 🇹🇼Taiwan 04
+  - 🇩🇪Germany 01
+  - 🇩🇪Germany 02
+- name: 🇭🇰 香港自动
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  proxies:
+  - 🇭🇰Hong Kong 03
+  - 🇭🇰Hong Kong 04
+  - 🇭🇰Hong Kong 05
+  - 🇭🇰Hong Kong 06
+- name: 🇯🇵 日本自动
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  proxies:
+  - 🇯🇵Japan 01
+  - 🇯🇵Japan 02
+  - 🇯🇵Japan 03
+  - 🇯🇵Japan 04
+- name: 🇸🇬 新加坡自动
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  proxies:
+  - 🇸🇬Singapore 01
+  - 🇸🇬Singapore 02
+  - 🇸🇬Singapore 03
+  - 🇸🇬Singapore 04
+- name: 🇺🇸 美国自动
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  proxies:
+  - 🇺🇸United States 01
+  - 🇺🇸United States 02
+  - 🇺🇸United States 03
+  - 🇺🇸United States 04
+- name: 🌐 其他地区自动
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  proxies:
+  - 🇲🇾Malaysia 01
+  - 🇲🇾Malaysia 02
+  - 🇰🇷Korea 01
+  - 🇰🇷Korea 02
+  - 🇳🇱Netherlands 01
+  - 🇳🇱Netherlands 02
+  - 🇬🇧United Kingdom 01
+  - 🇬🇧United Kingdom 02
+  - 🇹🇼Taiwan 03
+  - 🇹🇼Taiwan 04
+  - 🇩🇪Germany 01
+  - 🇩🇪Germany 02
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -522,104 +620,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-- name: 🔐 VLESS 自动
-  type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 80
-  proxies:
-  - 🇺🇸United States 01
-  - 🇺🇸United States 02
-  - 🇺🇸United States 03
-  - 🇺🇸United States 04
-  - 🇲🇾Malaysia 01
-  - 🇲🇾Malaysia 02
-  - 🇸🇬Singapore 01
-  - 🇸🇬Singapore 02
-  - 🇸🇬Singapore 03
-  - 🇸🇬Singapore 04
-  - 🇯🇵Japan 01
-  - 🇯🇵Japan 02
-  - 🇯🇵Japan 03
-  - 🇯🇵Japan 04
-  - 🇰🇷Korea 01
-  - 🇰🇷Korea 02
-  - 🇳🇱Netherlands 01
-  - 🇳🇱Netherlands 02
-  - 🇬🇧United Kingdom 01
-  - 🇬🇧United Kingdom 02
-  - 🇭🇰Hong Kong 03
-  - 🇭🇰Hong Kong 04
-  - 🇭🇰Hong Kong 05
-  - 🇭🇰Hong Kong 06
-  - 🇹🇼Taiwan 03
-  - 🇹🇼Taiwan 04
-  - 🇩🇪Germany 01
-  - 🇩🇪Germany 02
-- name: 🔁 故障切换
-  type: fallback
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  proxies:
-  - 🔐 VLESS 自动
-- name: 🇯🇵 日本自动
-  type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 80
-  proxies:
-  - 🇯🇵Japan 01
-  - 🇯🇵Japan 02
-  - 🇯🇵Japan 03
-  - 🇯🇵Japan 04
-- name: 🇭🇰 香港自动
-  type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 80
-  proxies:
-  - 🇭🇰Hong Kong 03
-  - 🇭🇰Hong Kong 04
-  - 🇭🇰Hong Kong 05
-  - 🇭🇰Hong Kong 06
-- name: 🇸🇬 新加坡自动
-  type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 80
-  proxies:
-  - 🇸🇬Singapore 01
-  - 🇸🇬Singapore 02
-  - 🇸🇬Singapore 03
-  - 🇸🇬Singapore 04
-- name: 🇺🇸 美国自动
-  type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 80
-  proxies:
-  - 🇺🇸United States 01
-  - 🇺🇸United States 02
-  - 🇺🇸United States 03
-  - 🇺🇸United States 04
-- name: 🌐 其他地区自动
-  type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 80
-  proxies:
-  - 🇲🇾Malaysia 01
-  - 🇲🇾Malaysia 02
-  - 🇰🇷Korea 01
-  - 🇰🇷Korea 02
-  - 🇳🇱Netherlands 01
-  - 🇳🇱Netherlands 02
-  - 🇬🇧United Kingdom 01
-  - 🇬🇧United Kingdom 02
-  - 🇹🇼Taiwan 03
-  - 🇹🇼Taiwan 04
-  - 🇩🇪Germany 01
-  - 🇩🇪Germany 02
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
