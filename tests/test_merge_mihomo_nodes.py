@@ -48,6 +48,19 @@ class ParseLinkTests(unittest.TestCase):
         self.assertEqual(node["reality-opts"]["public-key"], "key")
         self.assertEqual(node["ws-opts"]["headers"]["Host"], "cdn.example.com")
 
+    def test_vless_reality_provider_prefix_and_numeric_xtls_are_normalized(self):
+        node = MODULE.parse_link(
+            "vless://auto%3A91cb8627-fe01-45c7-a116-f852c545eb35@example.com:443?"
+            "tls=1&peer=download.example.com&xtls=2&pbk=public-key&sid=short-id&"
+            "fingerprint=chrome&tfo=1#Reality"
+        )
+        self.assertEqual(node["uuid"], "91cb8627-fe01-45c7-a116-f852c545eb35")
+        self.assertEqual(node["flow"], "xtls-rprx-vision")
+        self.assertTrue(node["tfo"])
+        self.assertEqual(node["servername"], "download.example.com")
+        self.assertEqual(node["reality-opts"]["public-key"], "public-key")
+        self.assertEqual(node["reality-opts"]["short-id"], "short-id")
+
     def test_malformed_port_is_skipped(self):
         self.assertIsNone(MODULE.parse_link("vless://uuid@example.com:not-a-port#bad"))
 

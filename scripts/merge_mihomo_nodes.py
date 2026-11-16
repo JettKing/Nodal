@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import base64
 import binascii
+import re
 import urllib.parse
 from pathlib import Path
 from typing import Any
@@ -14,6 +15,10 @@ import yaml
 
 SUPPORTED_SCHEMES = {"hysteria2", "vless"}
 TRUE_VALUES = {"1", "true", "yes", "on"}
+UUID_PATTERN = re.compile(
+    r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-"
+    r"[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+)
 
 
 def first(query: dict[str, list[str]], *keys: str) -> str | None:
@@ -26,6 +31,19 @@ def first(query: dict[str, list[str]], *keys: str) -> str | None:
 
 def truthy(value: str | None) -> bool:
     return value is not None and value.lower() in TRUE_VALUES
+
+
+def normalize_vless_uuid(value: str | None) -> str | None:
+    """Remove provider encryption prefixes from UUID-shaped VLESS user IDs."""
+    if not value:
+        return value
+    if UUID_PATTERN.fullmatch(value):
+        return value
+    if ":" in value:
+        prefix, candidate = value.split(":", 1)
+        if prefix.lower() in {"auto", "none", "zero"} and UUID_PATTERN.fullmatch(candidate):
+            return candidate
+    return value
 
 
 def parse_link(line: str) -> dict[str, Any] | None:
@@ -83,7 +101,10 @@ def parse_link(line: str) -> dict[str, Any] | None:
     }
 
     if username:
-        node["password" if scheme == "hysteria2" else "uuid"] = urllib.parse.unquote(username)
+        username = urllib.parse.unquote(username)
+        node["password" if scheme == "hysteria2" else "uuid"] = (
+            normalize_vless_uuid(username) if scheme == "vless" else username
+        )
 
     if scheme == "hysteria2":
         sni = first(query, "sni", "peer")
@@ -114,13 +135,15 @@ def parse_link(line: str) -> dict[str, Any] | None:
     if truthy(first(query, "allowInsecure", "allow-insecure", "insecure")):
         node["skip-cert-verify"] = True
     flow = first(query, "flow")
-    if not flow and first(query, "xtls") in {"vision", "xtls-rprx-vision"}:
+    if not flow and first(query, "xtls") in {"2", "vision", "xtls-rprx-vision"}:
         flow = "xtls-rprx-vision"
     if flow and flow in {"xtls-rprx-vision"}:
         node["flow"] = flow
     fingerprint = first(query, "fingerprint", "fp")
     if fingerprint:
         node["client-fingerprint"] = fingerprint
+    if truthy(first(query, "tfo", "tcp-fast-open", "tcp_fast_open")):
+        node["tfo"] = True
 
     public_key = first(query, "pbk", "publicKey")
     short_id = first(query, "sid", "shortId")
