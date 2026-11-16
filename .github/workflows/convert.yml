@@ -149,6 +149,7 @@ jobs:
 
             rm -f "$temporary_file"
 
+            fallback_reason=""
             if ! curl --fail-with-body --show-error --silent --location \
                 --connect-timeout 15 --max-time 180 \
                 --retry 3 --retry-delay 5 \
@@ -163,14 +164,54 @@ jobs:
                 --data-urlencode "config=${ACL4SSR_CONFIG_URL}" \
                 --output "$temporary_file" \
                 2>"$RUNNER_TEMP/${source}-conversion-error"; then
-              echo "subconverter returned an HTTP/client error for ${source}; response body was not logged." >&2
+              fallback_reason="subconverter HTTP/client error"
               rm -f "$temporary_file"
-              exit 1
             fi
 
-            test -s "$temporary_file"
-            if grep -Fqi 'No nodes were found' "$temporary_file" || \
-              head -n 1 "$temporary_file" | grep -Eiq '^(error|bad gateway)(:|$)'; then
+            if [[ -z "$fallback_reason" ]] && {
+              [[ ! -s "$temporary_file" ]] ||
+              grep -Fqi 'No nodes were found' "$temporary_file" ||
+              head -n 1 "$temporary_file" | grep -Eiq '^(error|bad gateway)(:|$)';
+            }; then
+              fallback_reason="subconverter returned no usable legacy configuration"
+              rm -f "$temporary_file"
+            fi
+
+            if [[ -n "$fallback_reason" ]]; then
+              modern_node_count="$(python3 - "$input_file" <<'PY'
+          import sys
+          from pathlib import Path
+
+          from scripts.merge_mihomo_nodes import decode_source
+
+          try:
+              print(len(decode_source(Path(sys.argv[1]))))
+          except Exception as exc:
+              print(f'ERROR: {exc}', file=sys.stderr)
+              print(0)
+          PY
+              )"
+              if [[ "$modern_node_count" =~ ^[1-9][0-9]*$ ]]; then
+                echo "${source}: ${fallback_reason}; using Mihomo fallback for ${modern_node_count} modern nodes."
+                cat > "$temporary_file" <<'YAML'
+          proxies: []
+          proxy-groups:
+            - name: "🚀 节点选择"
+              type: select
+              proxies:
+                - "DIRECT"
+          rules:
+            - "MATCH,🚀 节点选择"
+          YAML
+              else
+                echo "Conversion failed for ${source}: ${fallback_reason}; no supported modern VLESS/Hysteria2 nodes were parsed." >&2
+                cat "$RUNNER_TEMP/${source}-conversion-error" >&2 || true
+                rm -f "$temporary_file"
+                exit 1
+              fi
+            fi
+
+            if [[ ! -s "$temporary_file" ]]; then
               echo "Conversion failed for ${source}; previous YAML was kept." >&2
               rm -f "$temporary_file"
               exit 1
