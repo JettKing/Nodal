@@ -55,14 +55,16 @@ https://jettking.github.io/Nodal/
 
 ```text
 https://jettking.github.io/Nodal/vpn.yaml
-https://jettking.github.io/Nodal/FYH002.yaml
-https://jettking.github.io/Nodal/HMQ006.yaml
 https://jettking.github.io/Nodal/HYL001.yaml
+https://jettking.github.io/Nodal/FYH002.yaml
+https://jettking.github.io/Nodal/WXY003.yaml
 https://jettking.github.io/Nodal/LXS004.yaml
 https://jettking.github.io/Nodal/WXQ005.yaml
-https://jettking.github.io/Nodal/WXY003.yaml
+https://jettking.github.io/Nodal/HMQ006.yaml
 https://jettking.github.io/Nodal/XPH007.yaml
 ```
+
+地址列表统一按“`vpn` 第一，其余文件名中的数字编号升序”排列，即 `001 → 002 → 003 → 004 → 005 → 006 → 007`。
 
 在 Clash Mi、Clash Meta、Mihomo Party 或其他兼容客户端中，添加对应的 YAML URL 即可。
 
@@ -84,20 +86,20 @@ https://jettking.github.io/Nodal/XPH007.yaml
 ├── tests/
 │   └── test_merge_mihomo_nodes.py # 单元测试
 ├── vpn                          # Base64 订阅源
-├── FYH002                       # Base64 订阅源
-├── HMQ006                       # Base64 订阅源
 ├── HYL001                       # Base64 订阅源
+├── FYH002                       # Base64 订阅源
+├── WXY003                       # Base64 订阅源
 ├── LXS004                       # Base64 订阅源
 ├── WXQ005                       # Base64 订阅源
-├── WXY003                       # Base64 订阅源
+├── HMQ006                       # Base64 订阅源
 ├── XPH007                       # Base64 订阅源
 ├── vpn.yaml                     # 自动生成的 Clash/Mihomo 配置
-├── FYH002.yaml                  # 自动生成的 Clash/Mihomo 配置
-├── HMQ006.yaml
 ├── HYL001.yaml
+├── WXY003.yaml
+├── FYH002.yaml
 ├── LXS004.yaml
 ├── WXQ005.yaml
-├── WXY003.yaml
+├── HMQ006.yaml
 ├── XPH007.yaml
 └── README.md
 ```
