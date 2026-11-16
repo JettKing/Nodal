@@ -15,18 +15,6 @@ import yaml
 
 SUPPORTED_SCHEMES = {"hysteria2", "vless"}
 TRUE_VALUES = {"1", "true", "yes", "on"}
-FIXED_PROTOCOL_GROUPS = (
-    "⚡ Hysteria2 自动",
-    "🔐 VLESS 自动",
-    "🚀 Trojan 自动",
-)
-FIXED_REGION_GROUPS = (
-    "🇯🇵 日本自动",
-    "🇭🇰 香港自动",
-    "🇸🇬 新加坡自动",
-    "🇺🇸 美国自动",
-    "🌐 其他地区自动",
-)
 UUID_PATTERN = re.compile(
     r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-"
     r"[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
@@ -274,19 +262,20 @@ def update_strategy_groups(data: dict[str, Any]) -> None:
         "🚀 Trojan 自动": [item["name"] for item in proxies if item.get("type") == "trojan"],
     }
     for name, members in protocol_groups.items():
-        add_or_replace_group(
-            groups,
-            {
-                "name": name,
-                "type": "url-test",
-                "url": probe_url,
-                "interval": 300,
-                "tolerance": 80,
-                "proxies": members or ["DIRECT"],
-            },
-        )
+        if members:
+            add_or_replace_group(
+                groups,
+                {
+                    "name": name,
+                    "type": "url-test",
+                    "url": probe_url,
+                    "interval": 300,
+                    "tolerance": 80,
+                    "proxies": members,
+                },
+            )
 
-    protocol_group_names = list(FIXED_PROTOCOL_GROUPS)
+    protocol_group_names = [name for name, members in protocol_groups.items() if members]
     if protocol_group_names:
         add_or_replace_group(
             groups,
@@ -302,9 +291,11 @@ def update_strategy_groups(data: dict[str, Any]) -> None:
     regions: dict[str, list[str]] = {}
     for item in proxies:
         regions.setdefault(node_region(item), []).append(item["name"])
-    region_group_names = list(FIXED_REGION_GROUPS)
-    for name in region_group_names:
-        members = regions.get(name, [])
+    region_group_names = []
+    for name, members in regions.items():
+        if not members:
+            continue
+        region_group_names.append(name)
         add_or_replace_group(
             groups,
             {
@@ -313,7 +304,7 @@ def update_strategy_groups(data: dict[str, Any]) -> None:
                 "url": probe_url,
                 "interval": 300,
                 "tolerance": 80,
-                "proxies": members or ["DIRECT"],
+                "proxies": members,
             },
         )
 
