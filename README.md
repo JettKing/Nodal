@@ -34,6 +34,8 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 ├── .github/
 │   └── workflows/
 │       └── convert.yml       # GitHub Actions 自动转换工作流
+├── scripts/
+│   └── merge_mihomo_nodes.py # 补回 Hysteria2/VLESS 的 Mihomo 节点
 ├── FYH002                  # Base64 编码的订阅源示例
 ├── HMQ006                  # Base64 编码的订阅源示例
 ├── HYL001                  # Base64 编码的订阅源示例
@@ -130,9 +132,11 @@ push:
 | `WXY003` | `WXY003.yaml` |
 | `vpn` | `vpn.yaml` |
 
-当前转换参数包括：
+当前转换流程包括：
 
-- 目标格式：Clash
+- 先使用固定版本的 `subconverter` 生成传统 Clash 配置。
+- 再从原始订阅源解析 Hysteria2/VLESS URI，并按 Mihomo 字段合并回生成 YAML。
+- Hysteria2/VLESS 节点会加入 `🚀 节点选择` 和 `♻️ 自动选择` 代理组。
 - UDP：开启
 - TCP Fast Open：开启
 - 插入额外配置：关闭

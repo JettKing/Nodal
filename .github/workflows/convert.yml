@@ -181,6 +181,13 @@ jobs:
               exit 1
             fi
 
+            # subconverter v0.9.0 only targets the legacy Clash format and
+            # drops modern Hysteria2/VLESS links. Merge those links into the
+            # generated file using Mihomo-compatible proxy fields.
+            python3 "$GITHUB_WORKSPACE/scripts/merge_mihomo_nodes.py" \
+              --source "$input_file" \
+              --config "$temporary_file"
+
             grep -q '^proxies:' "$temporary_file"
             grep -q '^proxy-groups:' "$temporary_file"
             grep -q '^rules:' "$temporary_file"
@@ -230,13 +237,32 @@ jobs:
                   print(f'ERROR {source}: rules must be a non-empty list')
                   failed = True
 
-              proxy_names = [item.get('name') for item in proxies or [] if isinstance(item, dict)]
+              proxy_names = []
+              for item in proxies or []:
+                  if not isinstance(item, dict) or not item.get('name') or not item.get('type'):
+                      print(f'ERROR {source}: every proxy must have name and type')
+                      failed = True
+                      continue
+                  if not item.get('server') or not item.get('port'):
+                      print(f"ERROR {source}: proxy {item.get('name')!r} must have server and port")
+                      failed = True
+                  if item.get('type') in {'hysteria2', 'vless'}:
+                      required = 'password' if item['type'] == 'hysteria2' else 'uuid'
+                      if not item.get(required):
+                          print(f"ERROR {source}: {item['type']} proxy {item.get('name')!r} is missing {required}")
+                          failed = True
+                  proxy_names.append(item.get('name'))
               duplicate_names = [name for name, count in collections.Counter(proxy_names).items() if count > 1]
               if duplicate_names:
                   print(f'ERROR {source}: duplicate proxy names: {duplicate_names}')
                   failed = True
 
-              group_names = {item.get('name') for item in groups or [] if isinstance(item, dict)}
+              group_names_list = [item.get('name') for item in groups or [] if isinstance(item, dict)]
+              group_names = set(group_names_list)
+              duplicate_group_names = [name for name, count in collections.Counter(group_names_list).items() if count > 1]
+              if duplicate_group_names:
+                  print(f'ERROR {source}: duplicate proxy-group names: {duplicate_group_names}')
+                  failed = True
               known = set(proxy_names) | group_names | {'DIRECT', 'REJECT'}
               missing_groups = set()
               for group in groups or []:
