@@ -194,8 +194,12 @@ jobs:
               if [[ "$modern_node_count" =~ ^[1-9][0-9]*$ ]]; then
                 echo "${source}: ${fallback_reason}; using Mihomo fallback for ${modern_node_count} modern nodes."
                 template_file="$(find "$source_dir" -maxdepth 1 -type f -name '*.yaml' ! -name "${source}.yaml" -print | sort | head -n 1 || true)"
-                if [[ -n "$template_file" ]]; then
-                  python3 - "$template_file" "$temporary_file" <<'PY'
+                if [[ -z "$template_file" ]]; then
+                  echo "No complete generated YAML template is available for ${source}; refusing to create a simplified configuration." >&2
+                  rm -f "$temporary_file"
+                  exit 1
+                fi
+                python3 - "$template_file" "$temporary_file" <<'PY'
           import sys
           from pathlib import Path
           import yaml
@@ -230,18 +234,6 @@ jobs:
               encoding="utf-8",
           )
           PY
-                else
-                  cat > "$temporary_file" <<'YAML'
-          proxies: []
-          proxy-groups:
-            - name: "🚀 节点选择"
-              type: select
-              proxies:
-                - "DIRECT"
-          rules:
-            - "MATCH,🚀 节点选择"
-          YAML
-                fi
               else
                 echo "Conversion failed for ${source}: ${fallback_reason}; no supported modern VLESS/Hysteria2 nodes were parsed." >&2
                 cat "$RUNNER_TEMP/${source}-conversion-error" >&2 || true
