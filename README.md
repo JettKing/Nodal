@@ -214,6 +214,24 @@ base64 --decode FYH002 | head
 
 不要将解码后的输出粘贴到 Issue、Pull Request、日志或聊天中。
 
+## 线上接口
+
+GitHub Pages 直接提供生成后的 YAML 文件：
+
+```text
+https://jettking.github.io/Nodal/<source>.yaml
+```
+
+仓库同时包含一个无 Secret 的 Cloudflare Worker API，源码位于 `worker/`，用于为客户端提供 JSON 元数据、CORS 和缓存后的 YAML 转发：
+
+| 接口 | 说明 |
+|---|---|
+| `/health` | 健康检查 |
+| `/sources` | 返回全部订阅源及 API 地址 |
+| `/config/<source>` | 返回对应的 YAML 配置 |
+
+Worker 只读 GitHub Pages，不保存订阅内容，也不需要 Secret。部署后可使用 `curl https://<worker-domain>/health` 验证服务，再使用 `/config/vpn` 检查 `content-type` 为 `text/yaml`。
+
 ## 常见故障
 
 ### `Missing or empty repository source file`

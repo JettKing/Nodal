@@ -200,6 +200,7 @@ jobs:
         run: |
           set -Eeuo pipefail
           python3 -m pip install --disable-pip-version-check --no-input 'PyYAML==6.0.2'
+          python3 -m unittest discover --start-directory tests --pattern 'test_*.py' --verbose
           python3 - <<'PY'
           from pathlib import Path
           import collections

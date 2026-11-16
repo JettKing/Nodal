@@ -40,7 +40,11 @@ def parse_link(line: str) -> dict[str, Any] | None:
     query = urllib.parse.parse_qs(parsed.query, keep_blank_values=True)
     username = parsed.username
     host = parsed.hostname
-    port = parsed.port
+    try:
+        port = parsed.port
+    except ValueError:
+        # Ignore malformed links instead of aborting the whole subscription.
+        return None
 
     # Some providers wrap VLESS's `uuid:host:port` payload in URL-safe
     # Base64 after vless://. Decode only the authority; query options remain
@@ -143,7 +147,7 @@ def parse_link(line: str) -> dict[str, Any] | None:
         if ws:
             node["ws-opts"] = ws
     elif network == "grpc":
-        service_name = first(query, "serviceName", "serviceName")
+        service_name = first(query, "serviceName", "service-name")
         if service_name:
             node["grpc-opts"] = {"grpc-service-name": service_name}
     elif network in {"h2", "http"}:
@@ -161,7 +165,9 @@ def parse_link(line: str) -> dict[str, Any] | None:
 
 def decode_source(path: Path) -> list[dict[str, Any]]:
     try:
-        decoded = base64.b64decode(path.read_bytes().strip(), validate=True).decode("utf-8")
+        # Subscription providers commonly wrap Base64 at 64/76 columns.
+        payload = b"".join(path.read_bytes().split())
+        decoded = base64.b64decode(payload, validate=True).decode("utf-8")
     except (binascii.Error, UnicodeDecodeError, ValueError) as exc:
         raise ValueError(f"invalid Base64/UTF-8 source: {path}: {exc}") from exc
     nodes = []
