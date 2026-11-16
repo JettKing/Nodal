@@ -528,8 +528,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 80
-  proxies:
-  - DIRECT
+  proxies: []
 - name: 🔐 VLESS 自动
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -569,16 +568,13 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 80
-  proxies:
-  - DIRECT
+  proxies: []
 - name: 🔁 故障切换
   type: fallback
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - ⚡ Hysteria2 自动
   - 🔐 VLESS 自动
-  - 🚀 Trojan 自动
 - name: 🇯🇵 日本自动
   type: url-test
   url: https://www.gstatic.com/generate_204
