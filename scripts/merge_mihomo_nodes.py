@@ -194,6 +194,102 @@ def node_key(item: dict[str, Any]) -> tuple[Any, ...]:
     )
 
 
+def node_region(item: dict[str, Any]) -> str:
+    text = f"{item.get('name', '')} {item.get('server', '')}".lower()
+    if any(token in text for token in ("香港", "hk", "hongkong", "hong-kong")):
+        return "🇭🇰 香港自动"
+    if any(token in text for token in ("日本", "jp", "japan")):
+        return "🇯🇵 日本自动"
+    if any(token in text for token in ("新加坡", "sg", "singapore")):
+        return "🇸🇬 新加坡自动"
+    if any(token in text for token in ("美国", "us", "usa", "unitedstates", "united-states")):
+        return "🇺🇸 美国自动"
+    return "🌐 其他地区自动"
+
+
+def add_or_replace_group(groups: list[dict[str, Any]], group: dict[str, Any]) -> None:
+    for index, existing in enumerate(groups):
+        if isinstance(existing, dict) and existing.get("name") == group["name"]:
+            groups[index] = group
+            return
+    groups.append(group)
+
+
+def update_strategy_groups(data: dict[str, Any]) -> None:
+    """Build stable protocol/fallback/region groups for Mihomo clients."""
+    proxies = [item for item in data.get("proxies", []) if isinstance(item, dict)]
+    groups = data.get("proxy-groups", [])
+    if not isinstance(groups, list):
+        return
+
+    probe_url = "https://www.gstatic.com/generate_204"
+    for group in groups:
+        if isinstance(group, dict) and group.get("type") in {"url-test", "fallback"}:
+            group["url"] = probe_url
+
+    protocol_groups = {
+        "⚡ Hysteria2 自动": [item["name"] for item in proxies if item.get("type") == "hysteria2"],
+        "🔐 VLESS 自动": [item["name"] for item in proxies if item.get("type") == "vless"],
+        "🚀 Trojan 自动": [item["name"] for item in proxies if item.get("type") == "trojan"],
+    }
+    for name, members in protocol_groups.items():
+        if members:
+            add_or_replace_group(
+                groups,
+                {
+                    "name": name,
+                    "type": "url-test",
+                    "url": probe_url,
+                    "interval": 300,
+                    "tolerance": 80,
+                    "proxies": members,
+                },
+            )
+
+    protocol_group_names = [name for name, members in protocol_groups.items() if members]
+    if protocol_group_names:
+        add_or_replace_group(
+            groups,
+            {
+                "name": "🔁 故障切换",
+                "type": "fallback",
+                "url": probe_url,
+                "interval": 300,
+                "proxies": protocol_group_names,
+            },
+        )
+
+    regions: dict[str, list[str]] = {}
+    for item in proxies:
+        regions.setdefault(node_region(item), []).append(item["name"])
+    region_group_names = []
+    for name, members in regions.items():
+        if not members:
+            continue
+        region_group_names.append(name)
+        add_or_replace_group(
+            groups,
+            {
+                "name": name,
+                "type": "url-test",
+                "url": probe_url,
+                "interval": 300,
+                "tolerance": 80,
+                "proxies": members,
+            },
+        )
+
+    preferred = next(
+        (group for group in groups if isinstance(group, dict) and group.get("name") == "🚀 节点选择"),
+        None,
+    )
+    if preferred:
+        refs = preferred.setdefault("proxies", [])
+        for name in ["🔁 故障切换", *protocol_group_names, *region_group_names]:
+            if name not in refs:
+                refs.insert(0, name)
+
+
 def merge(source: Path, config: Path) -> tuple[int, int]:
     data = yaml.safe_load(config.read_text(encoding="utf-8"))
     if not isinstance(data, dict):
@@ -236,6 +332,8 @@ def merge(source: Path, config: Path) -> tuple[int, int]:
             for name in added_names:
                 if name not in refs:
                     refs.append(name)
+
+    update_strategy_groups(data)
 
     config.write_text(
         yaml.safe_dump(data, allow_unicode=True, sort_keys=False, default_flow_style=False),

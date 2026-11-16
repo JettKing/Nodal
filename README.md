@@ -137,6 +137,9 @@ push:
 - 先使用固定版本的 `subconverter` 生成传统 Clash 配置。
 - 再从原始订阅源解析 Hysteria2/VLESS URI，并按 Mihomo 字段合并回生成 YAML。
 - Hysteria2/VLESS 节点会加入 `🚀 节点选择` 和 `♻️ 自动选择` 代理组。
+- 自动测速和故障切换使用 HTTPS 探测地址。
+- 生成 Hysteria2、VLESS、Trojan 专用自动测速组，以及 `🔁 故障切换` 组。
+- 按香港、日本、新加坡、美国和其他地区生成自动测速组。
 - UDP：开启
 - TCP Fast Open：开启
 - 插入额外配置：关闭
