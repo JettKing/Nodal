@@ -199,21 +199,21 @@ https://jettking.github.io/Nodal/NEW001.yaml
 
 如果要更新某个源中的节点，只需要替换对应的无扩展名源文件。
 
-例如更新 `XPH007`：
+例如更新 `NEW001`：
 
 ```bash
-# 用新的 Base64/Base64URL 内容替换 XPH007
-vim XPH007
+# 用新的 Base64/Base64URL 内容替换 NEW001
+vim NEW001
 
-git add XPH007
-git commit -m "chore: update XPH007 nodes"
+git add NEW001
+git commit -m "chore: update NEW001 nodes"
 git push origin main
 ```
 
 GitHub Actions 会执行：
 
 ```text
-读取 XPH007
+读取 NEW001
   ↓
 解码和检查源内容
   ↓
@@ -227,12 +227,12 @@ PyYAML 结构检查
   ↓
 Mihomo 内核 -t 检查
   ↓
-提交 XPH007.yaml
+提交 NEW001.yaml
   ↓
 GitHub Pages 发布
 ```
 
-如果转换或校验失败，工作流会停止，并保留上一次有效的 `XPH007.yaml`，不会用错误内容覆盖线上配置。
+如果转换或校验失败，工作流会停止，并保留上一次有效的 `NEW001.yaml`，不会用错误内容覆盖线上配置。
 
 > 定时任务只会重新处理仓库中已有的源文件。它不会自动访问服务商 URL 下载最新源内容，除非你手动更新源文件或另外实现外部订阅拉取逻辑。
 
@@ -241,15 +241,15 @@ GitHub Pages 发布
 删除根目录中的源文件即可：
 
 ```bash
-git rm OLD001
-git commit -m "chore: remove OLD001 subscription"
+git rm NEW001
+git commit -m "chore: remove NEW001 subscription"
 git push origin main
 ```
 
 下一次工作流会在所有剩余源都成功转换和校验后删除：
 
 ```text
-OLD001.yaml
+NEW001.yaml
 ```
 
 如果其他源转换失败，清理步骤不会执行，旧的 YAML 会被保留。
