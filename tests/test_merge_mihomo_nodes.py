@@ -64,6 +64,29 @@ class ParseLinkTests(unittest.TestCase):
     def test_malformed_port_is_skipped(self):
         self.assertIsNone(MODULE.parse_link("vless://uuid@example.com:not-a-port#bad"))
 
+    def test_fixed_strategy_groups_include_empty_protocol_and_region_groups(self):
+        data = {
+            "proxies": [
+                {"name": "US 01", "type": "vless", "server": "us.example.com"}
+            ],
+            "proxy-groups": [{"name": "🚀 节点选择", "type": "select", "proxies": []}],
+        }
+        MODULE.update_strategy_groups(data)
+        groups = {group["name"]: group for group in data["proxy-groups"]}
+        expected = {
+            "⚡ Hysteria2 自动",
+            "🔐 VLESS 自动",
+            "🚀 Trojan 自动",
+            "🇯🇵 日本自动",
+            "🇭🇰 香港自动",
+            "🇸🇬 新加坡自动",
+            "🇺🇸 美国自动",
+            "🌐 其他地区自动",
+        }
+        self.assertTrue(expected.issubset(groups))
+        self.assertEqual(groups["🌐 其他地区自动"]["proxies"], ["DIRECT"])
+        self.assertEqual(groups["⚡ Hysteria2 自动"]["proxies"], ["DIRECT"])
+
 
 class MergeTests(unittest.TestCase):
     def test_wrapped_base64_and_duplicate_names(self):
