@@ -287,6 +287,13 @@ jobs:
               raise SystemExit(1)
           PY
 
+      - name: Remove stale generated YAML files
+        run: |
+          set -Eeuo pipefail
+          # Only run after every discovered source and generated config passed
+          # validation, so a temporary upstream failure cannot delete old YAML.
+          python3 scripts/prune_generated_configs.py --sources "$SOURCES"
+
       - name: Commit and push validated YAML
         run: |
           set -Eeuo pipefail

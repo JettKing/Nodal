@@ -19,6 +19,12 @@ DISCOVER = importlib.util.module_from_spec(DISCOVER_SPEC)
 assert DISCOVER_SPEC.loader is not None
 DISCOVER_SPEC.loader.exec_module(DISCOVER)
 
+PRUNE_SCRIPT = Path(__file__).parents[1] / "scripts" / "prune_generated_configs.py"
+PRUNE_SPEC = importlib.util.spec_from_file_location("prune_generated_configs", PRUNE_SCRIPT)
+PRUNE = importlib.util.module_from_spec(PRUNE_SPEC)
+assert PRUNE_SPEC.loader is not None
+PRUNE_SPEC.loader.exec_module(PRUNE)
+
 
 class ParseLinkTests(unittest.TestCase):
     def test_hysteria2_query_options_are_mapped(self):
@@ -93,6 +99,19 @@ class DiscoverSourceTests(unittest.TestCase):
             (root / ".hidden").write_bytes(payload)
             (root / "scripts").mkdir()
             self.assertEqual(DISCOVER.discover(root), ["NEW001"])
+
+
+class PruneGeneratedConfigTests(unittest.TestCase):
+    def test_removes_only_yaml_without_a_current_source(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "KEEP.yaml").write_text("keep", encoding="utf-8")
+            (root / "STALE.yaml").write_text("stale", encoding="utf-8")
+            (root / "notes.txt").write_text("keep", encoding="utf-8")
+            removed = PRUNE.prune(root, {"KEEP"})
+            self.assertEqual(removed, ["STALE.yaml"])
+            self.assertTrue((root / "KEEP.yaml").exists())
+            self.assertTrue((root / "notes.txt").exists())
 
 
 if __name__ == "__main__":

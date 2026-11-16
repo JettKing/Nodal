@@ -35,8 +35,9 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 │   └── workflows/
 │       └── convert.yml       # GitHub Actions 自动转换工作流
 ├── scripts/
-│   ├── discover_sources.py    # 自动发现合法订阅源
-│   └── merge_mihomo_nodes.py  # 补回 Hysteria2/VLESS 的 Mihomo 节点
+│   ├── discover_sources.py       # 自动发现合法订阅源
+│   ├── merge_mihomo_nodes.py     # 补回 Hysteria2/VLESS 的 Mihomo 节点
+│   └── prune_generated_configs.py # 清理已删除源对应的 YAML
 ├── FYH002                  # Base64 编码的订阅源示例
 ├── HMQ006                  # Base64 编码的订阅源示例
 ├── HYL001                  # Base64 编码的订阅源示例
@@ -65,7 +66,7 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 - 文件内容是 Base64 编码的 UTF-8 文本；
 - 解码后至少包含一个受支持的代理 URI，例如 `vless://`、`hysteria2://`、`trojan://` 或 `ss://`。
 
-例如新增根目录文件 `ABC001`，提交后工作流会自动生成 `ABC001.yaml`，无需修改工作流中的源列表。无效 Base64、普通 README 文本和带扩展名文件会被忽略。删除源文件不会自动删除已有的 `.yaml`，以避免订阅源暂时失效时误删可用配置。
+例如新增根目录文件 `ABC001`，提交后工作流会自动生成 `ABC001.yaml`，无需修改工作流中的源列表。删除根目录源文件后，下一次所有剩余源都转换并校验成功时，工作流会自动删除对应的旧 `ABC001.yaml`。无效 Base64、普通 README 文本和带扩展名文件会被忽略；如果任一剩余源转换失败，本轮不会清理旧 YAML。
 
 ### 不要提交未经授权的凭据
 
