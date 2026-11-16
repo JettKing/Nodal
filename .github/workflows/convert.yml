@@ -329,6 +329,15 @@ jobs:
               if duplicate_group_names:
                   print(f'ERROR {source}: duplicate proxy-group names: {duplicate_group_names}')
                   failed = True
+              for group in groups or []:
+                  if not isinstance(group, dict):
+                      continue
+                  if group.get('type') in {'select', 'url-test', 'fallback', 'load-balance'}:
+                      proxies_ref = group.get('proxies')
+                      use_ref = group.get('use')
+                      if not proxies_ref and not use_ref:
+                          print(f"ERROR {source}: proxy group {group.get('name')!r} has neither proxies nor use")
+                          failed = True
               known = set(proxy_names) | group_names | {'DIRECT', 'REJECT'}
               missing_groups = set()
               for group in groups or []:
