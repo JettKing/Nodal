@@ -134,6 +134,55 @@ class MergeTests(unittest.TestCase):
         )
         self.assertTrue(all(group.get("proxies") for group in data["proxy-groups"] if group.get("type") == "url-test"))
 
+    def test_strategy_groups_use_stable_order(self):
+        source_text = "\n".join(
+            [
+                "vless://uuid@example.com:443#VLESS",
+                "hysteria2://password@example.net:443#Hysteria2",
+            ]
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "source"
+            config = root / "config.yaml"
+            source.write_bytes(base64.b64encode(source_text.encode()))
+            config.write_text(
+                yaml.safe_dump(
+                    {
+                        "proxies": [],
+                        "proxy-groups": [
+                            {"name": "🌍 国外媒体", "type": "select", "proxies": ["🚀 节点选择"]},
+                            {"name": "🚀 节点选择", "type": "select", "proxies": []},
+                            {"name": "♻️ 自动选择", "type": "url-test", "proxies": []},
+                        ],
+                        "rules": ["MATCH,🚀 节点选择"],
+                    },
+                    allow_unicode=True,
+                    sort_keys=False,
+                ),
+                encoding="utf-8",
+            )
+            MODULE.merge(source, config)
+            data = yaml.safe_load(config.read_text(encoding="utf-8"))
+        names = [group["name"] for group in data["proxy-groups"]]
+        self.assertEqual(names[:6], [
+            "🚀 节点选择",
+            "♻️ 自动选择",
+            "🔁 故障切换",
+            "⚡ Hysteria2 自动",
+            "🔐 VLESS 自动",
+            "🌐 其他地区自动",
+        ])
+        self.assertEqual(names[6], "🌍 国外媒体")
+        preferred = next(group for group in data["proxy-groups"] if group["name"] == "🚀 节点选择")
+        self.assertEqual(preferred["proxies"][:5], [
+            "♻️ 自动选择",
+            "🔁 故障切换",
+            "⚡ Hysteria2 自动",
+            "🔐 VLESS 自动",
+            "🌐 其他地区自动",
+        ])
+
 
 class DiscoverSourceTests(unittest.TestCase):
     def test_discovers_new_root_source_and_ignores_invalid_files(self):

@@ -253,6 +253,42 @@ def add_or_replace_group(groups: list[dict[str, Any]], group: dict[str, Any]) ->
     groups.append(group)
 
 
+STRATEGY_GROUP_ORDER = (
+    "🚀 节点选择",
+    "♻️ 自动选择",
+    "🔁 故障切换",
+    "⚡ Hysteria2 自动",
+    "🔐 VLESS 自动",
+    "🚀 Trojan 自动",
+    "🇭🇰 香港自动",
+    "🇯🇵 日本自动",
+    "🇸🇬 新加坡自动",
+    "🇺🇸 美国自动",
+    "🌐 其他地区自动",
+    "🌍 国外媒体",
+    "📲 电报信息",
+    "Ⓜ️ 微软服务",
+    "🍎 苹果服务",
+    "📢 谷歌FCM",
+    "🎯 全球直连",
+    "🛑 全球拦截",
+    "🍃 应用净化",
+    "🐟 漏网之鱼",
+)
+STRATEGY_GROUP_ORDER_INDEX = {name: index for index, name in enumerate(STRATEGY_GROUP_ORDER)}
+
+
+def reorder_strategy_groups(groups: list[dict[str, Any]]) -> None:
+    """Put known groups in a stable UI order and retain custom groups last."""
+    original_positions = {id(group): index for index, group in enumerate(groups)}
+    groups.sort(
+        key=lambda group: (
+            STRATEGY_GROUP_ORDER_INDEX.get(group.get("name"), len(STRATEGY_GROUP_ORDER)),
+            original_positions[id(group)],
+        )
+    )
+
+
 def update_strategy_groups(data: dict[str, Any]) -> None:
     """Build stable protocol/fallback/region groups for Mihomo clients."""
     proxies = [item for item in data.get("proxies", []) if isinstance(item, dict)]
@@ -313,7 +349,8 @@ def update_strategy_groups(data: dict[str, Any]) -> None:
     for item in proxies:
         regions.setdefault(node_region(item), []).append(item["name"])
     region_group_names = []
-    for name, members in regions.items():
+    for name in STRATEGY_GROUP_ORDER:
+        members = regions.get(name, [])
         if not members:
             continue
         region_group_names.append(name)
@@ -337,9 +374,32 @@ def update_strategy_groups(data: dict[str, Any]) -> None:
         refs = preferred.setdefault("proxies", [])
         stale_protocol_groups = set(protocol_groups) - set(protocol_group_names)
         refs[:] = [name for name in refs if name not in stale_protocol_groups]
-        for name in ["🔁 故障切换", *protocol_group_names, *region_group_names]:
+        existing_group_names = {
+            group.get("name") for group in groups
+            if isinstance(group, dict) and group.get("name")
+        }
+        additions = [
+            name for name in STRATEGY_GROUP_ORDER
+            if name in {
+                "♻️ 自动选择",
+                "🔁 故障切换",
+                *protocol_group_names,
+                *region_group_names,
+            } and name in existing_group_names
+        ]
+        for name in additions:
             if name not in refs:
-                refs.insert(0, name)
+                refs.append(name)
+        ref_positions = {name: index for index, name in enumerate(refs)}
+        refs[:] = sorted(
+            refs,
+            key=lambda name: (
+                STRATEGY_GROUP_ORDER_INDEX.get(name, len(STRATEGY_GROUP_ORDER)),
+                ref_positions[name],
+            ),
+        )
+
+    reorder_strategy_groups(groups)
 
 
 def merge(source: Path, config: Path) -> tuple[int, int]:
