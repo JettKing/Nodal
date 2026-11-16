@@ -155,6 +155,7 @@ jobs:
             rm -f "$temporary_file"
 
             if ! curl --fail-with-body --show-error --silent --location \
+                --connect-timeout 15 --max-time 180 \
                 --retry 3 --retry-delay 5 \
                 --get 'http://127.0.0.1:25500/sub' \
                 --data-urlencode 'target=clash' \
@@ -165,9 +166,9 @@ jobs:
                 --data-urlencode 'scv=false' \
                 --data-urlencode 'insert=false' \
                 --data-urlencode "config=${ACL4SSR_CONFIG_URL}" \
-                --output "$temporary_file"; then
-              echo "subconverter returned an HTTP/client error for ${source}." >&2
-              sed -n '1,5p' "$temporary_file" >&2 || true
+                --output "$temporary_file" \
+                2>"$RUNNER_TEMP/${source}-conversion-error"; then
+              echo "subconverter returned an HTTP/client error for ${source}; response body was not logged." >&2
               rm -f "$temporary_file"
               exit 1
             fi
@@ -176,7 +177,6 @@ jobs:
             if grep -Fqi 'No nodes were found' "$temporary_file" || \
               head -n 1 "$temporary_file" | grep -Eiq '^(error|bad gateway)(:|$)'; then
               echo "Conversion failed for ${source}; previous YAML was kept." >&2
-              sed -n '1,5p' "$temporary_file" >&2 || true
               rm -f "$temporary_file"
               exit 1
             fi
@@ -288,4 +288,5 @@ jobs:
           set +e
           kill "${SUBCONVERTER_PID:-}" "${SOURCE_SERVER_PID:-}" 2>/dev/null || true
           rm -rf "$RUNNER_TEMP/subconverter.log" "$RUNNER_TEMP/source-server.log" \
-            "$RUNNER_TEMP/base64-error" subconverter.tar.gz subconverter
+            "$RUNNER_TEMP/base64-error" "$RUNNER_TEMP"/*-conversion-error \
+            subconverter.tar.gz subconverter
