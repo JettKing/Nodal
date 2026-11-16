@@ -261,6 +261,19 @@ def update_strategy_groups(data: dict[str, Any]) -> None:
         "🔐 VLESS 自动": [item["name"] for item in proxies if item.get("type") == "vless"],
         "🚀 Trojan 自动": [item["name"] for item in proxies if item.get("type") == "trojan"],
     }
+    protocol_group_names = [name for name, members in protocol_groups.items() if members]
+    # A legacy converter/template may leave an empty protocol group behind.
+    # Mihomo rejects url-test groups without `proxies`, so remove stale groups
+    # before adding the groups that are actually supported by this source.
+    groups[:] = [
+        group
+        for group in groups
+        if not (
+            isinstance(group, dict)
+            and group.get("name") in protocol_groups
+            and not protocol_groups[group.get("name")]
+        )
+    ]
     for name, members in protocol_groups.items():
         if members:
             add_or_replace_group(
@@ -275,7 +288,6 @@ def update_strategy_groups(data: dict[str, Any]) -> None:
                 },
             )
 
-    protocol_group_names = [name for name, members in protocol_groups.items() if members]
     if protocol_group_names:
         add_or_replace_group(
             groups,
@@ -314,6 +326,8 @@ def update_strategy_groups(data: dict[str, Any]) -> None:
     )
     if preferred:
         refs = preferred.setdefault("proxies", [])
+        stale_protocol_groups = set(protocol_groups) - set(protocol_group_names)
+        refs[:] = [name for name in refs if name not in stale_protocol_groups]
         for name in ["🔁 故障切换", *protocol_group_names, *region_group_names]:
             if name not in refs:
                 refs.insert(0, name)
