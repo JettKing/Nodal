@@ -30,7 +30,12 @@ SAFE_SOURCE_NAME = re.compile(r"^[A-Za-z0-9_-]+$")
 
 def decode_source(path: Path) -> str:
     payload = b"".join(path.read_bytes().split())
-    return base64.b64decode(payload, validate=True).decode("utf-8")
+    padding = b"=" * ((4 - len(payload) % 4) % 4)
+    try:
+        decoded = base64.b64decode(payload + padding, altchars=b"-_", validate=True)
+    except binascii.Error as exc:
+        raise ValueError(f"invalid Base64/Base64URL payload: {path}") from exc
+    return decoded.decode("utf-8")
 
 
 def is_valid_source(path: Path) -> bool:

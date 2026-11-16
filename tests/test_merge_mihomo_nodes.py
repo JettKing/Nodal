@@ -99,6 +99,41 @@ class MergeTests(unittest.TestCase):
         self.assertEqual([p["name"] for p in data["proxies"]], ["same", "same 2"])
         self.assertIn("same 2", data["proxy-groups"][0]["proxies"])
 
+    def test_single_vless_source_removes_empty_protocol_groups(self):
+        source_text = "vless://uuid@example.com:443#only-vless\n"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "source"
+            config = root / "config.yaml"
+            source.write_bytes(base64.urlsafe_b64encode(source_text.encode()).rstrip(b"="))
+            config.write_text(
+                yaml.safe_dump(
+                    {
+                        "proxies": [],
+                        "proxy-groups": [
+                            {"name": "🚀 节点选择", "type": "select", "proxies": []},
+                            {"name": "♻️ 自动选择", "type": "url-test", "proxies": []},
+                            {"name": "⚡ Hysteria2 自动", "type": "url-test", "proxies": []},
+                            {"name": "🚀 Trojan 自动", "type": "url-test", "proxies": []},
+                        ],
+                        "rules": ["MATCH,🚀 节点选择"],
+                    },
+                    allow_unicode=True,
+                    sort_keys=False,
+                ),
+                encoding="utf-8",
+            )
+            MODULE.merge(source, config)
+            data = yaml.safe_load(config.read_text(encoding="utf-8"))
+        names = {group["name"] for group in data["proxy-groups"]}
+        self.assertNotIn("⚡ Hysteria2 自动", names)
+        self.assertNotIn("🚀 Trojan 自动", names)
+        self.assertEqual(
+            next(group["proxies"] for group in data["proxy-groups"] if group["name"] == "🔐 VLESS 自动"),
+            ["only-vless"],
+        )
+        self.assertTrue(all(group.get("proxies") for group in data["proxy-groups"] if group.get("type") == "url-test"))
+
 
 class DiscoverSourceTests(unittest.TestCase):
     def test_discovers_new_root_source_and_ignores_invalid_files(self):
@@ -112,6 +147,14 @@ class DiscoverSourceTests(unittest.TestCase):
             (root / ".hidden").write_bytes(payload)
             (root / "scripts").mkdir()
             self.assertEqual(DISCOVER.discover(root), ["NEW001"])
+
+    def test_discovers_unpadded_base64url_source(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            text = "hysteria2://pass@example.com:443?obfs-password=_-#hy2\n"
+            encoded = base64.urlsafe_b64encode(text.encode()).rstrip(b"=")
+            (root / "URLSAFE").write_bytes(encoded)
+            self.assertEqual(DISCOVER.discover(root), ["URLSAFE"])
 
 
 class PruneGeneratedConfigTests(unittest.TestCase):

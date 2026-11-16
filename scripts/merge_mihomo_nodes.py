@@ -21,6 +21,16 @@ UUID_PATTERN = re.compile(
 )
 
 
+def decode_base64_payload(payload: bytes) -> bytes:
+    """Decode standard or URL-safe Base64, with optional missing padding."""
+    payload = b"".join(payload.split())
+    padded = payload + b"=" * ((4 - len(payload) % 4) % 4)
+    try:
+        return base64.b64decode(padded, altchars=b"-_", validate=True)
+    except binascii.Error as exc:
+        raise ValueError("invalid Base64/Base64URL payload") from exc
+
+
 def first(query: dict[str, list[str]], *keys: str) -> str | None:
     for key in keys:
         values = query.get(key)
@@ -189,8 +199,7 @@ def parse_link(line: str) -> dict[str, Any] | None:
 def decode_source(path: Path) -> list[dict[str, Any]]:
     try:
         # Subscription providers commonly wrap Base64 at 64/76 columns.
-        payload = b"".join(path.read_bytes().split())
-        decoded = base64.b64decode(payload, validate=True).decode("utf-8")
+        decoded = decode_base64_payload(path.read_bytes()).decode("utf-8")
     except (binascii.Error, UnicodeDecodeError, ValueError) as exc:
         raise ValueError(f"invalid Base64/UTF-8 source: {path}: {exc}") from exc
     nodes = []

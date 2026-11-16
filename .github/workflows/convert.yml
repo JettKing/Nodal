@@ -21,6 +21,9 @@ env:
   SUBCONVERTER_VERSION: 'v0.9.0'
   SUBCONVERTER_ASSET: 'subconverter_linux64.tar.gz'
   SUBCONVERTER_SHA256: '884a6d1168267eba076fcdd5171215bacf98c17948ab526e4cbbdcad5f7a0217'
+  MIHOMO_VERSION: 'v1.19.34'
+  MIHOMO_ASSET: 'mihomo-linux-amd64-v1-v1.19.34.gz'
+  MIHOMO_SHA256: '0c07340a01408d033dda4088ea2a4c1e4d82aeed7b2f84f7c046e93b6ff3290c'
   ACL4SSR_CONFIG_URL: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/575637df38884575bfa523e95c17d0ee3be1676c/Clash/config/ACL4SSR_Online.ini'
 
 jobs:
@@ -47,9 +50,9 @@ jobs:
         run: |
           set -Eeuo pipefail
           python3 - <<'PY'
-          import base64
           import os
           from pathlib import Path
+          from scripts.discover_sources import decode_source
 
           protocols = (
               'vmess://', 'vless://', 'trojan://', 'ss://', 'ssr://',
@@ -60,10 +63,9 @@ jobs:
           for source in os.environ['SOURCES'].split():
               path = Path(source)
               try:
-                  payload = b''.join(path.read_bytes().split())
-                  text = base64.b64decode(payload, validate=True).decode('utf-8')
+                  text = decode_source(path)
               except Exception as exc:
-                  raise SystemExit(f'Invalid Base64 or UTF-8 in {source}: {exc}')
+                  raise SystemExit(f'Invalid Base64/Base64URL or UTF-8 in {source}: {exc}')
               lines = [line.strip() for line in text.splitlines() if line.strip()]
               recognized = sum(line.lower().startswith(protocol) for line in lines for protocol in protocols)
               if not lines or recognized == 0:
@@ -124,6 +126,22 @@ jobs:
             exit 1
           fi
 
+      - name: Download pinned Mihomo
+        env:
+          VERSION: ${{ env.MIHOMO_VERSION }}
+          ASSET: ${{ env.MIHOMO_ASSET }}
+        run: |
+          set -Eeuo pipefail
+          url="https://github.com/MetaCubeX/mihomo/releases/download/${VERSION}/${ASSET}"
+          curl --fail --show-error --silent --location --retry 3 --retry-delay 5 \
+            "$url" --output "$RUNNER_TEMP/mihomo.gz"
+          echo "${{ env.MIHOMO_SHA256 }}  $RUNNER_TEMP/mihomo.gz" | sha256sum --check --strict -
+          gzip --decompress --stdout "$RUNNER_TEMP/mihomo.gz" > "$RUNNER_TEMP/mihomo-bin"
+          chmod +x "$RUNNER_TEMP/mihomo-bin"
+          mkdir -p "$RUNNER_TEMP/mihomo-data"
+          "$RUNNER_TEMP/mihomo-bin" -v
+          echo "MIHOMO_BIN=$RUNNER_TEMP/mihomo-bin" >> "$GITHUB_ENV"
+
       - name: Convert subscriptions from repository files
         run: |
           set -Eeuo pipefail
@@ -141,8 +159,9 @@ jobs:
             output_file="${source}.yaml"
             temporary_file="${output_file}.tmp"
 
-            if ! base64 --decode "$input_file" >/dev/null 2>"$RUNNER_TEMP/base64-error"; then
-              echo "Invalid Base64 in repository source file: ${source}" >&2
+            if ! python3 -c 'import sys; from pathlib import Path; from scripts.discover_sources import decode_source; decode_source(Path(sys.argv[1]))' \
+                "$input_file" >/dev/null 2>"$RUNNER_TEMP/base64-error"; then
+              echo "Invalid Base64/Base64URL in repository source file: ${source}" >&2
               rm -f "$RUNNER_TEMP/base64-error"
               exit 1
             fi
@@ -193,9 +212,9 @@ jobs:
               )"
               if [[ "$modern_node_count" =~ ^[1-9][0-9]*$ ]]; then
                 echo "${source}: ${fallback_reason}; using Mihomo fallback for ${modern_node_count} modern nodes."
-                template_file="$(find "$source_dir" -maxdepth 1 -type f -name '*.yaml' ! -name "${source}.yaml" -print | sort | head -n 1 || true)"
-                if [[ -z "$template_file" ]]; then
-                  echo "No complete generated YAML template is available for ${source}; refusing to create a simplified configuration." >&2
+                template_file="$source_dir/templates/mihomo-base.yaml"
+                if [[ ! -s "$template_file" ]]; then
+                  echo "Fixed Mihomo fallback template is missing: ${template_file}" >&2
                   rm -f "$temporary_file"
                   exit 1
                 fi
@@ -258,6 +277,7 @@ jobs:
             grep -q '^proxies:' "$temporary_file"
             grep -q '^proxy-groups:' "$temporary_file"
             grep -q '^rules:' "$temporary_file"
+            "$MIHOMO_BIN" -t -d "$RUNNER_TEMP/mihomo-data" -f "$temporary_file"
             mv -f "$temporary_file" "$output_file"
           done
 

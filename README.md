@@ -20,10 +20,11 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 2. 检查根目录中的订阅源文件是否存在、Base64/UTF-8 有效且包含支持的代理 URI。
 3. 通过 Runner 本机地址将仓库文件提供给 `subconverter`。
 4. 使用固定版本并经过 SHA-256 校验的 `subconverter` 转换为 Clash YAML。
-5. 检查生成结果是否有效。
-6. 检查代理名称、代理组引用和规则目标。
-7. 转换和校验全部成功后，提交并推送对应的 `*.yaml` 文件。
-8. 删除 Runner 上的转换程序和日志。
+5. 使用固定版本并经过 SHA-256 校验的 Mihomo 内核执行配置级 `-t` 校验。
+6. 检查生成结果是否有效。
+7. 检查代理名称、代理组引用、空策略组和规则目标。
+8. 转换和校验全部成功后，提交并推送对应的 `*.yaml` 文件。
+9. 删除 Runner 上的转换程序、内核和日志。
 
 如果任一订阅缺失、转换失败或校验失败，工作流会停止，并且不会用错误内容覆盖已有 YAML 文件。
 
@@ -38,12 +39,15 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 │   ├── discover_sources.py       # 自动发现合法订阅源
 │   ├── merge_mihomo_nodes.py     # 补回 Hysteria2/VLESS 的 Mihomo 节点
 │   └── prune_generated_configs.py # 清理已删除源对应的 YAML
+├── templates/
+│   └── mihomo-base.yaml        # 固定的 Mihomo 回退模板
 ├── FYH002                  # Base64 编码的订阅源示例
 ├── HMQ006                  # Base64 编码的订阅源示例
 ├── HYL001                  # Base64 编码的订阅源示例
 ├── LXS004                  # Base64 编码的订阅源示例
 ├── WXQ005                  # Base64 编码的订阅源示例
 ├── WXY003                  # Base64 编码的订阅源示例
+├── XPH007                  # Base64 编码的订阅源示例
 ├── vpn                     # Base64 编码的订阅源示例
 ├── FYH002.yaml             # 生成的 Clash 配置
 ├── HMQ006.yaml
@@ -51,6 +55,7 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 ├── LXS004.yaml
 ├── WXQ005.yaml
 ├── WXY003.yaml
+├── XPH007.yaml
 ├── vpn.yaml
 └── README.md
 ```
@@ -63,7 +68,7 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 
 - 文件没有扩展名，且文件名只包含字母、数字、下划线或短横线；
 - 文件不是隐藏文件、目录或脚本文件；
-- 文件内容是 Base64 编码的 UTF-8 文本；
+- 文件内容是标准 Base64 或 Base64URL 编码的 UTF-8 文本，可省略末尾 padding；
 - 解码后至少包含一个受支持的代理 URI，例如 `vless://`、`hysteria2://`、`trojan://` 或 `ss://`。
 
 例如新增根目录文件 `NEW001`，提交后工作流会自动生成 `NEW001.yaml`，无需修改工作流中的源列表。删除根目录源文件后，下一次所有剩余源都转换并校验成功时，工作流会自动删除对应的旧 `NEW001.yaml`。无效 Base64、普通 README 文本和带扩展名文件会被忽略；如果任一剩余源转换失败，本轮不会清理旧 YAML。
@@ -137,6 +142,9 @@ push:
 - 自动测速和故障切换使用 HTTPS 探测地址。
 - 生成 Hysteria2、VLESS、Trojan 专用自动测速组，以及 `🔁 故障切换` 组。
 - 按香港、日本、新加坡、美国和其他地区生成自动测速组。
+- 仅为实际存在的协议生成专用策略组，不保留空的协议组。
+- `subconverter` 失败时使用固定的 `templates/mihomo-base.yaml`，不再随机选择其他订阅 YAML。
+- 每个生成文件都会通过固定版本 Mihomo 的内核级配置校验。
 - UDP：开启
 - TCP Fast Open：开启
 - 插入额外配置：关闭
@@ -158,6 +166,8 @@ push:
 - 代理名称不能重复。
 - 代理组引用必须存在。
 - 分流规则目标必须存在。
+- `select`、`url-test`、`fallback` 和 `load-balance` 策略组必须包含有效的 `proxies` 或 `use`。
+- Mihomo 内核 `-t` 配置测试必须通过。
 
 因此，当某个上游订阅暂时失效时，工作流会失败并保留上一次有效的 YAML，而不会把错误文本提交进仓库。
 
@@ -203,10 +213,10 @@ for path in sorted(Path('.').glob('*.yaml')):
 PY
 ```
 
-检查订阅源是否可以被 Base64 解码：
+检查订阅源是否可以被 Base64/Base64URL 解码：
 
 ```bash
-base64 --decode FYH002 | head
+python3 -c 'from pathlib import Path; from scripts.discover_sources import decode_source; print(decode_source(Path("FYH002")).splitlines()[0])'
 ```
 
 不要将解码后的输出粘贴到 Issue、Pull Request、日志或聊天中。
