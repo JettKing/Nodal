@@ -13,6 +13,12 @@ MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
 SPEC.loader.exec_module(MODULE)
 
+DISCOVER_SCRIPT = Path(__file__).parents[1] / "scripts" / "discover_sources.py"
+DISCOVER_SPEC = importlib.util.spec_from_file_location("discover_sources", DISCOVER_SCRIPT)
+DISCOVER = importlib.util.module_from_spec(DISCOVER_SPEC)
+assert DISCOVER_SPEC.loader is not None
+DISCOVER_SPEC.loader.exec_module(DISCOVER)
+
 
 class ParseLinkTests(unittest.TestCase):
     def test_hysteria2_query_options_are_mapped(self):
@@ -73,6 +79,20 @@ class MergeTests(unittest.TestCase):
         self.assertEqual((added, total), (2, 2))
         self.assertEqual([p["name"] for p in data["proxies"]], ["same", "same 2"])
         self.assertIn("same 2", data["proxy-groups"][0]["proxies"])
+
+
+class DiscoverSourceTests(unittest.TestCase):
+    def test_discovers_new_root_source_and_ignores_invalid_files(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            payload = base64.b64encode(b"vless://uuid@example.com:443#new\n")
+            (root / "NEW001").write_bytes(payload)
+            (root / "README").write_text("not a subscription", encoding="utf-8")
+            (root / "with space").write_bytes(payload)
+            (root / "existing.yaml").write_bytes(payload)
+            (root / ".hidden").write_bytes(payload)
+            (root / "scripts").mkdir()
+            self.assertEqual(DISCOVER.discover(root), ["NEW001"])
 
 
 if __name__ == "__main__":

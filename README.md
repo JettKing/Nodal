@@ -35,7 +35,8 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 │   └── workflows/
 │       └── convert.yml       # GitHub Actions 自动转换工作流
 ├── scripts/
-│   └── merge_mihomo_nodes.py # 补回 Hysteria2/VLESS 的 Mihomo 节点
+│   ├── discover_sources.py    # 自动发现合法订阅源
+│   └── merge_mihomo_nodes.py  # 补回 Hysteria2/VLESS 的 Mihomo 节点
 ├── FYH002                  # Base64 编码的订阅源示例
 ├── HMQ006                  # Base64 编码的订阅源示例
 ├── HYL001                  # Base64 编码的订阅源示例
@@ -57,19 +58,14 @@ Nodal 是一个基于 GitHub Actions 的 Clash 配置自动转换项目。
 
 ## 配置订阅源文件
 
-在仓库根目录保留以下 7 个文件：
+工作流会自动扫描仓库根目录。只要新增一个满足以下条件的文件，就会在下一次工作流运行时生成同名的 `.yaml`：
 
-```text
-HMQ006
-HYL001
-LXS004
-FYH002
-WXQ005
-WXY003
-vpn
-```
+- 文件没有扩展名，且文件名只包含字母、数字、下划线或短横线；
+- 文件不是隐藏文件、目录或脚本文件；
+- 文件内容是 Base64 编码的 UTF-8 文本；
+- 解码后至少包含一个受支持的代理 URI，例如 `vless://`、`hysteria2://`、`trojan://` 或 `ss://`。
 
-文件名必须完全匹配，其中 VPN 源文件名称为小写 `vpn`。如果使用自己的订阅源，请确保文件内容是 `subconverter` 支持的格式，并保持 Base64 编码完整。
+例如新增根目录文件 `ABC001`，提交后工作流会自动生成 `ABC001.yaml`，无需修改工作流中的源列表。无效 Base64、普通 README 文本和带扩展名文件会被忽略。删除源文件不会自动删除已有的 `.yaml`，以避免订阅源暂时失效时误删可用配置。
 
 ### 不要提交未经授权的凭据
 
@@ -120,7 +116,7 @@ push:
 
 ## 生成的配置
 
-每个订阅源文件对应一个生成的 YAML 文件：
+每个被自动发现的订阅源文件对应一个生成的 YAML 文件，例如：
 
 | 订阅源文件 | 输出文件 |
 |---|---|
