@@ -218,6 +218,7 @@ proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
+  - 🌐 其他地区自动
   - 🇺🇸 美国自动
   - 🇸🇬 新加坡自动
   - 🇭🇰 香港自动
@@ -489,6 +490,13 @@ proxy-groups:
   - 🇺🇸【北美洲】美国01原生丨直连【2x】
   - 🇺🇸【北美洲】美国02原生丨直连【2x】
   - 🇺🇸【北美洲】美国03原生丨直连【2x】
+- name: 🌐 其他地区自动
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  proxies:
+  - DIRECT
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
