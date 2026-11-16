@@ -406,9 +406,7 @@ proxy-groups:
   - 🇸🇬 新加坡自动
   - 🇭🇰 香港自动
   - 🇯🇵 日本自动
-  - 🚀 Trojan 自动
   - 🔐 VLESS 自动
-  - ⚡ Hysteria2 自动
   - 🔁 故障切换
   - ♻️ 自动选择
   - DIRECT
@@ -523,12 +521,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-- name: ⚡ Hysteria2 自动
-  type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 80
-  proxies: []
 - name: 🔐 VLESS 自动
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -563,12 +555,6 @@ proxy-groups:
   - 🇹🇼Taiwan 04
   - 🇩🇪Germany 01
   - 🇩🇪Germany 02
-- name: 🚀 Trojan 自动
-  type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 80
-  proxies: []
 - name: 🔁 故障切换
   type: fallback
   url: https://www.gstatic.com/generate_204
