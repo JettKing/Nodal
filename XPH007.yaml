@@ -4,10 +4,12 @@ proxies:
   server: us1.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: download-porter.hoyoverse.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: 0_UOGGSOr0NZqCA-nQo-Ct0MjQPfghmBL_sh6XU5pW8
     short-id: 3c685704595ac92d
@@ -16,10 +18,12 @@ proxies:
   server: us2.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: download-porter.hoyoverse.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: w5egR8fKNXrEJns2AfwStSzRQ9yHY_invtW7tnqm8Dk
     short-id: 3c685704595ac92d
@@ -28,10 +32,12 @@ proxies:
   server: us3.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: download-porter.hoyoverse.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: Xxlyh5wfeoNPedBBkb8Sq8rjGEwmNHfE-sVyU7pJEnA
     short-id: 3c685704595ac92d
@@ -40,10 +46,12 @@ proxies:
   server: us4.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: download-porter.hoyoverse.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: zyuUbkfNG5nWHUVIVjGCCYIs85gKcxho6vmHKXVMIWA
     short-id: 3c685704595ac92d
@@ -52,10 +60,12 @@ proxies:
   server: my1.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.setel.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: PJjtKzpZHwxP7GD1fq_UkdWgHaW4IenVRcZuZEgMmmQ
     short-id: 3c685704595ac92d
@@ -64,10 +74,12 @@ proxies:
   server: my2.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.setel.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM
     short-id: 3c685704595ac92d
@@ -76,10 +88,12 @@ proxies:
   server: sg1.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: sg-hyp-api.hoyoverse.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: vUhHTgZiXSho6Nv84w_JZW7Mo7XjJr0TsOBf19Dpols
     short-id: 3c685704595ac92d
@@ -88,10 +102,12 @@ proxies:
   server: sg2.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: sg-hyp-api.hoyoverse.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: Oh-r_LCdfRhSzm9zQEv-0jMO57hebZJzOmSTTGveh2c
     short-id: 3c685704595ac92d
@@ -100,10 +116,12 @@ proxies:
   server: sg3.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: mms.vod.susercontent.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: kEB6pxifWUD0HpIyATtcDxthaQLkheek46bkIxPyDV0
     short-id: 3c685704595ac92d
@@ -112,10 +130,12 @@ proxies:
   server: sg4.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: mms.vod.susercontent.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: 1PreFAh7nw0pDyzGHhWHaxnWHrRYIRv0rSXDpI90JV0
     short-id: 3c685704595ac92d
@@ -124,10 +144,12 @@ proxies:
   server: jp1.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.capcom.co.jp
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: 0gYZJnHAz7yMRQjZH5Twd9ETHfKjzQimUgbzb1yLlhM
     short-id: 3c685704595ac92d
@@ -136,10 +158,12 @@ proxies:
   server: jp2.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.capcom.co.jp
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: 3yorIs_psiYbIeESwMdne5mPe2JVzeNOpDa2IJxQ-Es
     short-id: 3c685704595ac92d
@@ -148,10 +172,12 @@ proxies:
   server: jp3.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.bandainamcoent.co.jp
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: HtrHyKJvjeh9xNVlNXidqFra8n_DhlL8EGu4ERst8QI
     short-id: 3c685704595ac92d
@@ -160,10 +186,12 @@ proxies:
   server: jp4.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.bandainamcoent.co.jp
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: qkSw1mYeebLzLGFAxnSu0CuNaSQXdhR-doksZoqEniA
     short-id: 3c685704595ac92d
@@ -172,10 +200,12 @@ proxies:
   server: kr1.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.coway.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: 7wI0UsM_xv7YfQ1yfBRVEaSpegvoGZeCzPgz_4kmDxY
     short-id: 3c685704595ac92d
@@ -184,10 +214,12 @@ proxies:
   server: kr2.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.coway.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
     short-id: 3c685704595ac92d
@@ -196,10 +228,12 @@ proxies:
   server: nl1.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.philips.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: AFQAIB5u9Uu6nf9fkP1BdcSHivSuUv97l4FH-LoFYgw
     short-id: 3c685704595ac92d
@@ -208,10 +242,12 @@ proxies:
   server: nl2.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.philips.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: Ncb78PVwvwU2tB1eiOlJd0ZCG2CbqG7-dPIHztlq2yM
     short-id: 3c685704595ac92d
@@ -220,10 +256,12 @@ proxies:
   server: uk1.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.bp.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: WXKNF5XZXBoydtaffIr0kjrYwoE0qOnqmU6A-Ix1lXI
     short-id: 3c685704595ac92d
@@ -232,10 +270,12 @@ proxies:
   server: uk2.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.bp.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
     short-id: 3c685704595ac92d
@@ -244,10 +284,12 @@ proxies:
   server: hk3.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: hk4e-launcher-static.hoyoverse.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: zV4Sja0iajpdzkR1iBMbI7RRWL2nlpgwGOtirQSG-zc
     short-id: 3c685704595ac92d
@@ -256,10 +298,12 @@ proxies:
   server: hk4.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: hk4e-launcher-static.hoyoverse.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: KhRbgahSFqlPKB6QNp9QYb4oXMy2SIgi440tm6iFZHA
     short-id: 3c685704595ac92d
@@ -268,10 +312,12 @@ proxies:
   server: hk5.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.hsbc.com.hk
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: HbjpGbCmp7lBysnS-twEYgGoriXACHZQObIpU9zJWVc
     short-id: 3c685704595ac92d
@@ -280,10 +326,12 @@ proxies:
   server: hk6.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.hsbc.com.hk
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: 2kl8isq7ajNv3BR6Z1EPag_LqJHmsfo2pn0dA7yetko
     short-id: 3c685704595ac92d
@@ -292,10 +340,12 @@ proxies:
   server: tw3.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: dlcdnets.asus.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM
     short-id: 3c685704595ac92d
@@ -304,10 +354,12 @@ proxies:
   server: tw4.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: dlcdnets.asus.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: IqsN_cPeCP6oEXtYQMMWBiUim-r9lxq7YGj_mE3992g
     short-id: 3c685704595ac92d
@@ -316,10 +368,12 @@ proxies:
   server: de1.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.siemens.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: aEAdhhksLgyI_GWf7l_ES5hMZhigMAIWBn9emSXdaHc
     short-id: 3c685704595ac92d
@@ -328,10 +382,12 @@ proxies:
   server: de2.oh-node.com
   port: 443
   udp: true
-  uuid: auto:91cb8627-fe01-45c7-a116-f852c545eb35
+  uuid: 91cb8627-fe01-45c7-a116-f852c545eb35
   tls: true
   servername: www.siemens.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
+  tfo: true
   reality-opts:
     public-key: JH9UnU0LFCDS3Q8zR7dhQDYrQ4iZGDgDB-sQcQ1q-kA
     short-id: 3c685704595ac92d

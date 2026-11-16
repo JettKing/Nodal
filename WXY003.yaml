@@ -160,30 +160,33 @@ proxies:
   server: 13.250.3.76
   port: 443
   udp: true
-  uuid: none:25116153-2b15-4942-870f-fc77686b85b4
+  uuid: 25116153-2b15-4942-870f-fc77686b85b4
   tls: true
   servername: www.shopify.com
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
 - name: 🇸🇬 【亚洲】新加坡02丨Vless
   type: vless
   server: 54.169.49.130
   port: 443
   udp: true
-  uuid: none:25116153-2b15-4942-870f-fc77686b85b4
+  uuid: 25116153-2b15-4942-870f-fc77686b85b4
   tls: true
   servername: www.shopify.com
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   client-fingerprint: ios
 - name: 🇯🇵【亚洲】日本01丨Vless
   type: vless
   server: 35.74.78.62
   port: 443
   udp: true
-  uuid: none:25116153-2b15-4942-870f-fc77686b85b4
+  uuid: 25116153-2b15-4942-870f-fc77686b85b4
   tls: true
   servername: www.bing.com
   skip-cert-verify: true
+  flow: xtls-rprx-vision
   client-fingerprint: ios
 - name: 🇺🇸【北美洲】美国01原生丨直连【2x】
   type: hysteria2
