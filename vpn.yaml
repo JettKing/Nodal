@@ -6,18 +6,18 @@ log-level: info
 external-controller: :9090
 proxies:
 - name: 🇯🇵 【亚洲】日本03丨测试
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本04丨测试
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -25,7 +25,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54357
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -33,7 +33,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54357
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -41,7 +41,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54258
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -49,7 +49,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54258
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -57,7 +57,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54261
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -65,7 +65,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54261
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -73,7 +73,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54273
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -81,23 +81,23 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54273
   type: trojan
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本03丨测试 2
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本04丨测试 2
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -105,7 +105,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54357
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -113,7 +113,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54357
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -121,7 +121,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54258
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -129,7 +129,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54258
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -137,7 +137,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54261
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -145,7 +145,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54261
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -153,7 +153,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54273
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -161,23 +161,23 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54273
   type: trojan
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本03丨测试 3
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本04丨测试 3
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -185,7 +185,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54357
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -193,7 +193,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54357
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -201,7 +201,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54258
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -209,7 +209,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54258
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -217,7 +217,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54261
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -225,7 +225,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54261
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -233,7 +233,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54273
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -241,23 +241,23 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54273
   type: trojan
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本03丨测试 4
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本04丨测试 4
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -265,7 +265,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54357
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -273,7 +273,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54357
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -281,7 +281,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54258
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -289,7 +289,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54258
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -297,7 +297,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54261
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -305,7 +305,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54261
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -313,7 +313,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54273
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -321,23 +321,23 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54273
   type: trojan
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本03丨测试 5
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本04丨测试 5
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -345,7 +345,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54357
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -353,7 +353,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54357
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -361,7 +361,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54258
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -369,7 +369,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54258
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -377,7 +377,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54261
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -385,7 +385,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54261
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -393,7 +393,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54273
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -401,23 +401,23 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54273
   type: trojan
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本03丨测试 6
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本04丨测试 6
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -425,7 +425,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54357
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -433,7 +433,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54357
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -441,7 +441,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54258
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -449,7 +449,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54258
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -457,7 +457,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54261
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -465,7 +465,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54261
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -473,7 +473,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54273
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -481,23 +481,23 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54273
   type: trojan
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本03丨测试 7
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本04丨测试 7
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -505,7 +505,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54357
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -513,7 +513,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54357
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -521,7 +521,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54258
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -529,7 +529,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54258
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -537,7 +537,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54261
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -545,7 +545,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54261
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -553,7 +553,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54273
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -561,23 +561,23 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54273
   type: trojan
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本03丨测试 8
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 【亚洲】日本04丨测试 8
-  server: 18.183.33.230
+  server: 57.181.38.31
   port: 443
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -585,7 +585,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54357
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -593,7 +593,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54357
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.lamer.com.hk
   skip-cert-verify: false
   udp: true
@@ -601,7 +601,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54258
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -609,7 +609,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54258
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -617,7 +617,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54261
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -625,7 +625,7 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54261
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -633,7 +633,7 @@ proxies:
   server: pokemonv6-01.pikaholo.com
   port: 54273
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
@@ -641,86 +641,406 @@ proxies:
   server: pokemonv6-02.pikaholo.com
   port: 54273
   type: trojan
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: false
   udp: true
-- name: 💬欢迎关注我的频道,❗️
-  type: hysteria2
-  server: 42.200.172.169
-  port: 46315
+- name: 🇯🇵 【亚洲】日本03丨测试 9
+  server: 57.181.38.31
+  port: 443
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: false
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+- name: 🇯🇵 【亚洲】日本04丨测试 9
+  server: 57.181.38.31
+  port: 443
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  server: pokemonv6-01.pikaholo.com
+  port: 54357
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.lamer.com.hk
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  server: pokemonv6-02.pikaholo.com
+  port: 54357
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.lamer.com.hk
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  server: pokemonv6-01.pikaholo.com
+  port: 54258
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  server: pokemonv6-02.pikaholo.com
+  port: 54258
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  server: pokemonv6-01.pikaholo.com
+  port: 54261
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  server: pokemonv6-02.pikaholo.com
+  port: 54261
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  server: pokemonv6-01.pikaholo.com
+  port: 54273
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  server: pokemonv6-02.pikaholo.com
+  port: 54273
+  type: trojan
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本03丨测试 10
+  server: 57.181.38.31
+  port: 443
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本04丨测试 10
+  server: 57.181.38.31
+  port: 443
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  server: pokemonv6-01.pikaholo.com
+  port: 54357
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.lamer.com.hk
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  server: pokemonv6-02.pikaholo.com
+  port: 54357
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.lamer.com.hk
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  server: pokemonv6-01.pikaholo.com
+  port: 54258
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  server: pokemonv6-02.pikaholo.com
+  port: 54258
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  server: pokemonv6-01.pikaholo.com
+  port: 54261
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  server: pokemonv6-02.pikaholo.com
+  port: 54261
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  server: pokemonv6-01.pikaholo.com
+  port: 54273
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  server: pokemonv6-02.pikaholo.com
+  port: 54273
+  type: trojan
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本03丨测试 11
+  server: 57.181.38.31
+  port: 443
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本04丨测试 11
+  server: 57.181.38.31
+  port: 443
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  server: pokemonv6-01.pikaholo.com
+  port: 54357
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.lamer.com.hk
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  server: pokemonv6-02.pikaholo.com
+  port: 54357
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.lamer.com.hk
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  server: pokemonv6-01.pikaholo.com
+  port: 54258
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  server: pokemonv6-02.pikaholo.com
+  port: 54258
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  server: pokemonv6-01.pikaholo.com
+  port: 54261
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  server: pokemonv6-02.pikaholo.com
+  port: 54261
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  server: pokemonv6-01.pikaholo.com
+  port: 54273
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  server: pokemonv6-02.pikaholo.com
+  port: 54273
+  type: trojan
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本03丨测试 12
+  server: 57.181.38.31
+  port: 443
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本04丨测试 12
+  server: 57.181.38.31
+  port: 443
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  server: pokemonv6-01.pikaholo.com
+  port: 54357
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.lamer.com.hk
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  server: pokemonv6-02.pikaholo.com
+  port: 54357
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.lamer.com.hk
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  server: pokemonv6-01.pikaholo.com
+  port: 54258
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  server: pokemonv6-02.pikaholo.com
+  port: 54258
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  server: pokemonv6-01.pikaholo.com
+  port: 54261
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  server: pokemonv6-02.pikaholo.com
+  port: 54261
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  server: pokemonv6-01.pikaholo.com
+  port: 54273
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 【北美洲】美国02丨V6【1x】 12
+  server: pokemonv6-02.pikaholo.com
+  port: 54273
+  type: trojan
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: false
+  udp: true
+- name: 🛜欢迎关注我的频道,❗️
+  type: hysteria2
+  server: 209.9.200.96
+  port: 23313
+  udp: true
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.shopify.com
   skip-cert-verify: true
   ports: 20000-50000
-- name: 💬徐胖虎资源社,❗️
+- name: 🛜徐胖虎资源社,❗️
   type: hysteria2
-  server: 42.200.172.169
-  port: 49835
+  server: 209.9.200.96
+  port: 33146
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.shopify.com
   skip-cert-verify: true
   ports: 20000-50000
-- name: 💬https://t.me/xph_fx,❗️
+- name: 🛜https://t.me/xph_fx,❗️
   type: hysteria2
-  server: 209.9.202.19
+  server: 42.200.231.232
   port: 443
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: true
-- name: 💬如遇不可用请更新订阅,❗️
+- name: 🛜如遇不可用请更新订阅,❗️
   type: hysteria2
-  server: 42.200.173.123
+  server: 42.200.166.53
   port: 443
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: true
-- name: 💬置顶广告投放联系@XphyBot,❗️
+- name: 🛜置顶广告投放联系@XphyBot,❗️
   type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 25317
+  server: 139.177.187.4
+  port: 32694
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
-- name: 💬更新日期：2026-11-16,❗️
+- name: 🛜更新日期：2026-11-21,❗️
   type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 22499
+  server: 139.177.187.4
+  port: 22918
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬【亚洲】新加坡03丨直连
   type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 22547
+  server: 172.104.63.177
+  port: 41099
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬【亚洲】新加坡04丨直连
   type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 23482
+  server: 172.104.63.177
+  port: 42337
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬 【亚洲】新加坡01丨Vless
   type: vless
-  server: 13.250.3.76
+  server: 54.169.49.130
   port: 443
   udp: true
-  uuid: be337f20-b739-411a-9467-829beac047be
+  uuid: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   tls: true
   servername: www.shopify.com
   skip-cert-verify: true
@@ -728,10 +1048,10 @@ proxies:
   client-fingerprint: chrome
 - name: 🇸🇬 【亚洲】新加坡02丨Vless
   type: vless
-  server: 54.169.49.130
+  server: 18.141.184.171
   port: 443
   udp: true
-  uuid: be337f20-b739-411a-9467-829beac047be
+  uuid: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   tls: true
   servername: www.shopify.com
   skip-cert-verify: true
@@ -739,10 +1059,10 @@ proxies:
   client-fingerprint: ios
 - name: 🇯🇵【亚洲】日本01丨Vless
   type: vless
-  server: 35.74.78.62
+  server: 54.65.161.158
   port: 443
   udp: true
-  uuid: be337f20-b739-411a-9467-829beac047be
+  uuid: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   tls: true
   servername: www.bing.com
   skip-cert-verify: true
@@ -750,106 +1070,97 @@ proxies:
   client-fingerprint: ios
 - name: 🇺🇸【北美洲】美国01原生丨直连【2x】
   type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 49093
+  server: 172.233.128.213
+  port: 33941
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇺🇸【北美洲】美国02原生丨直连【2x】
   type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 42007
-  udp: true
-  password: be337f20-b739-411a-9467-829beac047be
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国03原生丨直连【2x】
-  type: hysteria2
-  server: us02zl.poke-mon.xyz
+  server: 172.239.67.246
   port: 443
   udp: true
-  password: be337f20-b739-411a-9467-829beac047be
+  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
   sni: bing.com
   skip-cert-verify: true
 - name: 🇭🇰【亚洲】香港01丨直连
   type: hysteria2
-  server: 42.200.172.169
-  port: 44694
+  server: 209.9.200.96
+  port: 29035
   udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.shopify.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇭🇰【亚洲】香港02丨直连
   type: hysteria2
-  server: 42.200.172.169
-  port: 29346
+  server: 209.9.200.96
+  port: 46152
   udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.shopify.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇭🇰【亚洲】香港03丨直连
   type: hysteria2
-  server: 209.9.202.19
+  server: 42.200.231.232
   port: 443
   udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: true
 - name: 🇭🇰【亚洲】香港04丨直连
   type: hysteria2
-  server: 42.200.173.123
+  server: 42.200.166.53
   port: 443
   udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: true
 - name: 🇸🇬【亚洲】新加坡01丨直连
   type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 49900
+  server: 139.177.187.4
+  port: 41584
   udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬【亚洲】新加坡02丨直连
   type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 30464
+  server: 139.177.187.4
+  port: 41899
   udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬【亚洲】新加坡03丨直连 2
   type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 21064
+  server: 172.104.63.177
+  port: 37864
   udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬【亚洲】新加坡04丨直连 2
   type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 26636
+  server: 172.104.63.177
+  port: 32458
   udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬 【亚洲】新加坡01丨Vless 2
   type: vless
-  server: 13.250.3.76
+  server: 54.169.49.130
   port: 443
   udp: true
-  uuid: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  uuid: 07aef016-d349-42ea-9cb7-3206380ae1bd
   tls: true
   servername: www.shopify.com
   skip-cert-verify: true
@@ -857,10 +1168,10 @@ proxies:
   client-fingerprint: chrome
 - name: 🇸🇬 【亚洲】新加坡02丨Vless 2
   type: vless
-  server: 54.169.49.130
+  server: 18.141.184.171
   port: 443
   udp: true
-  uuid: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  uuid: 07aef016-d349-42ea-9cb7-3206380ae1bd
   tls: true
   servername: www.shopify.com
   skip-cert-verify: true
@@ -868,7 +1179,607 @@ proxies:
   client-fingerprint: ios
 - name: 🇯🇵【亚洲】日本01丨Vless 2
   type: vless
-  server: 35.74.78.62
+  server: 54.65.161.158
+  port: 443
+  udp: true
+  uuid: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  tls: true
+  servername: www.bing.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 2
+  type: hysteria2
+  server: 172.233.128.213
+  port: 35053
+  udp: true
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  sni: bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 2
+  type: hysteria2
+  server: 172.239.67.246
+  port: 443
+  udp: true
+  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港01丨直连 2
+  type: hysteria2
+  server: 209.9.200.96
+  port: 21862
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港02丨直连 2
+  type: hysteria2
+  server: 209.9.200.96
+  port: 30181
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港03丨直连 2
+  type: hysteria2
+  server: 42.200.231.232
+  port: 443
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港04丨直连 2
+  type: hysteria2
+  server: 42.200.166.53
+  port: 443
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡01丨直连 2
+  type: hysteria2
+  server: 139.177.187.4
+  port: 38135
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡02丨直连 2
+  type: hysteria2
+  server: 139.177.187.4
+  port: 48062
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡03丨直连 3
+  type: hysteria2
+  server: 172.104.63.177
+  port: 46001
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡04丨直连 3
+  type: hysteria2
+  server: 172.104.63.177
+  port: 25022
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬 【亚洲】新加坡01丨Vless 3
+  type: vless
+  server: 54.169.49.130
+  port: 443
+  udp: true
+  uuid: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇸🇬 【亚洲】新加坡02丨Vless 3
+  type: vless
+  server: 18.141.184.171
+  port: 443
+  udp: true
+  uuid: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇯🇵【亚洲】日本01丨Vless 3
+  type: vless
+  server: 54.65.161.158
+  port: 443
+  udp: true
+  uuid: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  tls: true
+  servername: www.bing.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 3
+  type: hysteria2
+  server: 172.233.128.213
+  port: 35404
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 3
+  type: hysteria2
+  server: 172.239.67.246
+  port: 443
+  udp: true
+  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港01丨直连 3
+  type: hysteria2
+  server: 209.9.200.96
+  port: 40610
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港02丨直连 3
+  type: hysteria2
+  server: 209.9.200.96
+  port: 33178
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港03丨直连 3
+  type: hysteria2
+  server: 42.200.231.232
+  port: 443
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港04丨直连 3
+  type: hysteria2
+  server: 42.200.166.53
+  port: 443
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡01丨直连 3
+  type: hysteria2
+  server: 139.177.187.4
+  port: 35820
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡02丨直连 3
+  type: hysteria2
+  server: 139.177.187.4
+  port: 45949
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡03丨直连 4
+  type: hysteria2
+  server: 172.104.63.177
+  port: 48091
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡04丨直连 4
+  type: hysteria2
+  server: 172.104.63.177
+  port: 31012
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬 【亚洲】新加坡01丨Vless 4
+  type: vless
+  server: 54.169.49.130
+  port: 443
+  udp: true
+  uuid: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇸🇬 【亚洲】新加坡02丨Vless 4
+  type: vless
+  server: 18.141.184.171
+  port: 443
+  udp: true
+  uuid: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇯🇵【亚洲】日本01丨Vless 4
+  type: vless
+  server: 54.65.161.158
+  port: 443
+  udp: true
+  uuid: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  tls: true
+  servername: www.bing.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 4
+  type: hysteria2
+  server: 172.233.128.213
+  port: 43163
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 4
+  type: hysteria2
+  server: 172.239.67.246
+  port: 443
+  udp: true
+  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港01丨直连 4
+  type: hysteria2
+  server: 209.9.200.96
+  port: 35325
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港02丨直连 4
+  type: hysteria2
+  server: 209.9.200.96
+  port: 36403
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港03丨直连 4
+  type: hysteria2
+  server: 42.200.231.232
+  port: 443
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港04丨直连 4
+  type: hysteria2
+  server: 42.200.166.53
+  port: 443
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡01丨直连 4
+  type: hysteria2
+  server: 139.177.187.4
+  port: 48924
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡02丨直连 4
+  type: hysteria2
+  server: 139.177.187.4
+  port: 31182
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡03丨直连 5
+  type: hysteria2
+  server: 172.104.63.177
+  port: 46900
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡04丨直连 5
+  type: hysteria2
+  server: 172.104.63.177
+  port: 40482
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬 【亚洲】新加坡01丨Vless 5
+  type: vless
+  server: 54.169.49.130
+  port: 443
+  udp: true
+  uuid: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇸🇬 【亚洲】新加坡02丨Vless 5
+  type: vless
+  server: 18.141.184.171
+  port: 443
+  udp: true
+  uuid: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇯🇵【亚洲】日本01丨Vless 5
+  type: vless
+  server: 54.65.161.158
+  port: 443
+  udp: true
+  uuid: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  tls: true
+  servername: www.bing.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 5
+  type: hysteria2
+  server: 172.233.128.213
+  port: 24593
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 5
+  type: hysteria2
+  server: 172.239.67.246
+  port: 443
+  udp: true
+  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港01丨直连 5
+  type: hysteria2
+  server: 209.9.200.96
+  port: 21829
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港02丨直连 5
+  type: hysteria2
+  server: 209.9.200.96
+  port: 44551
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港03丨直连 5
+  type: hysteria2
+  server: 42.200.231.232
+  port: 443
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港04丨直连 5
+  type: hysteria2
+  server: 42.200.166.53
+  port: 443
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡01丨直连 5
+  type: hysteria2
+  server: 139.177.187.4
+  port: 29574
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡02丨直连 5
+  type: hysteria2
+  server: 139.177.187.4
+  port: 48351
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡03丨直连 6
+  type: hysteria2
+  server: 172.104.63.177
+  port: 37221
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡04丨直连 6
+  type: hysteria2
+  server: 172.104.63.177
+  port: 36117
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬 【亚洲】新加坡01丨Vless 6
+  type: vless
+  server: 54.169.49.130
+  port: 443
+  udp: true
+  uuid: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇸🇬 【亚洲】新加坡02丨Vless 6
+  type: vless
+  server: 18.141.184.171
+  port: 443
+  udp: true
+  uuid: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇯🇵【亚洲】日本01丨Vless 6
+  type: vless
+  server: 54.65.161.158
+  port: 443
+  udp: true
+  uuid: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  tls: true
+  servername: www.bing.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 6
+  type: hysteria2
+  server: 172.233.128.213
+  port: 36856
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 6
+  type: hysteria2
+  server: 172.239.67.246
+  port: 443
+  udp: true
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港01丨直连 6
+  type: hysteria2
+  server: 209.9.200.96
+  port: 24595
+  udp: true
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港02丨直连 6
+  type: hysteria2
+  server: 209.9.200.96
+  port: 40474
+  udp: true
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港03丨直连 6
+  type: hysteria2
+  server: 42.200.231.232
+  port: 443
+  udp: true
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港04丨直连 6
+  type: hysteria2
+  server: 42.200.166.53
+  port: 443
+  udp: true
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡01丨直连 6
+  type: hysteria2
+  server: 139.177.187.4
+  port: 41492
+  udp: true
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡02丨直连 6
+  type: hysteria2
+  server: 139.177.187.4
+  port: 34708
+  udp: true
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡03丨直连 7
+  type: hysteria2
+  server: 172.104.63.177
+  port: 34327
+  udp: true
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡04丨直连 7
+  type: hysteria2
+  server: 172.104.63.177
+  port: 25766
+  udp: true
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬 【亚洲】新加坡01丨Vless 7
+  type: vless
+  server: 54.169.49.130
+  port: 443
+  udp: true
+  uuid: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇸🇬 【亚洲】新加坡02丨Vless 7
+  type: vless
+  server: 18.141.184.171
+  port: 443
+  udp: true
+  uuid: bf00f6c5-43ac-42d9-b5b7-c814af64978f
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇯🇵【亚洲】日本01丨Vless 7
+  type: vless
+  server: 54.65.161.158
   port: 443
   udp: true
   uuid: bf00f6c5-43ac-42d9-b5b7-c814af64978f
@@ -877,753 +1788,99 @@ proxies:
   skip-cert-verify: true
   flow: xtls-rprx-vision
   client-fingerprint: ios
-- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 2
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 38110
-  udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 2
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 27668
-  udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国03原生丨直连【2x】 2
-  type: hysteria2
-  server: us02zl.poke-mon.xyz
-  port: 443
-  udp: true
-  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港01丨直连 2
-  type: hysteria2
-  server: 42.200.172.169
-  port: 37850
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港02丨直连 2
-  type: hysteria2
-  server: 42.200.172.169
-  port: 38670
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港03丨直连 2
-  type: hysteria2
-  server: 209.9.202.19
-  port: 443
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港04丨直连 2
-  type: hysteria2
-  server: 42.200.173.123
-  port: 443
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬【亚洲】新加坡01丨直连 2
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 23365
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡02丨直连 2
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 43434
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡03丨直连 3
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 35115
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡04丨直连 3
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 29810
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬 【亚洲】新加坡01丨Vless 3
-  type: vless
-  server: 13.250.3.76
-  port: 443
-  udp: true
-  uuid: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-- name: 🇸🇬 【亚洲】新加坡02丨Vless 3
-  type: vless
-  server: 54.169.49.130
-  port: 443
-  udp: true
-  uuid: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-- name: 🇯🇵【亚洲】日本01丨Vless 3
-  type: vless
-  server: 35.74.78.62
-  port: 443
-  udp: true
-  uuid: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  tls: true
-  servername: www.bing.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 3
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 40571
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 3
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 39465
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国03原生丨直连【2x】 3
-  type: hysteria2
-  server: us02zl.poke-mon.xyz
-  port: 443
-  udp: true
-  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港01丨直连 3
-  type: hysteria2
-  server: 42.200.172.169
-  port: 41664
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港02丨直连 3
-  type: hysteria2
-  server: 42.200.172.169
-  port: 35614
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港03丨直连 3
-  type: hysteria2
-  server: 209.9.202.19
-  port: 443
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港04丨直连 3
-  type: hysteria2
-  server: 42.200.173.123
-  port: 443
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬【亚洲】新加坡01丨直连 3
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 40314
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡02丨直连 3
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 29593
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡03丨直连 4
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 48473
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡04丨直连 4
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 44055
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬 【亚洲】新加坡01丨Vless 4
-  type: vless
-  server: 13.250.3.76
-  port: 443
-  udp: true
-  uuid: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-- name: 🇸🇬 【亚洲】新加坡02丨Vless 4
-  type: vless
-  server: 54.169.49.130
-  port: 443
-  udp: true
-  uuid: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-- name: 🇯🇵【亚洲】日本01丨Vless 4
-  type: vless
-  server: 35.74.78.62
-  port: 443
-  udp: true
-  uuid: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  tls: true
-  servername: www.bing.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 4
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 20465
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 4
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 46362
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国03原生丨直连【2x】 4
-  type: hysteria2
-  server: us02zl.poke-mon.xyz
-  port: 443
-  udp: true
-  password: 7d57f1d9-02c9-4361-8ad9-6db03d26a325
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港01丨直连 4
-  type: hysteria2
-  server: 42.200.172.169
-  port: 22682
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港02丨直连 4
-  type: hysteria2
-  server: 42.200.172.169
-  port: 48706
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港03丨直连 4
-  type: hysteria2
-  server: 209.9.202.19
-  port: 443
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港04丨直连 4
-  type: hysteria2
-  server: 42.200.173.123
-  port: 443
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬【亚洲】新加坡01丨直连 4
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 24816
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡02丨直连 4
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 36112
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡03丨直连 5
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 39153
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡04丨直连 5
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 45157
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬 【亚洲】新加坡01丨Vless 5
-  type: vless
-  server: 13.250.3.76
-  port: 443
-  udp: true
-  uuid: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-- name: 🇸🇬 【亚洲】新加坡02丨Vless 5
-  type: vless
-  server: 54.169.49.130
-  port: 443
-  udp: true
-  uuid: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-- name: 🇯🇵【亚洲】日本01丨Vless 5
-  type: vless
-  server: 35.74.78.62
-  port: 443
-  udp: true
-  uuid: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  tls: true
-  servername: www.bing.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 5
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 26184
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 5
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 33473
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国03原生丨直连【2x】 5
-  type: hysteria2
-  server: us02zl.poke-mon.xyz
-  port: 443
-  udp: true
-  password: 2c9e4306-24a4-4dfe-8d17-112d1d78a072
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港01丨直连 5
-  type: hysteria2
-  server: 42.200.172.169
-  port: 45248
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港02丨直连 5
-  type: hysteria2
-  server: 42.200.172.169
-  port: 44384
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港03丨直连 5
-  type: hysteria2
-  server: 209.9.202.19
-  port: 443
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港04丨直连 5
-  type: hysteria2
-  server: 42.200.173.123
-  port: 443
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬【亚洲】新加坡01丨直连 5
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 25531
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡02丨直连 5
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 31692
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡03丨直连 6
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 27022
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡04丨直连 6
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 39679
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬 【亚洲】新加坡01丨Vless 6
-  type: vless
-  server: 13.250.3.76
-  port: 443
-  udp: true
-  uuid: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-- name: 🇸🇬 【亚洲】新加坡02丨Vless 6
-  type: vless
-  server: 54.169.49.130
-  port: 443
-  udp: true
-  uuid: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-- name: 🇯🇵【亚洲】日本01丨Vless 6
-  type: vless
-  server: 35.74.78.62
-  port: 443
-  udp: true
-  uuid: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  tls: true
-  servername: www.bing.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 6
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 22350
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 6
-  type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 40360
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国03原生丨直连【2x】 6
-  type: hysteria2
-  server: us02zl.poke-mon.xyz
-  port: 443
-  udp: true
-  password: 7d3c89f4-bd51-4553-9b89-75d62777da6a
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港01丨直连 6
-  type: hysteria2
-  server: 42.200.172.169
-  port: 24264
-  udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港02丨直连 6
-  type: hysteria2
-  server: 42.200.172.169
-  port: 38769
-  udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  sni: www.shopify.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇭🇰【亚洲】香港03丨直连 6
-  type: hysteria2
-  server: 209.9.202.19
-  port: 443
-  udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰【亚洲】香港04丨直连 6
-  type: hysteria2
-  server: 42.200.173.123
-  port: 443
-  udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬【亚洲】新加坡01丨直连 6
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 27382
-  udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡02丨直连 6
-  type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 29788
-  udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡03丨直连 7
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 45858
-  udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬【亚洲】新加坡04丨直连 7
-  type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 26408
-  udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  sni: www.bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇸🇬 【亚洲】新加坡01丨Vless 7
-  type: vless
-  server: 13.250.3.76
-  port: 443
-  udp: true
-  uuid: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-- name: 🇸🇬 【亚洲】新加坡02丨Vless 7
-  type: vless
-  server: 54.169.49.130
-  port: 443
-  udp: true
-  uuid: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  tls: true
-  servername: www.shopify.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-- name: 🇯🇵【亚洲】日本01丨Vless 7
-  type: vless
-  server: 35.74.78.62
-  port: 443
-  udp: true
-  uuid: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  tls: true
-  servername: www.bing.com
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
 - name: 🇺🇸【北美洲】美国01原生丨直连【2x】 7
   type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 39100
+  server: 172.233.128.213
+  port: 40731
   udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇺🇸【北美洲】美国02原生丨直连【2x】 7
   type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 33542
-  udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 20000-50000
-- name: 🇺🇸【北美洲】美国03原生丨直连【2x】 7
-  type: hysteria2
-  server: us02zl.poke-mon.xyz
+  server: 172.239.67.246
   port: 443
   udp: true
-  password: 07aef016-d349-42ea-9cb7-3206380ae1bd
+  password: bf00f6c5-43ac-42d9-b5b7-c814af64978f
   sni: bing.com
   skip-cert-verify: true
 - name: 🇭🇰【亚洲】香港01丨直连 7
   type: hysteria2
-  server: 42.200.172.169
-  port: 24337
+  server: 209.9.200.96
+  port: 47895
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.shopify.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇭🇰【亚洲】香港02丨直连 7
   type: hysteria2
-  server: 42.200.172.169
-  port: 44870
+  server: 209.9.200.96
+  port: 22541
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.shopify.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇭🇰【亚洲】香港03丨直连 7
   type: hysteria2
-  server: 209.9.202.19
+  server: 42.200.231.232
   port: 443
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: true
 - name: 🇭🇰【亚洲】香港04丨直连 7
   type: hysteria2
-  server: 42.200.173.123
+  server: 42.200.166.53
   port: 443
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: true
 - name: 🇸🇬【亚洲】新加坡01丨直连 7
   type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 26006
+  server: 139.177.187.4
+  port: 28772
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬【亚洲】新加坡02丨直连 7
   type: hysteria2
-  server: sg01-hy.poke-mon.xyz
-  port: 42607
+  server: 139.177.187.4
+  port: 20621
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬【亚洲】新加坡03丨直连 8
   type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 33148
+  server: 172.104.63.177
+  port: 30416
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬【亚洲】新加坡04丨直连 8
   type: hysteria2
-  server: sg02-hy.poke-mon.xyz
-  port: 29155
+  server: 172.104.63.177
+  port: 37166
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: www.bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇸🇬 【亚洲】新加坡01丨Vless 8
   type: vless
-  server: 13.250.3.76
+  server: 54.169.49.130
   port: 443
   udp: true
-  uuid: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  uuid: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   tls: true
   servername: www.shopify.com
   skip-cert-verify: true
@@ -1631,10 +1888,10 @@ proxies:
   client-fingerprint: chrome
 - name: 🇸🇬 【亚洲】新加坡02丨Vless 8
   type: vless
-  server: 54.169.49.130
+  server: 18.141.184.171
   port: 443
   udp: true
-  uuid: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  uuid: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   tls: true
   servername: www.shopify.com
   skip-cert-verify: true
@@ -1642,10 +1899,10 @@ proxies:
   client-fingerprint: ios
 - name: 🇯🇵【亚洲】日本01丨Vless 8
   type: vless
-  server: 35.74.78.62
+  server: 54.65.161.158
   port: 443
   udp: true
-  uuid: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  uuid: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   tls: true
   servername: www.bing.com
   skip-cert-verify: true
@@ -1653,28 +1910,499 @@ proxies:
   client-fingerprint: ios
 - name: 🇺🇸【北美洲】美国01原生丨直连【2x】 8
   type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 44199
+  server: 172.233.128.213
+  port: 45861
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
   sni: bing.com
   skip-cert-verify: true
   ports: 20000-50000
 - name: 🇺🇸【北美洲】美国02原生丨直连【2x】 8
   type: hysteria2
-  server: us01zl.poke-mon.xyz
-  port: 38159
+  server: 172.239.67.246
+  port: 443
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: dca8d8b3-6869-4d50-bac2-2539ce1b18bc
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港01丨直连 8
+  type: hysteria2
+  server: 209.9.200.96
+  port: 30481
+  udp: true
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港02丨直连 8
+  type: hysteria2
+  server: 209.9.200.96
+  port: 45844
+  udp: true
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港03丨直连 8
+  type: hysteria2
+  server: 42.200.231.232
+  port: 443
+  udp: true
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港04丨直连 8
+  type: hysteria2
+  server: 42.200.166.53
+  port: 443
+  udp: true
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡01丨直连 8
+  type: hysteria2
+  server: 139.177.187.4
+  port: 22891
+  udp: true
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡02丨直连 8
+  type: hysteria2
+  server: 139.177.187.4
+  port: 47294
+  udp: true
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡03丨直连 9
+  type: hysteria2
+  server: 172.104.63.177
+  port: 30460
+  udp: true
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡04丨直连 9
+  type: hysteria2
+  server: 172.104.63.177
+  port: 38445
+  udp: true
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬 【亚洲】新加坡01丨Vless 9
+  type: vless
+  server: 54.169.49.130
+  port: 443
+  udp: true
+  uuid: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇸🇬 【亚洲】新加坡02丨Vless 9
+  type: vless
+  server: 18.141.184.171
+  port: 443
+  udp: true
+  uuid: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇯🇵【亚洲】日本01丨Vless 9
+  type: vless
+  server: 54.65.161.158
+  port: 443
+  udp: true
+  uuid: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  tls: true
+  servername: www.bing.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 9
+  type: hysteria2
+  server: 172.233.128.213
+  port: 21970
+  udp: true
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
   sni: bing.com
   skip-cert-verify: true
   ports: 20000-50000
-- name: 🇺🇸【北美洲】美国03原生丨直连【2x】 8
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 9
   type: hysteria2
-  server: us02zl.poke-mon.xyz
+  server: 172.239.67.246
   port: 443
   udp: true
-  password: 1f945607-ee52-4bfa-ab53-60b159c0ff9c
+  password: 2a04307c-cbf4-44e1-8ff8-c847a6b5ff82
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港01丨直连 9
+  type: hysteria2
+  server: 209.9.200.96
+  port: 41263
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港02丨直连 9
+  type: hysteria2
+  server: 209.9.200.96
+  port: 29025
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港03丨直连 9
+  type: hysteria2
+  server: 42.200.231.232
+  port: 443
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港04丨直连 9
+  type: hysteria2
+  server: 42.200.166.53
+  port: 443
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡01丨直连 9
+  type: hysteria2
+  server: 139.177.187.4
+  port: 38117
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡02丨直连 9
+  type: hysteria2
+  server: 139.177.187.4
+  port: 42673
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡03丨直连 10
+  type: hysteria2
+  server: 172.104.63.177
+  port: 43258
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡04丨直连 10
+  type: hysteria2
+  server: 172.104.63.177
+  port: 48907
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬 【亚洲】新加坡01丨Vless 10
+  type: vless
+  server: 54.169.49.130
+  port: 443
+  udp: true
+  uuid: db09851a-1af8-499f-8620-9693e63d82dc
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇸🇬 【亚洲】新加坡02丨Vless 10
+  type: vless
+  server: 18.141.184.171
+  port: 443
+  udp: true
+  uuid: db09851a-1af8-499f-8620-9693e63d82dc
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇯🇵【亚洲】日本01丨Vless 10
+  type: vless
+  server: 54.65.161.158
+  port: 443
+  udp: true
+  uuid: db09851a-1af8-499f-8620-9693e63d82dc
+  tls: true
+  servername: www.bing.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 10
+  type: hysteria2
+  server: 172.233.128.213
+  port: 34013
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 10
+  type: hysteria2
+  server: 172.239.67.246
+  port: 443
+  udp: true
+  password: db09851a-1af8-499f-8620-9693e63d82dc
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港01丨直连 10
+  type: hysteria2
+  server: 209.9.200.96
+  port: 47995
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港02丨直连 10
+  type: hysteria2
+  server: 209.9.200.96
+  port: 28879
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港03丨直连 10
+  type: hysteria2
+  server: 42.200.231.232
+  port: 443
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港04丨直连 10
+  type: hysteria2
+  server: 42.200.166.53
+  port: 443
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡01丨直连 10
+  type: hysteria2
+  server: 139.177.187.4
+  port: 22779
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡02丨直连 10
+  type: hysteria2
+  server: 139.177.187.4
+  port: 30114
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡03丨直连 11
+  type: hysteria2
+  server: 172.104.63.177
+  port: 49721
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡04丨直连 11
+  type: hysteria2
+  server: 172.104.63.177
+  port: 33445
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬 【亚洲】新加坡01丨Vless 11
+  type: vless
+  server: 54.169.49.130
+  port: 443
+  udp: true
+  uuid: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇸🇬 【亚洲】新加坡02丨Vless 11
+  type: vless
+  server: 18.141.184.171
+  port: 443
+  udp: true
+  uuid: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇯🇵【亚洲】日本01丨Vless 11
+  type: vless
+  server: 54.65.161.158
+  port: 443
+  udp: true
+  uuid: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  tls: true
+  servername: www.bing.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 11
+  type: hysteria2
+  server: 172.233.128.213
+  port: 25826
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 11
+  type: hysteria2
+  server: 172.239.67.246
+  port: 443
+  udp: true
+  password: 340e35a1-342e-48e4-bdc3-d1c9d587f515
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港01丨直连 11
+  type: hysteria2
+  server: 209.9.200.96
+  port: 33282
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港02丨直连 11
+  type: hysteria2
+  server: 209.9.200.96
+  port: 43284
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.shopify.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇭🇰【亚洲】香港03丨直连 11
+  type: hysteria2
+  server: 42.200.231.232
+  port: 443
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港04丨直连 11
+  type: hysteria2
+  server: 42.200.166.53
+  port: 443
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡01丨直连 11
+  type: hysteria2
+  server: 139.177.187.4
+  port: 47375
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡02丨直连 11
+  type: hysteria2
+  server: 139.177.187.4
+  port: 48296
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡03丨直连 12
+  type: hysteria2
+  server: 172.104.63.177
+  port: 40120
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬【亚洲】新加坡04丨直连 12
+  type: hysteria2
+  server: 172.104.63.177
+  port: 49812
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: www.bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇸🇬 【亚洲】新加坡01丨Vless 12
+  type: vless
+  server: 54.169.49.130
+  port: 443
+  udp: true
+  uuid: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇸🇬 【亚洲】新加坡02丨Vless 12
+  type: vless
+  server: 18.141.184.171
+  port: 443
+  udp: true
+  uuid: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  tls: true
+  servername: www.shopify.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇯🇵【亚洲】日本01丨Vless 12
+  type: vless
+  server: 54.65.161.158
+  port: 443
+  udp: true
+  uuid: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  tls: true
+  servername: www.bing.com
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】 12
+  type: hysteria2
+  server: 172.233.128.213
+  port: 48720
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
+  sni: bing.com
+  skip-cert-verify: true
+  ports: 20000-50000
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】 12
+  type: hysteria2
+  server: 172.239.67.246
+  port: 443
+  udp: true
+  password: 1b361508-87cb-44f8-b619-808d4ddb1ef0
   sni: bing.com
   skip-cert-verify: true
 proxy-groups:
@@ -1772,12 +2500,52 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
-  - 💬欢迎关注我的频道,❗️
-  - 💬徐胖虎资源社,❗️
-  - 💬https://t.me/xph_fx,❗️
-  - 💬如遇不可用请更新订阅,❗️
-  - 💬置顶广告投放联系@XphyBot,❗️
-  - 💬更新日期：2026-11-16,❗️
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
+  - 🛜欢迎关注我的频道,❗️
+  - 🛜徐胖虎资源社,❗️
+  - 🛜https://t.me/xph_fx,❗️
+  - 🛜如遇不可用请更新订阅,❗️
+  - 🛜置顶广告投放联系@XphyBot,❗️
+  - 🛜更新日期：2026-11-21,❗️
   - 🇸🇬【亚洲】新加坡03丨直连
   - 🇸🇬【亚洲】新加坡04丨直连
   - 🇸🇬 【亚洲】新加坡01丨Vless
@@ -1785,7 +2553,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless
   - 🇺🇸【北美洲】美国01原生丨直连【2x】
   - 🇺🇸【北美洲】美国02原生丨直连【2x】
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】
   - 🇭🇰【亚洲】香港01丨直连
   - 🇭🇰【亚洲】香港02丨直连
   - 🇭🇰【亚洲】香港03丨直连
@@ -1799,7 +2566,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 2
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 2
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 2
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 2
   - 🇭🇰【亚洲】香港01丨直连 2
   - 🇭🇰【亚洲】香港02丨直连 2
   - 🇭🇰【亚洲】香港03丨直连 2
@@ -1813,7 +2579,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 3
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 3
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 3
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 3
   - 🇭🇰【亚洲】香港01丨直连 3
   - 🇭🇰【亚洲】香港02丨直连 3
   - 🇭🇰【亚洲】香港03丨直连 3
@@ -1827,7 +2592,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 4
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 4
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 4
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 4
   - 🇭🇰【亚洲】香港01丨直连 4
   - 🇭🇰【亚洲】香港02丨直连 4
   - 🇭🇰【亚洲】香港03丨直连 4
@@ -1841,7 +2605,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 5
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 5
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 5
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 5
   - 🇭🇰【亚洲】香港01丨直连 5
   - 🇭🇰【亚洲】香港02丨直连 5
   - 🇭🇰【亚洲】香港03丨直连 5
@@ -1855,7 +2618,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 6
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 6
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 6
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 6
   - 🇭🇰【亚洲】香港01丨直连 6
   - 🇭🇰【亚洲】香港02丨直连 6
   - 🇭🇰【亚洲】香港03丨直连 6
@@ -1869,7 +2631,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 7
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 7
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 7
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 7
   - 🇭🇰【亚洲】香港01丨直连 7
   - 🇭🇰【亚洲】香港02丨直连 7
   - 🇭🇰【亚洲】香港03丨直连 7
@@ -1883,7 +2644,58 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 8
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 8
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 8
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 8
+  - 🇭🇰【亚洲】香港01丨直连 8
+  - 🇭🇰【亚洲】香港02丨直连 8
+  - 🇭🇰【亚洲】香港03丨直连 8
+  - 🇭🇰【亚洲】香港04丨直连 8
+  - 🇸🇬【亚洲】新加坡01丨直连 8
+  - 🇸🇬【亚洲】新加坡02丨直连 8
+  - 🇸🇬【亚洲】新加坡03丨直连 9
+  - 🇸🇬【亚洲】新加坡04丨直连 9
+  - 🇸🇬 【亚洲】新加坡01丨Vless 9
+  - 🇸🇬 【亚洲】新加坡02丨Vless 9
+  - 🇯🇵【亚洲】日本01丨Vless 9
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 9
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 9
+  - 🇭🇰【亚洲】香港01丨直连 9
+  - 🇭🇰【亚洲】香港02丨直连 9
+  - 🇭🇰【亚洲】香港03丨直连 9
+  - 🇭🇰【亚洲】香港04丨直连 9
+  - 🇸🇬【亚洲】新加坡01丨直连 9
+  - 🇸🇬【亚洲】新加坡02丨直连 9
+  - 🇸🇬【亚洲】新加坡03丨直连 10
+  - 🇸🇬【亚洲】新加坡04丨直连 10
+  - 🇸🇬 【亚洲】新加坡01丨Vless 10
+  - 🇸🇬 【亚洲】新加坡02丨Vless 10
+  - 🇯🇵【亚洲】日本01丨Vless 10
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 10
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 10
+  - 🇭🇰【亚洲】香港01丨直连 10
+  - 🇭🇰【亚洲】香港02丨直连 10
+  - 🇭🇰【亚洲】香港03丨直连 10
+  - 🇭🇰【亚洲】香港04丨直连 10
+  - 🇸🇬【亚洲】新加坡01丨直连 10
+  - 🇸🇬【亚洲】新加坡02丨直连 10
+  - 🇸🇬【亚洲】新加坡03丨直连 11
+  - 🇸🇬【亚洲】新加坡04丨直连 11
+  - 🇸🇬 【亚洲】新加坡01丨Vless 11
+  - 🇸🇬 【亚洲】新加坡02丨Vless 11
+  - 🇯🇵【亚洲】日本01丨Vless 11
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 11
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 11
+  - 🇭🇰【亚洲】香港01丨直连 11
+  - 🇭🇰【亚洲】香港02丨直连 11
+  - 🇭🇰【亚洲】香港03丨直连 11
+  - 🇭🇰【亚洲】香港04丨直连 11
+  - 🇸🇬【亚洲】新加坡01丨直连 11
+  - 🇸🇬【亚洲】新加坡02丨直连 11
+  - 🇸🇬【亚洲】新加坡03丨直连 12
+  - 🇸🇬【亚洲】新加坡04丨直连 12
+  - 🇸🇬 【亚洲】新加坡01丨Vless 12
+  - 🇸🇬 【亚洲】新加坡02丨Vless 12
+  - 🇯🇵【亚洲】日本01丨Vless 12
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 12
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 12
 - name: ♻️ 自动选择
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1970,12 +2782,52 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
-  - 💬欢迎关注我的频道,❗️
-  - 💬徐胖虎资源社,❗️
-  - 💬https://t.me/xph_fx,❗️
-  - 💬如遇不可用请更新订阅,❗️
-  - 💬置顶广告投放联系@XphyBot,❗️
-  - 💬更新日期：2026-11-16,❗️
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
+  - 🛜欢迎关注我的频道,❗️
+  - 🛜徐胖虎资源社,❗️
+  - 🛜https://t.me/xph_fx,❗️
+  - 🛜如遇不可用请更新订阅,❗️
+  - 🛜置顶广告投放联系@XphyBot,❗️
+  - 🛜更新日期：2026-11-21,❗️
   - 🇸🇬【亚洲】新加坡03丨直连
   - 🇸🇬【亚洲】新加坡04丨直连
   - 🇸🇬 【亚洲】新加坡01丨Vless
@@ -1983,7 +2835,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless
   - 🇺🇸【北美洲】美国01原生丨直连【2x】
   - 🇺🇸【北美洲】美国02原生丨直连【2x】
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】
   - 🇭🇰【亚洲】香港01丨直连
   - 🇭🇰【亚洲】香港02丨直连
   - 🇭🇰【亚洲】香港03丨直连
@@ -1997,7 +2848,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 2
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 2
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 2
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 2
   - 🇭🇰【亚洲】香港01丨直连 2
   - 🇭🇰【亚洲】香港02丨直连 2
   - 🇭🇰【亚洲】香港03丨直连 2
@@ -2011,7 +2861,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 3
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 3
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 3
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 3
   - 🇭🇰【亚洲】香港01丨直连 3
   - 🇭🇰【亚洲】香港02丨直连 3
   - 🇭🇰【亚洲】香港03丨直连 3
@@ -2025,7 +2874,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 4
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 4
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 4
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 4
   - 🇭🇰【亚洲】香港01丨直连 4
   - 🇭🇰【亚洲】香港02丨直连 4
   - 🇭🇰【亚洲】香港03丨直连 4
@@ -2039,7 +2887,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 5
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 5
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 5
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 5
   - 🇭🇰【亚洲】香港01丨直连 5
   - 🇭🇰【亚洲】香港02丨直连 5
   - 🇭🇰【亚洲】香港03丨直连 5
@@ -2053,7 +2900,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 6
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 6
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 6
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 6
   - 🇭🇰【亚洲】香港01丨直连 6
   - 🇭🇰【亚洲】香港02丨直连 6
   - 🇭🇰【亚洲】香港03丨直连 6
@@ -2067,7 +2913,6 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 7
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 7
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 7
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 7
   - 🇭🇰【亚洲】香港01丨直连 7
   - 🇭🇰【亚洲】香港02丨直连 7
   - 🇭🇰【亚洲】香港03丨直连 7
@@ -2081,7 +2926,58 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 8
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 8
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 8
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 8
+  - 🇭🇰【亚洲】香港01丨直连 8
+  - 🇭🇰【亚洲】香港02丨直连 8
+  - 🇭🇰【亚洲】香港03丨直连 8
+  - 🇭🇰【亚洲】香港04丨直连 8
+  - 🇸🇬【亚洲】新加坡01丨直连 8
+  - 🇸🇬【亚洲】新加坡02丨直连 8
+  - 🇸🇬【亚洲】新加坡03丨直连 9
+  - 🇸🇬【亚洲】新加坡04丨直连 9
+  - 🇸🇬 【亚洲】新加坡01丨Vless 9
+  - 🇸🇬 【亚洲】新加坡02丨Vless 9
+  - 🇯🇵【亚洲】日本01丨Vless 9
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 9
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 9
+  - 🇭🇰【亚洲】香港01丨直连 9
+  - 🇭🇰【亚洲】香港02丨直连 9
+  - 🇭🇰【亚洲】香港03丨直连 9
+  - 🇭🇰【亚洲】香港04丨直连 9
+  - 🇸🇬【亚洲】新加坡01丨直连 9
+  - 🇸🇬【亚洲】新加坡02丨直连 9
+  - 🇸🇬【亚洲】新加坡03丨直连 10
+  - 🇸🇬【亚洲】新加坡04丨直连 10
+  - 🇸🇬 【亚洲】新加坡01丨Vless 10
+  - 🇸🇬 【亚洲】新加坡02丨Vless 10
+  - 🇯🇵【亚洲】日本01丨Vless 10
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 10
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 10
+  - 🇭🇰【亚洲】香港01丨直连 10
+  - 🇭🇰【亚洲】香港02丨直连 10
+  - 🇭🇰【亚洲】香港03丨直连 10
+  - 🇭🇰【亚洲】香港04丨直连 10
+  - 🇸🇬【亚洲】新加坡01丨直连 10
+  - 🇸🇬【亚洲】新加坡02丨直连 10
+  - 🇸🇬【亚洲】新加坡03丨直连 11
+  - 🇸🇬【亚洲】新加坡04丨直连 11
+  - 🇸🇬 【亚洲】新加坡01丨Vless 11
+  - 🇸🇬 【亚洲】新加坡02丨Vless 11
+  - 🇯🇵【亚洲】日本01丨Vless 11
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 11
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 11
+  - 🇭🇰【亚洲】香港01丨直连 11
+  - 🇭🇰【亚洲】香港02丨直连 11
+  - 🇭🇰【亚洲】香港03丨直连 11
+  - 🇭🇰【亚洲】香港04丨直连 11
+  - 🇸🇬【亚洲】新加坡01丨直连 11
+  - 🇸🇬【亚洲】新加坡02丨直连 11
+  - 🇸🇬【亚洲】新加坡03丨直连 12
+  - 🇸🇬【亚洲】新加坡04丨直连 12
+  - 🇸🇬 【亚洲】新加坡01丨Vless 12
+  - 🇸🇬 【亚洲】新加坡02丨Vless 12
+  - 🇯🇵【亚洲】日本01丨Vless 12
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 12
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 12
 - name: 🔁 故障切换
   type: fallback
   url: https://www.gstatic.com/generate_204
@@ -2096,17 +2992,16 @@ proxy-groups:
   interval: 300
   tolerance: 80
   proxies:
-  - 💬欢迎关注我的频道,❗️
-  - 💬徐胖虎资源社,❗️
-  - 💬https://t.me/xph_fx,❗️
-  - 💬如遇不可用请更新订阅,❗️
-  - 💬置顶广告投放联系@XphyBot,❗️
-  - 💬更新日期：2026-11-16,❗️
+  - 🛜欢迎关注我的频道,❗️
+  - 🛜徐胖虎资源社,❗️
+  - 🛜https://t.me/xph_fx,❗️
+  - 🛜如遇不可用请更新订阅,❗️
+  - 🛜置顶广告投放联系@XphyBot,❗️
+  - 🛜更新日期：2026-11-21,❗️
   - 🇸🇬【亚洲】新加坡03丨直连
   - 🇸🇬【亚洲】新加坡04丨直连
   - 🇺🇸【北美洲】美国01原生丨直连【2x】
   - 🇺🇸【北美洲】美国02原生丨直连【2x】
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】
   - 🇭🇰【亚洲】香港01丨直连
   - 🇭🇰【亚洲】香港02丨直连
   - 🇭🇰【亚洲】香港03丨直连
@@ -2117,7 +3012,6 @@ proxy-groups:
   - 🇸🇬【亚洲】新加坡04丨直连 2
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 2
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 2
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 2
   - 🇭🇰【亚洲】香港01丨直连 2
   - 🇭🇰【亚洲】香港02丨直连 2
   - 🇭🇰【亚洲】香港03丨直连 2
@@ -2128,7 +3022,6 @@ proxy-groups:
   - 🇸🇬【亚洲】新加坡04丨直连 3
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 3
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 3
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 3
   - 🇭🇰【亚洲】香港01丨直连 3
   - 🇭🇰【亚洲】香港02丨直连 3
   - 🇭🇰【亚洲】香港03丨直连 3
@@ -2139,7 +3032,6 @@ proxy-groups:
   - 🇸🇬【亚洲】新加坡04丨直连 4
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 4
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 4
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 4
   - 🇭🇰【亚洲】香港01丨直连 4
   - 🇭🇰【亚洲】香港02丨直连 4
   - 🇭🇰【亚洲】香港03丨直连 4
@@ -2150,7 +3042,6 @@ proxy-groups:
   - 🇸🇬【亚洲】新加坡04丨直连 5
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 5
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 5
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 5
   - 🇭🇰【亚洲】香港01丨直连 5
   - 🇭🇰【亚洲】香港02丨直连 5
   - 🇭🇰【亚洲】香港03丨直连 5
@@ -2161,7 +3052,6 @@ proxy-groups:
   - 🇸🇬【亚洲】新加坡04丨直连 6
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 6
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 6
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 6
   - 🇭🇰【亚洲】香港01丨直连 6
   - 🇭🇰【亚洲】香港02丨直连 6
   - 🇭🇰【亚洲】香港03丨直连 6
@@ -2172,7 +3062,6 @@ proxy-groups:
   - 🇸🇬【亚洲】新加坡04丨直连 7
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 7
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 7
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 7
   - 🇭🇰【亚洲】香港01丨直连 7
   - 🇭🇰【亚洲】香港02丨直连 7
   - 🇭🇰【亚洲】香港03丨直连 7
@@ -2183,7 +3072,46 @@ proxy-groups:
   - 🇸🇬【亚洲】新加坡04丨直连 8
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 8
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 8
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 8
+  - 🇭🇰【亚洲】香港01丨直连 8
+  - 🇭🇰【亚洲】香港02丨直连 8
+  - 🇭🇰【亚洲】香港03丨直连 8
+  - 🇭🇰【亚洲】香港04丨直连 8
+  - 🇸🇬【亚洲】新加坡01丨直连 8
+  - 🇸🇬【亚洲】新加坡02丨直连 8
+  - 🇸🇬【亚洲】新加坡03丨直连 9
+  - 🇸🇬【亚洲】新加坡04丨直连 9
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 9
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 9
+  - 🇭🇰【亚洲】香港01丨直连 9
+  - 🇭🇰【亚洲】香港02丨直连 9
+  - 🇭🇰【亚洲】香港03丨直连 9
+  - 🇭🇰【亚洲】香港04丨直连 9
+  - 🇸🇬【亚洲】新加坡01丨直连 9
+  - 🇸🇬【亚洲】新加坡02丨直连 9
+  - 🇸🇬【亚洲】新加坡03丨直连 10
+  - 🇸🇬【亚洲】新加坡04丨直连 10
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 10
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 10
+  - 🇭🇰【亚洲】香港01丨直连 10
+  - 🇭🇰【亚洲】香港02丨直连 10
+  - 🇭🇰【亚洲】香港03丨直连 10
+  - 🇭🇰【亚洲】香港04丨直连 10
+  - 🇸🇬【亚洲】新加坡01丨直连 10
+  - 🇸🇬【亚洲】新加坡02丨直连 10
+  - 🇸🇬【亚洲】新加坡03丨直连 11
+  - 🇸🇬【亚洲】新加坡04丨直连 11
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 11
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 11
+  - 🇭🇰【亚洲】香港01丨直连 11
+  - 🇭🇰【亚洲】香港02丨直连 11
+  - 🇭🇰【亚洲】香港03丨直连 11
+  - 🇭🇰【亚洲】香港04丨直连 11
+  - 🇸🇬【亚洲】新加坡01丨直连 11
+  - 🇸🇬【亚洲】新加坡02丨直连 11
+  - 🇸🇬【亚洲】新加坡03丨直连 12
+  - 🇸🇬【亚洲】新加坡04丨直连 12
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 12
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 12
 - name: 🔐 VLESS 自动
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -2214,6 +3142,18 @@ proxy-groups:
   - 🇸🇬 【亚洲】新加坡01丨Vless 8
   - 🇸🇬 【亚洲】新加坡02丨Vless 8
   - 🇯🇵【亚洲】日本01丨Vless 8
+  - 🇸🇬 【亚洲】新加坡01丨Vless 9
+  - 🇸🇬 【亚洲】新加坡02丨Vless 9
+  - 🇯🇵【亚洲】日本01丨Vless 9
+  - 🇸🇬 【亚洲】新加坡01丨Vless 10
+  - 🇸🇬 【亚洲】新加坡02丨Vless 10
+  - 🇯🇵【亚洲】日本01丨Vless 10
+  - 🇸🇬 【亚洲】新加坡01丨Vless 11
+  - 🇸🇬 【亚洲】新加坡02丨Vless 11
+  - 🇯🇵【亚洲】日本01丨Vless 11
+  - 🇸🇬 【亚洲】新加坡01丨Vless 12
+  - 🇸🇬 【亚洲】新加坡02丨Vless 12
+  - 🇯🇵【亚洲】日本01丨Vless 12
 - name: 🚀 Trojan 自动
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -2300,6 +3240,46 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
 - name: 🇭🇰 香港自动
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -2322,6 +3302,14 @@ proxy-groups:
   - 🇭🇰 【亚洲】香港02丨V6【1x】 7
   - 🇭🇰 【亚洲】香港01丨V6【1x】 8
   - 🇭🇰 【亚洲】香港02丨V6【1x】 8
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
   - 🇭🇰【亚洲】香港01丨直连
   - 🇭🇰【亚洲】香港02丨直连
   - 🇭🇰【亚洲】香港03丨直连
@@ -2350,6 +3338,22 @@ proxy-groups:
   - 🇭🇰【亚洲】香港02丨直连 7
   - 🇭🇰【亚洲】香港03丨直连 7
   - 🇭🇰【亚洲】香港04丨直连 7
+  - 🇭🇰【亚洲】香港01丨直连 8
+  - 🇭🇰【亚洲】香港02丨直连 8
+  - 🇭🇰【亚洲】香港03丨直连 8
+  - 🇭🇰【亚洲】香港04丨直连 8
+  - 🇭🇰【亚洲】香港01丨直连 9
+  - 🇭🇰【亚洲】香港02丨直连 9
+  - 🇭🇰【亚洲】香港03丨直连 9
+  - 🇭🇰【亚洲】香港04丨直连 9
+  - 🇭🇰【亚洲】香港01丨直连 10
+  - 🇭🇰【亚洲】香港02丨直连 10
+  - 🇭🇰【亚洲】香港03丨直连 10
+  - 🇭🇰【亚洲】香港04丨直连 10
+  - 🇭🇰【亚洲】香港01丨直连 11
+  - 🇭🇰【亚洲】香港02丨直连 11
+  - 🇭🇰【亚洲】香港03丨直连 11
+  - 🇭🇰【亚洲】香港04丨直连 11
 - name: 🇯🇵 日本自动
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -2388,6 +3392,22 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本04丨测试 8
   - 🇯🇵 【亚洲】日本01丨V6【1x】 8
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
   - 🇯🇵【亚洲】日本01丨Vless
   - 🇯🇵【亚洲】日本01丨Vless 2
   - 🇯🇵【亚洲】日本01丨Vless 3
@@ -2396,6 +3416,10 @@ proxy-groups:
   - 🇯🇵【亚洲】日本01丨Vless 6
   - 🇯🇵【亚洲】日本01丨Vless 7
   - 🇯🇵【亚洲】日本01丨Vless 8
+  - 🇯🇵【亚洲】日本01丨Vless 9
+  - 🇯🇵【亚洲】日本01丨Vless 10
+  - 🇯🇵【亚洲】日本01丨Vless 11
+  - 🇯🇵【亚洲】日本01丨Vless 12
 - name: 🇸🇬 新加坡自动
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -2418,8 +3442,14 @@ proxy-groups:
   - 🇸🇬 【亚洲】新加坡08丨V6【1x】 7
   - 🇸🇬 【亚洲】新加坡07丨V6【1x】 8
   - 🇸🇬 【亚洲】新加坡08丨V6【1x】 8
-  - 💬置顶广告投放联系@XphyBot,❗️
-  - 💬更新日期：2026-11-16,❗️
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
   - 🇸🇬【亚洲】新加坡03丨直连
   - 🇸🇬【亚洲】新加坡04丨直连
   - 🇸🇬 【亚洲】新加坡01丨Vless
@@ -2466,6 +3496,30 @@ proxy-groups:
   - 🇸🇬【亚洲】新加坡04丨直连 8
   - 🇸🇬 【亚洲】新加坡01丨Vless 8
   - 🇸🇬 【亚洲】新加坡02丨Vless 8
+  - 🇸🇬【亚洲】新加坡01丨直连 8
+  - 🇸🇬【亚洲】新加坡02丨直连 8
+  - 🇸🇬【亚洲】新加坡03丨直连 9
+  - 🇸🇬【亚洲】新加坡04丨直连 9
+  - 🇸🇬 【亚洲】新加坡01丨Vless 9
+  - 🇸🇬 【亚洲】新加坡02丨Vless 9
+  - 🇸🇬【亚洲】新加坡01丨直连 9
+  - 🇸🇬【亚洲】新加坡02丨直连 9
+  - 🇸🇬【亚洲】新加坡03丨直连 10
+  - 🇸🇬【亚洲】新加坡04丨直连 10
+  - 🇸🇬 【亚洲】新加坡01丨Vless 10
+  - 🇸🇬 【亚洲】新加坡02丨Vless 10
+  - 🇸🇬【亚洲】新加坡01丨直连 10
+  - 🇸🇬【亚洲】新加坡02丨直连 10
+  - 🇸🇬【亚洲】新加坡03丨直连 11
+  - 🇸🇬【亚洲】新加坡04丨直连 11
+  - 🇸🇬 【亚洲】新加坡01丨Vless 11
+  - 🇸🇬 【亚洲】新加坡02丨Vless 11
+  - 🇸🇬【亚洲】新加坡01丨直连 11
+  - 🇸🇬【亚洲】新加坡02丨直连 11
+  - 🇸🇬【亚洲】新加坡03丨直连 12
+  - 🇸🇬【亚洲】新加坡04丨直连 12
+  - 🇸🇬 【亚洲】新加坡01丨Vless 12
+  - 🇸🇬 【亚洲】新加坡02丨Vless 12
 - name: 🇺🇸 美国自动
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -2488,40 +3542,50 @@ proxy-groups:
   - 🇺🇸 【北美洲】美国02丨V6【1x】 7
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
   - 🇺🇸【北美洲】美国01原生丨直连【2x】
   - 🇺🇸【北美洲】美国02原生丨直连【2x】
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 2
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 2
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 2
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 3
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 3
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 3
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 4
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 4
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 4
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 5
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 5
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 5
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 6
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 6
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 6
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 7
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 7
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 7
   - 🇺🇸【北美洲】美国01原生丨直连【2x】 8
   - 🇺🇸【北美洲】美国02原生丨直连【2x】 8
-  - 🇺🇸【北美洲】美国03原生丨直连【2x】 8
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 9
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 9
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 10
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 10
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 11
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 11
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】 12
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】 12
 - name: 🌐 其他地区自动
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 80
   proxies:
-  - 💬欢迎关注我的频道,❗️
-  - 💬徐胖虎资源社,❗️
-  - 💬https://t.me/xph_fx,❗️
-  - 💬如遇不可用请更新订阅,❗️
+  - 🛜欢迎关注我的频道,❗️
+  - 🛜徐胖虎资源社,❗️
+  - 🛜https://t.me/xph_fx,❗️
+  - 🛜如遇不可用请更新订阅,❗️
+  - 🛜置顶广告投放联系@XphyBot,❗️
+  - 🛜更新日期：2026-11-21,❗️
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -2608,6 +3672,46 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
 - name: 📲 电报信息
   type: select
   proxies:
@@ -2693,6 +3797,46 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -2778,6 +3922,46 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -2863,6 +4047,46 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -2949,6 +4173,46 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -3051,6 +4315,46 @@ proxy-groups:
   - 🇯🇵 【亚洲】日本02丨V6【1x】 8
   - 🇺🇸 【北美洲】美国01丨V6【1x】 8
   - 🇺🇸 【北美洲】美国02丨V6【1x】 8
+  - 🇯🇵 【亚洲】日本03丨测试 9
+  - 🇯🇵 【亚洲】日本04丨测试 9
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 9
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 9
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 9
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 9
+  - 🇯🇵 【亚洲】日本03丨测试 10
+  - 🇯🇵 【亚洲】日本04丨测试 10
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 10
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 10
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 10
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 10
+  - 🇯🇵 【亚洲】日本03丨测试 11
+  - 🇯🇵 【亚洲】日本04丨测试 11
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 11
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 11
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 11
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 11
+  - 🇯🇵 【亚洲】日本03丨测试 12
+  - 🇯🇵 【亚洲】日本04丨测试 12
+  - 🇭🇰 【亚洲】香港01丨V6【1x】 12
+  - 🇭🇰 【亚洲】香港02丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡07丨V6【1x】 12
+  - 🇸🇬 【亚洲】新加坡08丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本01丨V6【1x】 12
+  - 🇯🇵 【亚洲】日本02丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国01丨V6【1x】 12
+  - 🇺🇸 【北美洲】美国02丨V6【1x】 12
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
